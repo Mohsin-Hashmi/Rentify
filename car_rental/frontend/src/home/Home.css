@@ -1,0 +1,754 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../assets/fonts/Poppins-SemiBold.woff2") format(woff2);
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../assets/fonts/Poppins-Medium.woff2") format(woff2);
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../assets/fonts/Poppins-Regular.woff2") format(woff2);
+  font-weight: 400;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+section,
+header,
+footer,
+button,
+input,
+label {
+  font-family: Poppins;
+  overflow-x: hidden;
+}
+
+/* Banner section css code */
+
+.rentcarBannerWrapper {
+  display: flex;
+  column-gap: 99px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 0 0 0;
+}
+
+.rentcarBannerWrapperContent {
+  max-width: 390px;
+  width: 100%;
+}
+
+.bannerImg {
+  max-width: 612px;
+  width: 100%;
+}
+
+.rentcarBannerWrapperContent h1 {
+  font-size: 47px;
+  color: #242424;
+}
+
+.rentcarBannerWrapperContent h1 span {
+  color: #1572d3;
+  position: relative;
+}
+
+.rentcarBannerWrapperContent h1 span::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/underlineImage.webp);
+  width: 138px;
+  height: 32px;
+  left: 0;
+  top: 54px;
+}
+
+.rentcarBannerWrapperContent .bannerPara {
+  font-weight: 18px;
+  line-height: 150%;
+  color: #272727;
+  margin: 40px 0;
+}
+
+.mobileApplicationLinks a {
+  text-decoration: none;
+}
+
+.googlePlayLink {
+  max-width: 123px;
+  width: 100%;
+  border-radius: 7px;
+  background-color: #000;
+  color: #ffffff;
+  display: flex;
+  column-gap: 1px;
+  align-items: center;
+}
+
+.googlePlayIcon img {
+  width: 21px;
+}
+
+.googlePlayContent p {
+  font-size: 10px;
+}
+
+.googlePlayContent h3 {
+  font-size: 12px;
+}
+
+.searchCarWrapper {
+  max-width: 1120px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 12px 12px 12px 12px;
+  display: flex;
+  column-gap: 74px;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: -5px 5px 40px 0px #7d7d7d40;
+}
+
+.searchCarWrapperCard {
+  max-width: 255px;
+  width: 100%;
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+}
+
+.cardContent h5 {
+  font-size: 16px;
+  color: #3e3e3e;
+  margin: 0 0 12px 0;
+}
+
+.cardContent p {
+  font-size: 14px;
+  color: #b6b6b6;
+}
+
+.cardSeperator {
+  font-size: 31px;
+  color: #b6b6b6;
+  vertical-align: middle;
+}
+
+.wrokProcessWrap {
+  padding: 86px 0;
+}
+
+.wrokProcessWrapPara {
+  max-width: 253px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #1572d3;
+  padding: 16px 32px;
+  margin: 0 auto;
+}
+
+.wrokProcessWrapPara p {
+  text-align: center;
+  color: #ffffff;
+}
+
+.workProcessHeading {
+  text-align: center;
+  margin: 32px 0 80px;
+  font-size: 38px;
+  color: #333333;
+}
+
+.wrokProcessBox {
+  max-width: 736px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.boxCard {
+  max-width: 230px;
+  width: 100%;
+  text-align: center;
+}
+
+.boxCard img {
+  margin: 0 auto;
+  display: block;
+}
+
+.boxCard h4 {
+  margin: 40px 0 24px;
+  font-size: 20px;
+  color: #333333;
+}
+
+.boxCard p {
+  font-size: 14px;
+  color: #6d6d6d;
+}
+
+.carBrands {
+  margin: 160px 0 0 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.carBrandsContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: max-content;
+  animation: scroll 2s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.carBrandsContent img {
+  margin: 0 40px;
+}
+
+.ourFeaturesWrap {
+  padding: 91px 0;
+  display: flex;
+  align-items: center;
+  column-gap: 101px;
+}
+
+.audiCarImage img {
+  position: relative;
+  left: 0;
+}
+
+.audiCarImage img {
+  max-width: 670px;
+  width: 100%;
+}
+
+.ourOffersTitle {
+  max-width: 253px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #1572d3;
+  padding: 16px 32px;
+}
+
+.ourOffersTitle p {
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.ourOffersHeading {
+  font-size: 28px;
+  color: #333333;
+  margin: 32px 0 35px;
+}
+
+.ourOffersContent {
+  max-width: 451px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.contentCard {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.contentCardParas h3 {
+  font-size: 20px;
+}
+
+.contentCardParas p {
+  font-size: 16px;
+  color: #6d6d6d;
+  margin: 10px 0 0 0;
+}
+
+.audiCarImage {
+  position: relative;
+}
+
+.audiCarImage img {
+  mix-blend-mode: multiply;
+}
+
+.audiCarImage::after {
+  content: "";
+  background-repeat: no-repeat;
+  position: absolute;
+  background-image: url(../assets/images/ourOfferBackImage.webp);
+  width: 700px;
+  height: 690px;
+  left: -80px;
+  top: -168px;
+  z-index: -1;
+}
+
+.popularDealsWrap {
+  padding: 84px 0;
+}
+
+.popularDealsBox {
+  max-width: 253px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #1572d3;
+  padding: 16px 32px;
+  margin: 0 auto;
+}
+
+.popularDealsBox p {
+  color: #ffffff;
+  text-align: center;
+}
+
+.popularDealsHeading {
+  text-align: center;
+  font-size: 38px;
+  margin: 24px 0 50px;
+  color: #333333;
+}
+
+.popularDealsWrapper {
+  max-width: 1120px;
+  width: 100%;
+  display: flex;
+  column-gap: 32px;
+  margin: 0 auto;
+}
+
+.popularDealsCard {
+  max-width: 256px;
+  width: 100%;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: -5px 5px 40px 0px #7d7d7d40;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+.popularDealsCard:hover {
+  border: 1px solid #1572d3;
+}
+
+.carName {
+  font-size: 18px;
+  color: #262626;
+  margin: 25px 0 0 0;
+}
+
+.carRating {
+  width: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 0 16px;
+}
+
+.carRating h4 {
+  font-size: 12px;
+}
+
+.carRating p {
+  color: #808080;
+  font-size: 12px;
+}
+
+.carFeaturesWrap {
+  max-width: 208px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 8px;
+}
+
+.carFeatureIcon img {
+  display: flex;
+  align-items: center;
+}
+
+.carFeatures {
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
+}
+
+.carFeatreContent p {
+  font-size: 12px;
+  color: #959595;
+}
+
+.ourPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 48px 0 24px;
+}
+
+.ourPrice h3 {
+  font-size: 14px;
+  color: #595959;
+}
+
+.ourPrice p {
+  font-size: 16px;
+  color: #292929;
+  font-weight: bold;
+}
+
+.ourPrice p span {
+  font-size: 14px;
+  color: #595959;
+}
+
+.rentNowBtn {
+  max-width: 208px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #1572d3;
+  padding: 15px 57px 15px 57px;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  font-size: 14px;
+  position: relative;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+.rentNowBtn:hover {
+  background-color: #ffffff;
+  color: #1572d3;
+  border: 1px solid #1572d3;
+}
+
+.rentNowBtn::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/arrow-right.webp);
+  width: 20px;
+  height: 20px;
+  left: 131px;
+}
+
+.rentNowBtn:hover::after {
+  filter: brightness(0) saturate(100%) invert(33%) sepia(82%) saturate(1297%)
+    hue-rotate(189deg) brightness(93%) contrast(96%);
+}
+
+.Cars {
+  margin: 35px 0 0 0;
+}
+
+.userReviewsPara {
+  max-width: 253px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #1572d3;
+  padding: 16px 32px;
+  margin: 0 auto;
+}
+
+.userReviewsWrap p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.userReviewsWrap h2 {
+  text-align: center;
+  font-size: 38px;
+  margin: 24px 0 0 0;
+  color: #333333;
+}
+
+.swiperWrap {
+  padding: 40px 0 80px 0;
+}
+
+.googlePlayLink {
+  padding: 8px;
+}
+
+.carRentalFooter {
+  background-color: #051c34;
+  padding: 40px 0;
+}
+
+/* media queries  start here */
+@media (max-width: 1169px) {
+  .bannerImg {
+    max-width: 540px;
+  }
+
+  .rentcarBannerWrapper {
+    column-gap: unset;
+    padding: 50px 0 50px 0;
+  }
+
+  .searchCarWrapper {
+    column-gap: 60px;
+  }
+
+  .popularDealsWrapper {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .popularDealsCard {
+    margin: 0 auto;
+  }
+
+  .popularDealsCard {
+    max-width: 850px;
+    width: 100%;
+  }
+
+  .carImages {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .carName {
+    text-align: center;
+  }
+
+  .carRating {
+    margin: 12px auto 16px auto;
+  }
+
+  .carFeaturesWrap {
+    margin: 0 auto;
+  }
+
+  .rentNowBtn {
+    margin: 0 auto;
+  }
+
+  .carFeaturesWrap {
+    max-width: 466px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .rentcarBannerWrapperContent h1 {
+    font-size: 37px;
+  }
+
+  .rentcarBannerWrapperContent .bannerPara {
+    font-size: 14px;
+    margin: 20px 0;
+  }
+
+  .rentcarBannerWrapperContent h1 span::after {
+    top: 42px;
+  }
+
+  .searchCarWrapper {
+    column-gap: 20px;
+  }
+
+  .searchCarWrapperCard {
+    column-gap: 5px;
+  }
+
+  .cardContent h5 {
+    font-size: 14px;
+    margin: 0 0 3px 0;
+  }
+
+  .cardContent p {
+    font-size: 11px;
+  }
+
+  .audiCarImage::after {
+    width: 350px;
+    height: 690px;
+    left: 11px;
+    top: -254px;
+  }
+
+  .ourOffersHeading {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .contentCardParas h3 {
+    font-size: 18px;
+  }
+
+  .contentCardParas p {
+    font-size: 14px;
+  }
+
+  .contentCard {
+    column-gap: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .rentcarBannerWrapperContent {
+    max-width: 589px;
+    width: 100%;
+  }
+
+  .rentcarBannerWrapper {
+    flex-direction: column;
+  }
+
+  .mobileApplicationLinks {
+    justify-content: center;
+  }
+
+  .googlePlayLink {
+    padding: 8px;
+  }
+
+  .googlePlayContent h3 {
+    font-size: 12px;
+  }
+
+  .googlePlayIcon img {
+    width: 21px;
+  }
+
+  .rentcarBannerWrapperContent h1 {
+    text-align: center;
+  }
+
+  .rentcarBannerWrapperContent .bannerPara {
+    text-align: center;
+  }
+
+  .searchCarWrapper {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .cardContent h5 {
+    font-size: 18px;
+  }
+
+  .cardContent p {
+    font-size: 16px;
+  }
+
+  .rentcarBannerWrapper {
+    padding-bottom: unset;
+  }
+
+  .searchCarWrapperCard {
+    justify-content: left;
+  }
+
+  .cardSeperator {
+    display: none;
+  }
+
+  .workProcessHeading {
+    margin-bottom: 30px;
+  }
+
+  .boxCard h4 {
+    margin: 10px 0 10px;
+  }
+
+  .wrokProcessBox {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  .carBrands {
+    margin: 100px 0 0 0;
+  }
+
+  .wrokProcessWrap {
+    padding-bottom: unset;
+  }
+
+  .workProcessHeading {
+    font-size: 28px;
+  }
+
+  .wrokProcessWrapPara {
+    max-width: 1170px;
+    width: 100%;
+  }
+
+  .ourFeaturesWrap {
+    flex-direction: column;
+  }
+
+  .audiCarImage::after {
+    display: none;
+  }
+
+  .ourOffersTitle {
+    max-width: 1170px;
+    width: 100%;
+  }
+
+  .ourOffersContent {
+    margin: 0 auto;
+  }
+
+  .ourFeaturesWrap {
+    padding-bottom: unset;
+  }
+}
+
+@media (max-width: 575px) {
+  .workProcessHeading {
+    font-size: 24px;
+  }
+
+  .ourOffersHeading {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 430px) {
+  .carFeaturesWrap {
+    justify-content: center;
+    column-gap: 20px;
+  }
+}

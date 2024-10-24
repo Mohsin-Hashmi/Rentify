@@ -1,0 +1,32 @@
+.modalCarsWrapper{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 16px;
+    margin: 0 auto;
+}
+.modalCarsWrapperCards{
+    max-width: 256px;
+    width: 100%;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: -5px 5px 40px 0px #7d7d7d40;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+.modalCarsWrapperCards:hover{
+    border: 1px solid #1572d3;
+}
+.modalCarsWrapperCards img{
+    margin: 0 auto;
+    display: block;
+}
+@media(max-width:991px){
+    .modalCarsWrapper{
+       justify-content: center;
+        
+
+    }
+}

@@ -1,0 +1,127 @@
+body{
+    font-family: Poppins;
+}
+.loginWrapper{
+    max-width: 428px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #ffffff;
+    box-shadow: -5px 5px 40px 0px #7d7d7d40;
+    padding: 30px 22px 48px;
+    z-index: 2000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.loginWrapper h1{
+    text-align: center;
+    font-size: 30px;
+    color: #1F41BB ;
+    
+
+}
+.loginWrapper .loginWrapperPara{
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    color: #000000;
+    margin: 5px auto 5px auto;
+}
+.inputField{
+    width: 100%;
+    border: 1px solid #F1F4FF;
+    border-radius: 10px;
+    padding: 20px 0 20px 20px;
+    outline: none;
+    background-color: #F1F4FF;
+}
+.inputField:focus{
+    border: 1px solid #1F41BB;
+}
+.passField{
+    margin: 29px 0 30px;
+}
+.forgetPassLink{
+    
+    text-decoration: none;
+    float: right;
+    color: #1F41BB;
+    font-size: 14px;
+}
+.loginSignInBtn{
+    width: 100%;
+    padding: 15px 144px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1F41BB;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 15px 0;
+    font-size: 20px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+.loginSignInBtn:hover{
+    border: 1px solid #1F41BB;
+    background-color: #ffffff;
+    color: #1F41BB;
+}
+.newAccountLink{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: #494949;
+    font-size: 14px;
+}
+.newAccountLink:hover{
+    color: #1F41BB;
+}
+.otherOptions{
+    text-align: center;
+    font-size: 15px;
+    color: #1F41BB;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+}
+.otherOptionsIcons{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin: 20px 0 0 0;
+}
+.labelShowPass{
+    margin: 0 0 0 10px;
+    font-size: 14px;
+}
+#show-password{
+    margin: 10px 0 0 10px;
+}
+.newAccountLink{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: #494949;
+    font-size: 14px;
+}
+.newAccountLink:hover{
+    color: #1F41BB;
+}
+
+@media(max-width:413px){
+    .loginSignInBtn {
+        padding: 15px 112px;
+    }
+    .loginWrapper .loginWrapperPara {
+        font-size: 19px;
+    }
+    .labelShowPass {
+        font-size: 13px;
+    }
+    .newAccountLink{
+        font-size: 13px;
+    }
+    .forgetPassLink{
+        font-size: 13px;
+    }
+}

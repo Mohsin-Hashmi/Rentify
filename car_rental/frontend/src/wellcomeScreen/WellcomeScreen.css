@@ -1,0 +1,65 @@
+.wellcomeScreenWrapper{
+    max-width: 428px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #ffffff;
+    box-shadow: -5px 5px 40px 0px #7d7d7d40;
+    padding: 30px 22px 48px;
+    z-index: 2000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.wellcomeScreenWrapper img{
+    max-width: 406px;
+    width: 100%;
+    height: 227px;
+}
+.wellcomeScreenWrapperContent h1{
+    text-align: center;
+    font-size: 35px;
+    color: #1F41BB;
+    margin: 13px 0 12px;
+}
+.wellcomeScreenWrapperContent p{
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    margin: 35px 0 0 0;
+}
+.buttons button{
+    border: none;
+    max-width: 160px;
+    width: 100%;
+    padding: 15px 38px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.buttons .loginInBtn{
+    background-color: #1F41BB;
+    color: #ffffff;
+}
+.buttons .loginInBtn:hover{
+    background-color: #ffff;
+    color: #1F41BB;
+    border: 1px solid #1F41BB;
+}
+.buttons  .registerBtn{
+    background-color: #ffffff;
+    color: #1F41BB;
+    border: 1px solid  #1F41BB;
+}
+.buttons  .registerBtn:hover{
+    background-color: #1F41BB;
+    color: #ffffff;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}

@@ -1,0 +1,170 @@
+.carRentalNavbar {
+  padding: 40px 0 0 0;
+}
+.carRentalNavbarWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carRentalNavbarWrapper .rentCarLogo {
+  display: flex;
+  align-items: center;
+}
+.navbarOptions {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  margin: 0 0 0 116px;
+}
+.navbarOptions li {
+  list-style: none;
+}
+.navbarOptions li a {
+  text-decoration: none;
+  color: #484848;
+  font-size: 16px;
+}
+.navbarOptions li a:hover {
+  color: #1572d3;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+.signInBtn {
+  margin: 0 0 0 116px;
+  border: none;
+  background-color: #ffffff;
+  color: #484848;
+  cursor: pointer;
+  font-size: 14px;
+}
+.signInBtn:hover {
+  color: #1572d3;
+}
+.signUpBtn {
+  max-width: 120px;
+  width: 100%;
+  height: 45px;
+  margin: 0 0 0 30px;
+  background-color: #1572d3;
+  border: none;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.signUpBtn:hover {
+  color: #1572d3;
+  background-color: #ffffff;
+  border: 1px solid #1572d3;
+}
+.mobileApplicationLinks {
+  display: flex;
+  column-gap: 11px;
+}
+
+.hamburger {
+  display: none;
+}
+.hamburgerButton {
+  background-color: initial;
+
+  border: none;
+}
+.sideMenuWrap {
+  transform: translateX(0);
+  /* transition:  all 3s ease; */
+  transition: transform 0.4s ease;
+  display: none;
+}
+/* Media Queries */
+@media (max-width: 1169px) {
+  .navbarOptions {
+    margin: 0 0 0 47px;
+    column-gap: 36px;
+  }
+  .signInBtn {
+    margin: 0 0 0 31px;
+  }
+}
+
+@media (max-width: 991px) {
+  .carRentalNavbarWrapper {
+    justify-content: space-between;
+  }
+  .navbarOptions {
+    margin: 0 0 0 23px;
+    column-gap: 18px;
+  }
+  .navbarOptions li a {
+    font-size: 13px;
+  }
+  .signUpBtn {
+    margin: unset;
+  }
+  .signInBtn {
+    margin: unset;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbarOptions {
+    display: none;
+  }
+  .signUpBtn,
+  .signInBtn {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger li {
+    list-style: none;
+  }
+  .hamburger li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+    display: block;
+    border-bottom: 1px solid #ffffff;
+  }
+  .sideMenuWrap {
+    position: fixed;
+    background-color: #1572d3;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    width: 250px;
+  }
+  .sideMenuWrap ul {
+    margin: 20px 0 20px 0;
+  }
+  .closeButton {
+    background-color: initial;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(14%) saturate(448%)
+    hue-rotate(45deg) brightness(117%) contrast(104%);
+  }
+  .hambugerButtons {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+  }
+  .hanburgerSignInBtn,
+  .hanburgerSignUpBtn {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+
+    color: #1572d3;
+  }
+}
+
+@media (max-width: 575px) {
+}
+
+@media (max-width: 430px) {
+}

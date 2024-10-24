@@ -1,0 +1,76 @@
+.swiperWrap {
+  padding: 40px 0 80px 0;
+}
+.swiperSlides {
+  border: 1px solid #959595;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: -5px 5px 40px 0px #7d7d7d40;
+}
+.swiperSlides h2 {
+  font-size: 20px;
+  color: #1572d3;
+}
+.swiperSlides p {
+  margin: 10px 0 0 0;
+  color: #6d6d6d;
+}
+/* Ensure all Swiper slides have the same height */
+.swiper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  height: 220px; /* Set a uniform height */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f9f9f9; /* Optional background for better visibility */
+  border-radius: 8px;
+  text-align: center;
+}
+.swiper-pagination{
+  bottom: 50px;
+}
+
+/* Adjust height for different screen sizes */
+@media (max-width: 767px) {
+  .swiperSlides {
+      height: 250px;
+  }
+}
+
+@media (max-width: 575px) {
+  .swiperSlides {
+      height: 200px;
+  }
+}
+
+
+
+@media(max-width:1169px){
+
+}
+@media(max-width:991px){
+  .popularDealsHeading{
+    font-size: 28px;
+  } 
+  .userReviewsWrap h2{
+    font-size: 28px;
+  }
+}
+@media(max-width:767px){
+  .popularDealsBox {
+    max-width: 1170px;
+    width: 100%;
+  }
+  .userReviewsPara{
+    max-width: 1170px;
+    width: 100%;
+  }
+}
+@media(max-width:575px){
+  
+}
+@media(max-width:430px){
+  
+}
