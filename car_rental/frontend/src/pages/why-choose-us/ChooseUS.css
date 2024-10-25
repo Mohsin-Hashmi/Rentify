@@ -36,11 +36,13 @@
 .chooseUsHeading {
   font-size: 40px;
   color: #242424;
+  text-align: center;
 }
 .chooseUsSubHeading {
   margin: 20px 0;
   font-size: 25px;
   color: #242424;
+  
 }
 .chooseUsPara {
   font-size: 18px;

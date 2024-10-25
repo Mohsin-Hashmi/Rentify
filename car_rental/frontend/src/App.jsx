@@ -6,7 +6,8 @@ import Home from "./home/Home.jsx";
 import WellcomeScreen from "./wellcomeScreen/WellcomeScreen.jsx";
 import Login from "./login/Login.jsx";
 import Signup from "./signUp/Signup.jsx";
-
+import { AuthProvider } from "./context/AuthContext.js";
+import ChooseUS from "../../frontend/src/pages/why-choose-us/ChooseUS.jsx"
 export default function App() {
   
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Signup />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/chooseus" element={<ChooseUS/>} />
         </Routes>
       </AuthProvider>
     </Router>
