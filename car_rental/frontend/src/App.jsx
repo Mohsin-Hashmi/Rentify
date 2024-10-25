@@ -9,8 +9,10 @@ import Home from "./home/Home.jsx";
 import WellcomeScreen from "./wellcomeScreen/WellcomeScreen.jsx";
 import Login from "./login/Login.jsx";
 import Signup from "./signUp/Signup.jsx";
+import ChooseUS from "./pages/why-choose-us/ChooseUS.jsx";
 
 export default function App() {
+  
   return (
     <>
       {/* Developing Routers */}
@@ -20,6 +22,7 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Signup />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/chooseus" element={<ChooseUS/>} />
         </Routes>
       </Router>
     </>

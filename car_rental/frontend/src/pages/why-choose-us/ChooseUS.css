@@ -1,0 +1,60 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../../assets/fonts/Poppins-SemiBold.woff2") format(woff2);
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../../assets/fonts/Poppins-Medium.woff2") format(woff2);
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../../assets/fonts/Poppins-Regular.woff2") format(woff2);
+  font-weight: 400;
+  font-display: swap;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.chooseUsWrap {
+  margin: 120px 0 40px 0;
+  border: 1px solid #ddd;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 40px;
+}
+.chooseUsHeading {
+  font-size: 40px;
+  color: #242424;
+}
+.chooseUsSubHeading {
+  margin: 20px 0;
+  font-size: 25px;
+  color: #242424;
+}
+.chooseUsPara {
+  font-size: 18px;
+  line-height: 28px;
+  color: #272727;
+}
+.carRentalNavbarWrapper{
+    background-color: #ffffff;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.scrolled {
+    background-color: white;
+    border: 2px solid #ddd;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6), -5px -5px 10px rgba(0, 0, 0, 0.1);
+  }

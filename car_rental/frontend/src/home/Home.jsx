@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState, useEffect}from "react";
 import "../home/Home.css";
 
 import Navbar from "../navbar/Navbar.jsx";
@@ -33,12 +33,14 @@ import ShowCarsModal from "../showCarsModal/ShowCarsModal.jsx";
 import Footer from "../footer/Footer.jsx";
 import SwiperCom from "../swiperCom/SwiperCom.jsx";
 const Home = () => {
+  
+  
   return (
     <>
       {/* Header Section */}
       <header className="carRentalNavbar">
         <div className="container">
-          <Navbar />
+          <Navbar/>
         </div>
       </header>
       {/* Banner section */}
