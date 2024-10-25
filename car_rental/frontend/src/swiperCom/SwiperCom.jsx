@@ -1,7 +1,7 @@
 // SwiperCom.js
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import '../swiperCom/SwiperCom.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -11,11 +11,15 @@ const SwiperCom = () => {
         <>
             <Swiper
                 direction="horizontal"
-                modules={[Pagination]}
+                modules={[Autoplay]}
                 spaceBetween={30} // Adjusted for better spacing across breakpoints
                 slidesPerView={3} // Default number of slides for larger screens
+                loop={true}
+                autoplay={{
+                    delay: 2000, 
+                    disableOnInteraction: false, // Continue autoplay after user interaction
+                }}
                 navigation
-                pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}

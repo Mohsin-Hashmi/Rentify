@@ -10,10 +10,7 @@ app.use(express.urlencoded({ extended: true })); // For form data
 
 // MongoDB connection
 mongoose
-  .connect(
-    "mongodb+srv://mohsin-dev:12345@car-rental-db.4horf.mongodb.net/",
-    
-  )
+  .connect("mongodb+srv://mohsin-dev:12345@car-rental-db.4horf.mongodb.net/",)
   .then(() => console.log("MongoDB connected successfully"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
