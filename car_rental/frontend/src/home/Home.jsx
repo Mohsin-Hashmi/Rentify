@@ -35,7 +35,12 @@ import SwiperCom from "../swiperCom/SwiperCom.jsx";
 const Home = () => {
   return (
     <>
-      <Navbar />
+      {/* Header Section */}
+      <header className="carRentalNavbar">
+        <div className="container">
+          <Navbar />
+        </div>
+      </header>
       {/* Banner section */}
       <section className="rentcarBanner">
         <div className="container">

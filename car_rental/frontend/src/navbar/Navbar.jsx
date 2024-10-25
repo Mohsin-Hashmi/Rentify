@@ -119,6 +119,7 @@ export default function Navbar() {
   };
 
   return (
+<<<<<<< HEAD
     <header className="carRentalNavbar">
       <div className="container">
         <div className="carRentalNavbarWrapper">
@@ -179,6 +180,51 @@ export default function Navbar() {
                   </>
                 )}
               </div>
+=======
+    // Navbar code starts Here.
+    <>
+      <div className="carRentalNavbarWrapper">
+        <a className="rentCarLogo" href="##">
+          <img src={rentcarlogo} alt="rent car logo" />
+        </a>
+        <div className="hamburger">
+          {/* Hamburger Icon */}
+          <button
+            className="hamburgerButton"
+            onClick={() => {
+              document.querySelector(".sideMenuWrap").style.display = "block";
+            }}
+          >
+            <img src={hamburgerIcon} alt="hamburger icon" />
+          </button>
+          <div className="sideMenuWrap">
+            {/* close button */}
+            <button
+              className="closeButton"
+              onClick={() => {
+                document.querySelector(".sideMenuWrap").style.display = "none";
+              }}
+            >
+              <img src={crossIcon} alt="cross icon" />
+            </button>
+            <ul>
+              <li>
+                <a href="##">Become a renter</a>
+              </li>
+              <li>
+                <a href="##">Rental deals</a>
+              </li>
+              <li>
+                <a href="##">How it work</a>
+              </li>
+              <li>
+                <a href="##">Why choose us</a>
+              </li>
+            </ul>
+            <div className="hambugerButtons">
+              <button className="hanburgerSignInBtn">Sign In</button>
+              <button className="hanburgerSignUpBtn">Sign up</button>
+>>>>>>> c39e6f44fdaa1ef18547bef7332393b214ad0a7a
             </div>
           </div>
 
@@ -212,7 +258,47 @@ export default function Navbar() {
             </>
           )}
         </div>
+<<<<<<< HEAD
       </div>
     </header>
+=======
+
+        <nav className="navbarOptions">
+          <li>
+            <a href="##">Become a renter</a>
+          </li>
+          <li>
+            <a href="##">Rental deals</a>
+          </li>
+          <li>
+            <a href="##">How it work</a>
+          </li>
+          <li>
+            <a href="##">Why choose us</a>
+          </li>
+        </nav>
+        <button
+          className="signInBtn"
+          onClick={() => {
+            //    <Routes>
+            //      <Route path="/login" element={<Login/>}></Route>
+            //    </Routes>
+          }}
+        >
+          Sign In
+        </button>
+        <button
+          className="signUpBtn"
+          onClick={() => {
+            //     <Routes>
+            //     <Route path="/register" element={<Signup/>}></Route>
+            //   </Routes>
+          }}
+        >
+          Sign up
+        </button>
+      </div>
+    </>
+>>>>>>> c39e6f44fdaa1ef18547bef7332393b214ad0a7a
   );
 }
