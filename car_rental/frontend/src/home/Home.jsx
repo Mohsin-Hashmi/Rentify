@@ -1,6 +1,7 @@
 import React , {useState, useEffect}from "react";
 import "../home/Home.css";
-
+import "../global/container.css"
+import "../global/fonts.css"
 import Navbar from "../navbar/Navbar.jsx";
 import bannerLogo from "../assets/images/blueCar.webp";
 import googlePlayIcon from "../assets/images/googlePlayIcon.webp";

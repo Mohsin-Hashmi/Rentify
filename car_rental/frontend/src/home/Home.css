@@ -1,47 +1,10 @@
-@font-face {
-  font-family: Poppins;
-  src: url("../assets/fonts/Poppins-SemiBold.woff2") format(woff2);
-  font-weight: 600;
-  font-display: swap;
-}
 
-@font-face {
-  font-family: Poppins;
-  src: url("../assets/fonts/Poppins-Medium.woff2") format(woff2);
-  font-weight: 500;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Poppins;
-  src: url("../assets/fonts/Poppins-Regular.woff2") format(woff2);
-  font-weight: 400;
-  font-display: swap;
-}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-.container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-section,
-header,
-footer,
-button,
-input,
-label {
-  font-family: Poppins;
-  overflow-x: hidden;
-}
-
 
 /* Banner section css code */
 

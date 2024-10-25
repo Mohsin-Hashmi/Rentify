@@ -1,6 +1,7 @@
 import React from "react";
 import "./ChooseUS.css";
 import Navbar from "../../navbar/Navbar";
+import Footer from "../../footer/Footer";
 const ChooseUS = () => {
   return (
     <>
@@ -37,6 +38,12 @@ const ChooseUS = () => {
           </div>
         </div>
       </section>
+       {/* Footer Declaration */}
+       <footer className="carRentalFooter">
+        <div className="container">
+          <Footer />
+        </div>
+      </footer>
     </>
   );
 };

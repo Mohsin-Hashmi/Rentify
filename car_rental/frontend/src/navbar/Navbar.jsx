@@ -62,10 +62,10 @@ export default function Navbar() {
                   <a href="##">Rental deals</a>
                 </li>
                 <li>
-                  <a href="##">How it work</a>
+                < Link to="/workprocess">How it work </Link>
                 </li>
                 <li>
-                  <a href="##">Why choose us</a>
+                   <Link to="/chooseus">Why choose us</Link>
                 </li>
               </ul>
               <div className="hambugerButtons">
@@ -83,10 +83,10 @@ export default function Navbar() {
               <a href="##">Rental deals</a>
             </li>
             <li>
-              <a href="##">How it work</a>
+              <Link to="/workprocess">How it work</Link>
             </li>
             <li>
-              {/* <a href="##"></a> */}
+              
               <Link to="/chooseus">Why choose us</Link>
             </li>
           </nav>

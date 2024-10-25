@@ -8,6 +8,7 @@ import Login from "./login/Login.jsx";
 import Signup from "./signUp/Signup.jsx";
 import { AuthProvider } from "./context/AuthContext.js";
 import ChooseUS from "../../frontend/src/pages/why-choose-us/ChooseUS.jsx"
+import WorkProcess from "../../frontend/src/pages/workProcess/WorkProcess.jsx"
 export default function App() {
   
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/register" element={<Signup />} />
           <Route path="/home" element={<Home />} />
           <Route path="/chooseus" element={<ChooseUS/>} />
+          <Route path="/workprocess" element={<WorkProcess/>}/>
         </Routes>
       </AuthProvider>
     </Router>

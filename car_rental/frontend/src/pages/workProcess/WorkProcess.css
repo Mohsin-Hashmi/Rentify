@@ -1,0 +1,83 @@
+.workProcessWrap{
+    margin: 120px 0;
+}
+.processHeading{
+    font-size: 40px;
+    color: #242424;
+    text-align: center;
+}
+.workProcessCards{
+    max-width: 450px;
+    width: 100%;
+    min-height: 300px;
+    height: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 171, 240, 1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.1);
+  
+    animation: shadow 1.8s infinite;
+}
+@keyframes shadow{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 171, 240, 1);
+    }100%{
+        box-shadow: 0 0 0 13px rgba(0, 171, 240, 0);
+    }
+}
+
+
+.workProcessCards p{
+    font-size: 15px;
+    color: #272727;
+    margin: 10px 0;
+}
+
+.workProcessCards ul{
+    padding: 0 0 0 30px;
+}
+.workProcessCards ul li{
+    font-size: 15px;
+    margin: 0 0 8px 0;
+}
+.cards{
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 270px;
+    margin: 80px 0 0 0;
+}
+.cards .lastCard{
+    margin-left: auto;
+}
+
+.arrowImage{
+    width: 254px;
+    height: 76px;
+   
+}
+.arrowImage02{
+    position: absolute;
+    right: 420px;
+    top: 705px;
+    
+    transform: rotate(90deg);
+}
+.arrowImage03{
+    transform: scaleX(-1); 
+    
+}
+.arrowImage04{
+    position: absolute;
+    transform: rotate(90deg);
+    top: 1276px;
+    left: 500px;
+}
+.arrowImage06{
+    position: absolute;
+    right: 420px;
+    top: 1847px;
+    transform: rotate(90deg);
+}
