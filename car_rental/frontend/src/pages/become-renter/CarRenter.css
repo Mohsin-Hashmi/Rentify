@@ -1,0 +1,102 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ 
+  .carRenter{
+    padding: 130px  0;
+  }
+  /* Form Container */
+  .form-container {
+    background-color: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .carRenterHeading{
+    font-size: 40px;
+    color: #242424;
+    text-align: center;
+  }
+  /* Form Header */
+  .form-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form Groups */
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin: 5px;
+    color: #555;
+    font-size: 18px;
+  }
+  
+  .form-group input, 
+  .form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 21px;
+   outline: none;
+  }
+
+  input[type="file"]::-webkit-file-upload-button {
+    font-weight: bold;
+    padding: 14px;
+    background-color: transparent;
+    outline: none;
+    border-radius: 15px;
+    color: #ffffff;
+    background-color: #1572d3;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    border: 1px solid transparent;
+  }
+  input[type="file"]::-webkit-file-upload-button:hover{
+    background-color: #ffffff;
+    color: #1572d3;
+    border: 1px solid #1572d3;
+  }
+  
+  .form-group input[type="file"] {
+    padding: 15px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  /* Availability Inputs */
+  .form-group input[type="date"] {
+    width: calc(50% - 5px);
+    margin-right: 10px;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .submit-btn:hover {
+    background-color: #004dcf;
+  }
+  

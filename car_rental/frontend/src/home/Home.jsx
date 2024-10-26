@@ -1,4 +1,4 @@
-import React , {useState, useEffect}from "react";
+
 import "../home/Home.css";
 import "../global/container.css"
 import "../global/fonts.css"

@@ -9,6 +9,7 @@ import Signup from "./signUp/Signup.jsx";
 import { AuthProvider } from "./context/AuthContext.js";
 import ChooseUS from "../../frontend/src/pages/why-choose-us/ChooseUS.jsx"
 import WorkProcess from "../../frontend/src/pages/workProcess/WorkProcess.jsx"
+import CarRenter from "./pages/become-renter/CarRenter.jsx";
 export default function App() {
   
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/chooseus" element={<ChooseUS/>} />
           <Route path="/workprocess" element={<WorkProcess/>}/>
+          <Route path="/rent-car" element={<CarRenter/>}/>
         </Routes>
       </AuthProvider>
     </Router>

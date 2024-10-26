@@ -56,7 +56,7 @@ export default function Navbar() {
               </button>
               <ul>
                 <li>
-                  <a href="##">Become a renter</a>
+                <Link  to="/rent-car">Become a renter</Link>
                 </li>
                 <li>
                   <a href="##">Rental deals</a>
@@ -77,7 +77,8 @@ export default function Navbar() {
 
           <nav className="navbarOptions">
             <li>
-              <a href="##">Become a renter</a>
+             
+              <Link  to="/rent-car">Become a renter</Link>
             </li>
             <li>
               <a href="##">Rental deals</a>
