@@ -13,7 +13,7 @@
   column-gap: 99px;
   align-items: center;
   justify-content: space-evenly;
-  padding: 10px 0 0 0;
+  margin: 90px 0 0 0;
 }
 
 .rentcarBannerWrapperContent {
@@ -29,7 +29,7 @@
 .rentcarBannerWrapperContent h1 {
   font-size: 47px;
   color: #242424;
-  margin: 120px 0 0 0;
+ 
 }
 
 .rentcarBannerWrapperContent h1 span {
@@ -484,7 +484,7 @@
 
   .rentcarBannerWrapper {
     column-gap: unset;
-    padding: 50px 0 50px 0;
+    margin: 75px 0 50px 0;
   }
 
   .searchCarWrapper {
@@ -586,6 +586,9 @@
   .contentCard {
     column-gap: 15px;
   }
+  .rentcarBannerWrapper{
+    margin: 90px 0 50px 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -616,7 +619,7 @@
 
   .rentcarBannerWrapperContent h1 {
     text-align: center;
-    margin: 90px 0 0 0;
+   
   }
 
   .rentcarBannerWrapperContent .bannerPara {
