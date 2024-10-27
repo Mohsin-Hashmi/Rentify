@@ -2,6 +2,7 @@
 import "../home/Home.css";
 import "../global/container.css"
 import "../global/fonts.css"
+import { Link } from "react-router-dom";
 import Navbar from "../navbar/Navbar.jsx";
 import bannerLogo from "../assets/images/blueCar.webp";
 import googlePlayIcon from "../assets/images/googlePlayIcon.webp";
@@ -239,7 +240,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* Popular car rental Deal */}
+      {/* Popular car rental Deals */}
       <section className="popularDeals">
         <div className="container">
           <div className="popularDealsWrap">
@@ -298,9 +299,9 @@ const Home = () => {
                     $1,800 <span>/day</span>
                   </p>
                 </div>
-                <a className="rentNowBtn" href="##">
+                <Link to="/rent-car" className="rentNowBtn" >
                   Rent Now
-                </a>
+                </Link>
               </div>
               <div className="popularDealsCard">
                 <img className="carImages" src={carTwo} alt="car two " />
@@ -350,9 +351,9 @@ const Home = () => {
                     $2,100 <span>/day</span>
                   </p>
                 </div>
-                <a className="rentNowBtn" href="##">
+                <Link to="/rent-car" className="rentNowBtn" >
                   Rent Now
-                </a>
+                </Link>
               </div>
               <div className="popularDealsCard">
                 <img className="carImages" src={carThree} alt="car three " />
@@ -402,9 +403,9 @@ const Home = () => {
                     $1,600 <span>/day</span>
                   </p>
                 </div>
-                <a className="rentNowBtn" href="##">
+                <Link to="/rent-car" className="rentNowBtn" >
                   Rent Now
-                </a>
+                </Link>
               </div>
               <div className="popularDealsCard">
                 <img className="carImages" src={carFour} alt="car four " />
@@ -454,9 +455,9 @@ const Home = () => {
                     $2,300 <span>/day</span>
                   </p>
                 </div>
-                <a className="rentNowBtn" href="##">
+                <Link to="/rent-car" className="rentNowBtn" >
                   Rent Now
-                </a>
+                </Link>
               </div>
             </div>
             {/* see all vehicles btn */}

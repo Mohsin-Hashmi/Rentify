@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../showAllCars/ShowAllCars.css";
 import carOne from "../assets/images/cardCarOne.webp";
 import carTwo from "../assets/images/cardCarTwo.webp";
@@ -63,9 +64,9 @@ const ShowAllCars = () => {
               $1,800 <span>/day</span>
             </p>
           </div>
-          <a className="rentNowBtn" href="##">
-            Rent Now
-          </a>
+          <Link to="/rent-car" className="rentNowBtn" >
+                  Rent Now
+                </Link>
         </div>
         {/* second car */}
         <div className="modalCarsWrapperCards">
@@ -116,9 +117,9 @@ const ShowAllCars = () => {
               $2,100 <span>/day</span>
             </p>
           </div>
-          <a className="rentNowBtn" href="##">
-            Rent Now
-          </a>
+          <Link to="/rent-car" className="rentNowBtn" >
+                  Rent Now
+                </Link>
         </div>
         {/* Third car */}
         <div className="modalCarsWrapperCards">
@@ -169,9 +170,9 @@ const ShowAllCars = () => {
               $1,600 <span>/day</span>
             </p>
           </div>
-          <a className="rentNowBtn" href="##">
-            Rent Now
-          </a>
+          <Link to="/rent-car" className="rentNowBtn" >
+                  Rent Now
+                </Link>
         </div>
         {/* Four car */}
         <div className="modalCarsWrapperCards">
@@ -222,9 +223,9 @@ const ShowAllCars = () => {
               $2,300 <span>/day</span>
             </p>
           </div>
-          <a className="rentNowBtn" href="##">
-            Rent Now
-          </a>
+          <Link to="/rent-car" className="rentNowBtn" >
+                  Rent Now
+                </Link>
         </div>
         {/* fifth car */}
         <div className="modalCarsWrapperCards">
@@ -275,9 +276,9 @@ const ShowAllCars = () => {
               $1,800 <span>/day</span>
             </p>
           </div>
-          <a className="rentNowBtn" href="##">
-            Rent Now
-          </a>
+          <Link to="/rent-car" className="rentNowBtn" >
+                  Rent Now
+                </Link>
         </div>
         {/* sixth car */}
         <div className="modalCarsWrapperCards">
@@ -328,9 +329,9 @@ const ShowAllCars = () => {
               $2,100 <span>/day</span>
             </p>
           </div>
-          <a className="rentNowBtn" href="##">
-            Rent Now
-          </a>
+          <Link to="/rent-car" className="rentNowBtn" >
+                  Rent Now
+                </Link>
         </div>
       </div>
     </>
