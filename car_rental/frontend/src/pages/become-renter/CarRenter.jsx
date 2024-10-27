@@ -20,7 +20,7 @@ const CarRenter = () => {
             <form id="rentalForm" enctype="multipart/form-data">
               {/* <!-- Car Name --> */}
               <div class="form-group">
-                <label for="carName">Car Name</label>
+                <label htmlFor="carName">Car Name</label>
                 <input
                   type="text"
                   id="carName"
@@ -32,7 +32,7 @@ const CarRenter = () => {
 
               {/* <!-- Car Rent Price --> */}
               <div class="form-group">
-                <label for="carPrice">Rent Price (per day)</label>
+                <label htmlFor="carPrice">Rent Price (per day)</label>
                 <input
                   type="number"
                   id="carPrice"
@@ -44,7 +44,7 @@ const CarRenter = () => {
 
               {/* <!-- Location --> */}
               <div class="form-group">
-                <label for="carLocation">Car Location</label>
+                <label htmlFor="carLocation">Car Location</label>
                 <input
                   type="text"
                   id="carLocation"
@@ -56,7 +56,7 @@ const CarRenter = () => {
 
               {/* <!-- Upload Car Image --> */}
               <div class="form-group">
-                <label for="carImage">Upload Car Image</label>
+                <label htmlFor="carImage">Upload Car Image</label>
                 <input
                 className="chooseFile"
                   type="file"
@@ -69,7 +69,7 @@ const CarRenter = () => {
 
               {/* <!-- Car Description --> */}
               <div class="form-group">
-                <label for="carDescription">Car Description</label>
+                <label htmlFor="carDescription">Car Description</label>
                 <textarea
                   id="carDescription"
                   name="carDescription"
@@ -81,7 +81,7 @@ const CarRenter = () => {
 
               {/* <!-- Availability Dates --> */}
               <div class="form-group">
-                <label for="availability">Availability</label>
+                <label htmlFor="availability">Availability</label>
                 <input type="date" id="startDate" name="startDate" required />
                 <input type="date" id="endDate" name="endDate" required />
               </div>

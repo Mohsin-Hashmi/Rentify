@@ -29,6 +29,7 @@
 .rentcarBannerWrapperContent h1 {
   font-size: 47px;
   color: #242424;
+  margin: 120px 0 0 0;
 }
 
 .rentcarBannerWrapperContent h1 span {
@@ -615,6 +616,7 @@
 
   .rentcarBannerWrapperContent h1 {
     text-align: center;
+    margin: 90px 0 0 0;
   }
 
   .rentcarBannerWrapperContent .bannerPara {

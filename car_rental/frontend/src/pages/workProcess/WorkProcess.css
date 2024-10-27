@@ -84,7 +84,7 @@
 
 
 
-@media(max-width:1430px){
+/* @media(max-width:1430px){
     .arrowImage02 , .arrowImage06 {
         right: 100px;
     }
@@ -93,9 +93,7 @@
     }
 }
 @media(max-width:1169px){
-    img{
-        display: none;
-    }
+   
     .cards{
         row-gap: 100px;
     }
@@ -115,4 +113,4 @@
 
 @media(max-width:413px){
     
-}
+} */

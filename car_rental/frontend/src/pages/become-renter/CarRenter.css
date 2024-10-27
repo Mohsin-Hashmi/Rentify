@@ -1,13 +1,9 @@
 /* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
   
  
   .carRenter{
-    padding: 130px  0;
+    margin: 130px  0;
   }
   /* Form Container */
   .form-container {
@@ -49,6 +45,8 @@
     border: 1px solid #ddd;
     border-radius: 21px;
    outline: none;
+   color: #555;
+   font-size: 15px;
   }
 
   input[type="file"]::-webkit-file-upload-button {
@@ -103,4 +101,4 @@
   .submit-btn:hover {
     background-color: #004dcf;
   }
-  
+ 

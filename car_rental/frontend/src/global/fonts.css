@@ -24,7 +24,8 @@ header,
 footer,
 button,
 input,
-label {
+label,
+::placeholder {
   font-family: Poppins;
-  overflow-x: hidden;
+  
 }
