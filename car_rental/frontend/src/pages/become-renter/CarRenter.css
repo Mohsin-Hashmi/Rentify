@@ -120,3 +120,8 @@
       margin: 9px;
     }
   }
+  @media(max-width:575px){
+    .dateWraper{
+      flex-wrap: wrap;
+    }
+  }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../showAllCars/ShowAllCars.css";
+import { useEffect } from "react";
 import carOne from "../assets/images/cardCarOne.webp";
 import carTwo from "../assets/images/cardCarTwo.webp";
 import carThree from "../assets/images/cardCarThree.webp";
@@ -10,8 +11,16 @@ import userIcon from "../assets/images/user.webp";
 import autoIcon from "../assets/images/autoIcon.webp";
 import airCon from "../assets/images/airConditionIcon.webp";
 import doorsIcon from "../assets/images/doorsIcon.webp";
-const ShowAllCars = () => {
+export default function  ShowAllCars() {
+  
+  const RentalDeals = () => {
+    window.scrollTo(0, 0);
+  }
+  
+
+
   return (
+    
     <>
       <div className="modalCarsWrapper">
         {/* first car */}
@@ -63,7 +72,7 @@ const ShowAllCars = () => {
               $1,800 <span>/day</span>
             </p>
           </div>
-          <Link to="/rent-car" className="rentNowBtn">
+          <Link to="/rent-car" className="rentNowBtn" onClick={RentalDeals}>
             Rent Now
           </Link>
         </div>
@@ -116,7 +125,7 @@ const ShowAllCars = () => {
               $2,100 <span>/day</span>
             </p>
           </div>
-          <Link to="/rent-car" className="rentNowBtn">
+          <Link to="/rent-car" className="rentNowBtn"  onClick={RentalDeals} >
             Rent Now
           </Link>
         </div>
@@ -169,7 +178,7 @@ const ShowAllCars = () => {
               $1,600 <span>/day</span>
             </p>
           </div>
-          <Link to="/rent-car" className="rentNowBtn">
+          <Link to="/rent-car" className="rentNowBtn"  onClick={RentalDeals}>
             Rent Now
           </Link>
         </div>
@@ -222,7 +231,7 @@ const ShowAllCars = () => {
               $2,300 <span>/day</span>
             </p>
           </div>
-          <Link to="/rent-car" className="rentNowBtn">
+          <Link to="/rent-car" className="rentNowBtn"  onClick={RentalDeals}>
             Rent Now
           </Link>
         </div>
@@ -275,7 +284,7 @@ const ShowAllCars = () => {
               $1,800 <span>/day</span>
             </p>
           </div>
-          <Link to="/rent-car" className="rentNowBtn">
+          <Link to="/rent-car" className="rentNowBtn"  onClick={RentalDeals}>
             Rent Now
           </Link>
         </div>
@@ -328,7 +337,7 @@ const ShowAllCars = () => {
               $2,100 <span>/day</span>
             </p>
           </div>
-          <Link to="/rent-car" className="rentNowBtn">
+          <Link to="/rent-car" className="rentNowBtn"  onClick={RentalDeals}>
             Rent Now
           </Link>
         </div>
@@ -336,4 +345,4 @@ const ShowAllCars = () => {
     </>
   );
 };
-export default ShowAllCars;
+

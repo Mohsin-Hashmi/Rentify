@@ -36,6 +36,9 @@ import Footer from "../footer/Footer.jsx";
 import SwiperCom from "../swiperCom/SwiperCom.jsx";
 const Home = () => {
   
+  const RentalDeals = () => {
+    window.scrollTo(0, 0);
+  }
   
   return (
     <>
@@ -299,7 +302,7 @@ const Home = () => {
                     $1,800 <span>/day</span>
                   </p>
                 </div>
-                <Link to="/rent-car" className="rentNowBtn" >
+                <Link to="/rent-car" className="rentNowBtn" onClick={RentalDeals} >
                   Rent Now
                 </Link>
               </div>
@@ -351,7 +354,7 @@ const Home = () => {
                     $2,100 <span>/day</span>
                   </p>
                 </div>
-                <Link to="/rent-car" className="rentNowBtn" >
+                <Link to="/rent-car" className="rentNowBtn" onClick={RentalDeals}>
                   Rent Now
                 </Link>
               </div>
@@ -403,7 +406,7 @@ const Home = () => {
                     $1,600 <span>/day</span>
                   </p>
                 </div>
-                <Link to="/rent-car" className="rentNowBtn" >
+                <Link to="/rent-car" className="rentNowBtn" onClick={RentalDeals}>
                   Rent Now
                 </Link>
               </div>
@@ -455,7 +458,7 @@ const Home = () => {
                     $2,300 <span>/day</span>
                   </p>
                 </div>
-                <Link to="/rent-car" className="rentNowBtn" >
+                <Link to="/rent-car" className="rentNowBtn" onClick={RentalDeals}>
                   Rent Now
                 </Link>
               </div>
