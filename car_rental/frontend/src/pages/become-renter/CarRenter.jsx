@@ -58,7 +58,7 @@ const CarRenter = () => {
               <div class="form-group">
                 <label htmlFor="carImage">Upload Car Image</label>
                 <input
-                className="chooseFile"
+                  className="chooseFile"
                   type="file"
                   id="carImage"
                   name="carImage"
@@ -80,10 +80,16 @@ const CarRenter = () => {
               </div>
 
               {/* <!-- Availability Dates --> */}
-              <div class="form-group">
-                <label htmlFor="availability">Availability</label>
-                <input type="date" id="startDate" name="startDate" required />
-                <input type="date" id="endDate" name="endDate" required />
+              <div class="form-group dateWraper">
+                <div className="dateInputs">
+                  <label htmlFor="availability">Availability To</label>
+                  <input type="date" id="startDate" name="startDate" required />
+                </div>
+
+                <div className="dateInputs">
+                  <label htmlFor="availability">Availability From</label>
+                  <input type="date" id="endDate" name="endDate" required />
+                </div>
               </div>
 
               {/* <!-- Contact Number --> */}

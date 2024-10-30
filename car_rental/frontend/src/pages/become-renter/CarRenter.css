@@ -101,6 +101,15 @@
   .submit-btn:hover {
     background-color: #004dcf;
   }
+
+  .dateWraper{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .dateInputs{
+    width: 100%;
+  }
+  
  
 
   @media(max-width:767px){

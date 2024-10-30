@@ -13,7 +13,6 @@ import doorsIcon from "../assets/images/doorsIcon.webp";
 const ShowAllCars = () => {
   return (
     <>
-   
       <div className="modalCarsWrapper">
         {/* first car */}
         <div className="modalCarsWrapperCards">
@@ -64,9 +63,9 @@ const ShowAllCars = () => {
               $1,800 <span>/day</span>
             </p>
           </div>
-          <Link to="/rent-car" className="rentNowBtn" >
-                  Rent Now
-                </Link>
+          <Link to="/rent-car" className="rentNowBtn">
+            Rent Now
+          </Link>
         </div>
         {/* second car */}
         <div className="modalCarsWrapperCards">
@@ -117,9 +116,9 @@ const ShowAllCars = () => {
               $2,100 <span>/day</span>
             </p>
           </div>
-          <Link to="/rent-car" className="rentNowBtn" >
-                  Rent Now
-                </Link>
+          <Link to="/rent-car" className="rentNowBtn">
+            Rent Now
+          </Link>
         </div>
         {/* Third car */}
         <div className="modalCarsWrapperCards">
@@ -170,9 +169,9 @@ const ShowAllCars = () => {
               $1,600 <span>/day</span>
             </p>
           </div>
-          <Link to="/rent-car" className="rentNowBtn" >
-                  Rent Now
-                </Link>
+          <Link to="/rent-car" className="rentNowBtn">
+            Rent Now
+          </Link>
         </div>
         {/* Four car */}
         <div className="modalCarsWrapperCards">
@@ -223,13 +222,13 @@ const ShowAllCars = () => {
               $2,300 <span>/day</span>
             </p>
           </div>
-          <Link to="/rent-car" className="rentNowBtn" >
-                  Rent Now
-                </Link>
+          <Link to="/rent-car" className="rentNowBtn">
+            Rent Now
+          </Link>
         </div>
         {/* fifth car */}
         <div className="modalCarsWrapperCards">
-        <img src={carOne} alt="car one" />
+          <img src={carOne} alt="car one" />
           <h2 className="carName">Jaguar XE L P250</h2>
           <div className="carRating">
             <img src={starIcon} alt="star icon" />
@@ -276,9 +275,9 @@ const ShowAllCars = () => {
               $1,800 <span>/day</span>
             </p>
           </div>
-          <Link to="/rent-car" className="rentNowBtn" >
-                  Rent Now
-                </Link>
+          <Link to="/rent-car" className="rentNowBtn">
+            Rent Now
+          </Link>
         </div>
         {/* sixth car */}
         <div className="modalCarsWrapperCards">
@@ -329,9 +328,9 @@ const ShowAllCars = () => {
               $2,100 <span>/day</span>
             </p>
           </div>
-          <Link to="/rent-car" className="rentNowBtn" >
-                  Rent Now
-                </Link>
+          <Link to="/rent-car" className="rentNowBtn">
+            Rent Now
+          </Link>
         </div>
       </div>
     </>
