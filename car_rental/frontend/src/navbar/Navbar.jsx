@@ -7,6 +7,10 @@ import rentcarlogo from "../assets/images/rentcarlogo.webp";
 import hamburgerIcon from "../assets/images/hamburger-icon-logo.webp";
 import crossIcon from "../assets/images/closeIcon.webp";
 export default function Navbar() {
+  const RentalDeals = () => {
+    window.scrollTo(0, 0);
+  }
+  
   const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
@@ -30,7 +34,7 @@ export default function Navbar() {
         <div
           className={`carRentalNavbarWrapper  ${scrolled ? "scrolled" : ""}`}
         >
-          <Link to="/home" className="rentCarLogo">
+          <Link to="/home" className="rentCarLogo" onClick={RentalDeals}>
             <img src={rentcarlogo} alt="rent car logo" />
           </Link>
           <div className="hamburger">
@@ -56,16 +60,16 @@ export default function Navbar() {
               </button>
               <ul>
                 <li>
-                <Link  to="/rent-car">Become a renter</Link>
+                <Link  to="/rent-car" onClick={RentalDeals}>Become a renter</Link>
                 </li>
                 <li>
                   <a href="##">Rental deals</a>
                 </li>
                 <li>
-                < Link to="/workprocess">How it work </Link>
+                < Link to="/workprocess" onClick={RentalDeals}>How it work </Link>
                 </li>
                 <li>
-                   <Link to="/chooseus">Why choose us</Link>
+                   <Link to="/chooseus" onClick={RentalDeals}>Why choose us</Link>
                 </li>
               </ul>
               <div className="hambugerButtons">
@@ -78,17 +82,17 @@ export default function Navbar() {
           <nav className="navbarOptions">
             <li>
              
-              <Link  to="/rent-car">Become a renter</Link>
+              <Link  to="/rent-car" onClick={RentalDeals}>Become a renter</Link>
             </li>
             <li>
               <a href="##">Rental deals</a>
             </li>
             <li>
-              <Link to="/workprocess">How it work</Link>
+              <Link to="/workprocess" onClick={RentalDeals}>How it work</Link>
             </li>
             <li>
               
-              <Link to="/chooseus">Why choose us</Link>
+              <Link to="/chooseus" onClick={RentalDeals}>Why choose us</Link>
             </li>
           </nav>
           <button
