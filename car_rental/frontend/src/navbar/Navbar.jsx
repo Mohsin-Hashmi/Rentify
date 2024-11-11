@@ -29,7 +29,7 @@ export default function Navbar(props) {
     // Navbar code starts Here.
     <>
       <div className={`carRentalNavbarWrapper  ${scrolled ? "scrolled" : ""}`}>
-        <Link to="/home" className="rentCarLogo" onClick={()=>props.dataOne()}>
+        <Link to="/home" className="rentCarLogo" onClick={()=>props.dataOne && props.dataOne()}>
           <img src={rentcarlogo} alt="rent car logo" />
         </Link>
         <div className="hamburger">
@@ -54,20 +54,20 @@ export default function Navbar(props) {
             </button>
             <ul>
               <li>
-                <Link to="/rent-car" onClick={()=>props.dataOne()}>
+                <Link to="/rent-car" onClick={()=>props.dataOne && props.dataOne()}>
                   Become a renter
                 </Link>
               </li>
               <li>
-                <Link to="/rent-deals" onClick={()=>props.dataOne()}>Rental deals</Link>
+                <Link to="/rent-deals" onClick={()=>props.dataOne && props.dataOne()}>Rental deals</Link>
               </li>
               <li>
-                <Link to="/workprocess" onClick={()=>props.dataOne()}>
+                <Link to="/workprocess" onClick={()=>props.dataOne && props.dataOne()}>
                   How it work
                 </Link>
               </li>
               <li>
-                <Link to="/chooseus" onClick={()=>props.dataOne()}>
+                <Link to="/chooseus" onClick={()=>props.dataOne && props.dataOne()}>
                   Why choose us
                 </Link>
               </li>
@@ -81,20 +81,20 @@ export default function Navbar(props) {
 
         <nav className="navbarOptions">
           <li>
-            <Link to="/rent-car" onClick={()=>props.dataOne()}>
+            <Link to="/rent-car" onClick={()=>props.dataOne && props.dataOne()}>
               Become a renter
             </Link>
           </li>
           <li>
-            <Link to="/rent-deals" onClick={()=>props.dataOne()}>Rental deals</Link>
+            <Link to="/rent-deals" onClick={()=>props.dataOne && props.dataOne()}>Rental deals</Link>
           </li>
           <li>
-            <Link to="/workprocess" onClick={()=>props.dataOne()}>
+            <Link to="/workprocess" onClick={()=>props.dataOne && props.dataOne()}>
               How it work
             </Link>
           </li>
           <li>
-            <Link to="/chooseus" onClick={()=>props.dataOne()}>
+            <Link to="/chooseus" onClick={()=>props.dataOne && props.dataOne()}>
               Why choose us
             </Link>
           </li>

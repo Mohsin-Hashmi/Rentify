@@ -15,7 +15,7 @@ const Footer = (props) => {
     <>
       <div className="carRentalFooterWrap">
         <div className="carRentalAddress">
-          <Link to="/home" onClick={()=>props.dataTwo()}>
+          <Link to="/home" onClick={()=>props.dataTwo && props.dataTwo()}>
             <img className="footerLogo" src={footerLogo} alt="footer Logo" />
           </Link>
 
