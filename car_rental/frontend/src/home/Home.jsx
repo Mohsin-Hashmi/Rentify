@@ -36,7 +36,7 @@ import Footer from "../footer/Footer.jsx";
 import SwiperCom from "../swiperCom/SwiperCom.jsx";
 const Home = () => {
   
-  const RentalDeals = () => {
+  const windowScroll = () => {
     window.scrollTo(0, 0);
   }
   
@@ -45,7 +45,7 @@ const Home = () => {
       {/* Header Section */}
       <header className="carRentalNavbar">
         <div className="container">
-          <Navbar/>
+          <Navbar dataOne={windowScroll}/>
         </div>
       </header>
       {/* Banner section */}
@@ -302,7 +302,7 @@ const Home = () => {
                     $1,800 <span>/day</span>
                   </p>
                 </div>
-                <Link to="/rent-car" className="rentNowBtn" onClick={RentalDeals} >
+                <Link to="/rent-car" className="rentNowBtn" onClick={windowScroll} >
                   Rent Now
                 </Link>
               </div>
@@ -354,7 +354,7 @@ const Home = () => {
                     $2,100 <span>/day</span>
                   </p>
                 </div>
-                <Link to="/rent-car" className="rentNowBtn" onClick={RentalDeals}>
+                <Link to="/rent-car" className="rentNowBtn" onClick={windowScroll}>
                   Rent Now
                 </Link>
               </div>
@@ -406,7 +406,7 @@ const Home = () => {
                     $1,600 <span>/day</span>
                   </p>
                 </div>
-                <Link to="/rent-car" className="rentNowBtn" onClick={RentalDeals}>
+                <Link to="/rent-car" className="rentNowBtn" onClick={windowScroll}>
                   Rent Now
                 </Link>
               </div>
@@ -458,7 +458,7 @@ const Home = () => {
                     $2,300 <span>/day</span>
                   </p>
                 </div>
-                <Link to="/rent-car" className="rentNowBtn" onClick={RentalDeals}>
+                <Link to="/rent-car" className="rentNowBtn" onClick={windowScroll}>
                   Rent Now
                 </Link>
               </div>
@@ -487,7 +487,7 @@ const Home = () => {
       {/* Footer Declaration */}
       <footer className="carRentalFooter">
         <div className="container">
-          <Footer />
+          <Footer dataTwo={windowScroll}/>
         </div>
       </footer>
     </>

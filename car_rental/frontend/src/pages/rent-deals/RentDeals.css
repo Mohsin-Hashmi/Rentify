@@ -1,0 +1,7 @@
+.rentDeals{
+    margin-top: 100px;
+}
+.rentDealsWrap{
+    display: flex;
+    justify-content: space-between;
+}

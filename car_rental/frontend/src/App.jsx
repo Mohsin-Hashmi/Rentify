@@ -10,6 +10,7 @@ import { AuthProvider } from "./context/AuthContext.js";
 import ChooseUS from "../../frontend/src/pages/why-choose-us/ChooseUS.jsx"
 import WorkProcess from "../../frontend/src/pages/workProcess/WorkProcess.jsx"
 import CarRenter from "./pages/become-renter/CarRenter.jsx";
+import RentDeals from "./pages/rent-deals/RentDeals.jsx";
 export default function App() {
   
   return (
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/chooseus" element={<ChooseUS/>} />
           <Route path="/workprocess" element={<WorkProcess/>}/>
           <Route path="/rent-car" element={<CarRenter/>}/>
+          <Route path="/rent-deals" element={<RentDeals/>}/>
         </Routes>
       </AuthProvider>
     </Router>

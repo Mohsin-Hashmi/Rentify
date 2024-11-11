@@ -42,13 +42,18 @@
   .form-group textarea {
     width: 100%;
     padding: 15px;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 21px;
    outline: none;
    color: #555;
    font-size: 15px;
   }
 
+  .form-group input:hover, 
+  .form-group textarea:hover{
+    background-color: #edecec;
+    
+  }
   input[type="file"]::-webkit-file-upload-button {
     font-weight: bold;
     padding: 14px;

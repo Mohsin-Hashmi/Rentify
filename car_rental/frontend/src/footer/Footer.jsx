@@ -1,5 +1,6 @@
 import React from "react";
 import "../footer/Footer.css";
+import { Link } from "react-router-dom";
 import footerLogo from "../assets/images/footerLogo.webp";
 import footerLocation from "../assets/images/footerLocationIcon.webp";
 import footerPhone from "../assets/images/footerCallIcon.webp";
@@ -8,12 +9,16 @@ import facebookIcon from "../assets/images/facebook.webp";
 import instragramIcon from "../assets/images/instagram.webp";
 import youtubeIcon from "../assets/images/youtube.webp";
 
-const Footer = () => {
+const Footer = (props) => {
+  
   return (
     <>
       <div className="carRentalFooterWrap">
         <div className="carRentalAddress">
-          <img className="footerLogo" src={footerLogo} alt="footer Logo" />
+          <Link to="/home" onClick={()=>props.dataTwo()}>
+            <img className="footerLogo" src={footerLogo} alt="footer Logo" />
+          </Link>
+
           <div className="footerAddress">
             <img src={footerLocation} alt="Location Icon" />
             <p>25566 Hc 1, Glenallen, Alaska, 99588, USA</p>
@@ -31,59 +36,59 @@ const Footer = () => {
           <div className="listOptions">
             <p>Our Product</p>
             <li>
-              <a href="##">Career</a>
+              <Link to="">Career</Link>
             </li>
             <li>
-              <a href="##">Car</a>
+              <Link to="">Car</Link>
             </li>
             <li>
-              <a href="##">Packages</a>
+              <Link to="">Packages</Link>
             </li>
             <li>
-              <a href="##">Features</a>
+              <Link to="">Features</Link>
             </li>
             <li>
-              <a href="##">Priceline</a>
+              <Link to="">Priceline</Link>
             </li>
           </div>
           <div className="listOptions">
             <p>Resources</p>
             <li>
-              <a href="##">Download</a>
+              <Link to="">Download</Link>
             </li>
             <li>
-              <a href="##">Help Centre</a>
+              <Link to="">Help Centre</Link>
             </li>
             <li>
-              <a href="##">Guides</a>
+              <Link to="">Guides</Link>
             </li>
             <li>
-              <a href="##">Partner Network</a>
+              <Link to="">Partner Network</Link>
             </li>
             <li>
-              <a href="##">Cruises</a>
+              <Link to="">Cruises</Link>
             </li>
             <li>
-              <a href="##">Developer</a>
+              <Link to="">Developer</Link>
             </li>
           </div>
 
           <div className="listOptions">
             <p>About Rentcars</p>
             <li>
-              <a href="##">Why choose us</a>
+              <Link to="">Why choose us</Link>
             </li>
             <li>
-              <a href="##">Our Story</a>
+              <Link to="">Our Storys</Link>
             </li>
             <li>
-              <a href="##">Investor Relations</a>
+              <Link to="">Investor Relations</Link>
             </li>
             <li>
-              <a href="##">Press Center</a>
+              <Link to="">Press Center</Link>
             </li>
             <li>
-              <a href="##">Advertise</a>
+              <Link to="">Advertise</Link>
             </li>
           </div>
 
@@ -91,26 +96,26 @@ const Footer = () => {
             <p>Follow Us</p>
             <div className="socialMediaHandles">
               <li>
-                <a href="##">
+                <Link to="">
                   <img src={facebookIcon} alt="facebook icon" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="##">
+                <Link to="">
                   <img src={instragramIcon} alt="instragram icon" />
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="##">
+                <Link to="">
                   <img src={youtubeIcon} alt="youtube icon" />
-                </a>
+                </Link>
               </li>
             </div>
           </div>
         </div>
       </div>
       <p className="copyRightPara">
-        Copyright 2023 ・ Rentcars, All Rights Reserved
+        Copyright 2024 ・ Rentcars, All Rights Reserved
       </p>
     </>
   );

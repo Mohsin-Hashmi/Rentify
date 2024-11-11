@@ -3,16 +3,14 @@ import Data from "../data"; // Local data containing car details
 import "../search_car/CarRentalSearch.css";
 
 const CarRentalSearch = () => {
-  const [location, setLocation] = useState(""); // State for location input
-  const [carName, setCarName] = useState(""); // State for car name input
-  const [cars, setCars] = useState([]); // State for search results
-  const [loading, setLoading] = useState(false); // Loading state
-
+  const [location, setLocation] = useState("");
+  const [carName, setCarName] = useState("");
+  const [cars, setCars] = useState([]);
+  const [loading, setLoading] = useState(false);
   // Handle form submission main functionality
   const handleSearch = (event) => {
     event.preventDefault(); // Prevent page refresh
-    setLoading(true); // Show loading indicator
-
+    setLoading(true);
     // Filter cars based on location and car name
     const filteredCars = Data.filter(
       (car) =>
@@ -22,18 +20,19 @@ const CarRentalSearch = () => {
 
     // Simulate an API delay for better UX
     setTimeout(() => {
-      setCars(filteredCars); // Update the car results
-      setLoading(false); // Hide loading indicator
+      setCars(filteredCars);
+      setLoading(false);
     }, 500);
   };
 
   return (
     <>
       <h2 className="modalHeading">Search for Car Rentals</h2>
-
       {/* Form to enter search criteria */}
       <form onSubmit={handleSearch}>
-        <label className="Label" htmlFor="location">Enter Location</label>
+        <label className="Label" htmlFor="location">
+          Enter Location
+        </label>
         <input
           type="text"
           id="location"
@@ -43,8 +42,9 @@ const CarRentalSearch = () => {
           placeholder="Enter Your Location"
           required
         />
-
-        <label className="Label" htmlFor="carName">Enter Car Name</label>
+        <label className="Label" htmlFor="carName">
+          Enter Car Name
+        </label>
         <input
           type="text"
           id="carName"
@@ -54,14 +54,19 @@ const CarRentalSearch = () => {
           placeholder="Enter Car Name"
           required
         />
-
-        <label className="Label date" htmlFor="pickupDate">Pickup Date</label>
+        <label className="Label date" htmlFor="pickupDate">
+          Pickup Date
+        </label>
         <input type="date" id="pickupDate" className="locationInput" />
 
-        <label className="Label date" htmlFor="returnDate">Return Date</label>
+        <label className="Label date" htmlFor="returnDate">
+          Return Date
+        </label>
         <input type="date" id="returnDate" className="locationInput" />
 
-        <button className="searchBtn" type="submit">Search</button>
+        <button className="searchBtn" type="submit">
+          Search
+        </button>
       </form>
 
       {/* Display search results or loading indicator */}
@@ -94,7 +99,9 @@ const CarRentalSearch = () => {
               </div>
             ))
           ) : (
-            <p className="searchCarPara">No cars found matching your criteria.</p>
+            <p className="searchCarPara">
+              No cars found matching your criteria.
+            </p>
           )}
         </div>
       )}

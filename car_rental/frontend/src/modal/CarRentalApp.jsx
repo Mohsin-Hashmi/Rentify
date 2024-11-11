@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-
 import "../modal/CarRentalApp.css";
 import CarRentalSearch from "../search_car/CarRentalSearch";
 
 const CarRentalApp = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  // open the modal
+  // open the modal function
   const openModal = () => {
     setIsModalOpen(true);
   };
-  // close the modal
+  // close the modal function
   const closeModal = () => {
     setIsModalOpen(false);
   };

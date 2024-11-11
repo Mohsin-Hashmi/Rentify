@@ -1,116 +1,112 @@
-.workProcessWrap{
-    margin: 120px 0;
+.workProcessWrap {
+  margin: 120px 0;
 }
-.processHeading{
-    font-size: 40px;
-    color: #242424;
-    text-align: center;
+.processHeading {
+  font-size: 40px;
+  color: #242424;
+  text-align: center;
 }
-.workProcessCards{
-    max-width: 450px;
-    width: 100%;
-    min-height: 300px;
-    height: 100%;
-    padding: 20px;
-    border-radius: 20px;
-    border: 2px solid rgba(0, 171, 240, 1);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.1);
-  
-    animation: shadow 1.8s infinite;
+.workProcessCards {
+  max-width: 450px;
+  width: 100%;
+  min-height: 300px;
+  height: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid rgba(0, 171, 240, 1);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.1);
+  animation: shadow 1.8s infinite;
 }
-@keyframes shadow{
-    0%{
-        box-shadow: 0 0 0 0 rgba(0, 171, 240, 1);
-    }100%{
-        box-shadow: 0 0 0 13px rgba(0, 171, 240, 0);
-    }
-}
-
-
-.workProcessCards p{
-    font-size: 15px;
-    color: #272727;
-    margin: 10px 0;
+@keyframes shadow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 171, 240, 1);
+  }
+  100% {
+    box-shadow: 0 0 0 13px rgba(0, 171, 240, 0);
+  }
 }
 
-.workProcessCards ul{
-    padding: 0 0 0 30px;
-}
-.workProcessCards ul li{
-    font-size: 15px;
-    margin: 0 0 8px 0;
-}
-.cards{
- 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    row-gap: 270px;
-    margin: 80px 0 0 0;
-}
-.cards .lastCard{
-    margin-left: auto;
+.workProcessCards p {
+  font-size: 15px;
+  color: #272727;
+  margin: 10px 0;
 }
 
-.arrowImage{
-    width: 254px;
-    height: 76px;
-   
+.workProcessCards ul {
+  padding: 0 0 0 30px;
 }
-.arrowImage02{
-    position: absolute;
-    right: 420px;
-    top: 705px;
-    
-    transform: rotate(90deg);
+.workProcessCards ul li {
+  font-size: 15px;
+  margin: 0 0 8px 0;
 }
-.arrowImage03{
-    transform: scaleX(-1); 
-    
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 270px;
+  margin: 80px 0 0 0;
 }
-.arrowImage04{
-    position: absolute;
-    transform: rotate(90deg);
-    top: 1276px;
-    left: 500px;
-}
-.arrowImage06{
-    position: absolute;
-    right: 420px;
-    top: 1847px;
-    transform: rotate(90deg);
+.cards .lastCard {
+  margin-left: auto;
 }
 
-
-
-/* @media(max-width:1430px){
-    .arrowImage02 , .arrowImage06 {
-        right: 100px;
-    }
-    .arrowImage04 {
-        left: 831px;
-    }
+.arrowImage {
+  width: 254px;
+  height: 76px;
 }
-@media(max-width:1169px){
-   
+.arrowImage02 {
+  position: absolute;
+  right: 420px;
+  top: 705px;
+  transform: rotate(90deg);
+}
+.arrowImage03 {
+  transform: scaleX(-1);
+}
+.arrowImage04 {
+  position: absolute;
+  transform: rotate(90deg);
+  top: 1276px;
+  left: 500px;
+}
+.arrowImage06 {
+  position: absolute;
+  right: 420px;
+  top: 1847px;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 1169px) {
+  .arrowImage,
+  .arrowImage02,
+  .arrowImage03,
+  .arrowImage04,
+  .arrowImage05,
+  .arrowImage06 {
+    display: none;
+  }
+  .cards {
+    row-gap: 100px;
+  }
+}
+
+@media (max-width: 991px) {
     .cards{
-        row-gap: 100px;
+        justify-content: center;
+        row-gap: 70px;
+        
     }
 }
 
-@media(max-width:991px){
-    
+@media (max-width: 767px) {
+    .cards{
+        margin: 50px 0 0 0;
+    }
 }
 
-@media(max-width:767px){
-    
+@media (max-width: 575px) {
 }
 
-@media(max-width:575px){
-    
+@media (max-width: 413px) {
 }
-
-@media(max-width:413px){
-    
-} */
