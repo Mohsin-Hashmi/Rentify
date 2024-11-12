@@ -82,42 +82,7 @@
   font-size: 12px;
 }
 
-.searchCarWrapper {
-  max-width: 1120px;
-  width: 100%;
-  border-radius: 12px;
-  padding: 12px 12px 12px 12px;
-  display: flex;
-  column-gap: 74px;
-  align-items: center;
-  margin: 0 auto;
-  box-shadow: -5px 5px 40px 0px #7d7d7d40;
-}
 
-.searchCarWrapperCard {
-  max-width: 255px;
-  width: 100%;
-  display: flex;
-  column-gap: 16px;
-  align-items: center;
-}
-
-.cardContent h5 {
-  font-size: 16px;
-  color: #3e3e3e;
-  margin: 0 0 12px 0;
-}
-
-.cardContent p {
-  font-size: 14px;
-  color: #b6b6b6;
-}
-
-.cardSeperator {
-  font-size: 31px;
-  color: #b6b6b6;
-  vertical-align: middle;
-}
 
 .wrokProcessWrap {
   padding: 86px 0;

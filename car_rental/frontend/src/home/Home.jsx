@@ -1,14 +1,12 @@
-
 import "../home/Home.css";
-import "../global/container.css"
-import "../global/fonts.css"
+import "../global/container.css";
+import "../global/fonts.css";
 import { Link } from "react-router-dom";
 import Navbar from "../navbar/Navbar.jsx";
 import bannerLogo from "../assets/images/blueCar.webp";
 import googlePlayIcon from "../assets/images/googlePlayIcon.webp";
 import appleIcon from "../assets/images/apple-Icon.webp";
-import locationIcon from "../assets/images/location.webp";
-import calendarIcon from "../assets/images/calendar.webp";
+import Search from "../search/Search.jsx";
 import chooseLocation from "../assets/images/choose_location_icon.webp";
 import pickDate from "../assets/images/date_icon.webp";
 import bookCar from "../assets/images/book_car_icon.webp";
@@ -30,22 +28,20 @@ import userIcon from "../assets/images/user.webp";
 import autoIcon from "../assets/images/autoIcon.webp";
 import airCon from "../assets/images/airConditionIcon.webp";
 import doorsIcon from "../assets/images/doorsIcon.webp";
-import Modal from "../modal/CarRentalApp.jsx";
 import ShowCarsModal from "../showCarsModal/ShowCarsModal.jsx";
 import Footer from "../footer/Footer.jsx";
 import SwiperCom from "../swiperCom/SwiperCom.jsx";
 const Home = () => {
-  
   const windowScroll = () => {
     window.scrollTo(0, 0);
-  }
-  
+  };
+
   return (
     <>
       {/* Header Section */}
       <header className="carRentalNavbar">
         <div className="container">
-          <Navbar dataOne={windowScroll}/>
+          <Navbar dataOne={windowScroll} />
         </div>
       </header>
       {/* Banner section */}
@@ -61,7 +57,7 @@ const Home = () => {
                 Android device.
               </p>
               <div className="mobileApplicationLinks">
-                <a href="##">
+                <Link to="">
                   <div className="googlePlayLink">
                     <div className="googlePlayIcon">
                       <img src={googlePlayIcon} alt="google play icon" />
@@ -71,8 +67,8 @@ const Home = () => {
                       <h3>Google Play</h3>
                     </div>
                   </div>
-                </a>
-                <a href="##">
+                </Link>
+                <Link to="">
                   <div className="appStoreLink">
                     <div className="googlePlayLink">
                       <div className="googlePlayIcon">
@@ -84,7 +80,7 @@ const Home = () => {
                       </div>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="rentcarBannerWrapperImage">
@@ -96,39 +92,7 @@ const Home = () => {
       {/* Search Section */}
       <section className="searchCar">
         <div className="container">
-          <div className="searchCarWrapper">
-            <div className="searchCarWrapperCard">
-              <div className="cardIcon">
-                <img src={locationIcon} alt="location icon" />
-              </div>
-              <div className="cardContent">
-                <h5>Location</h5>
-                <p>Search your location</p>
-              </div>
-            </div>
-            <div className="searchCarWrapperCard">
-              <div className="cardSeperator">|</div>
-              <div className="cardIcon">
-                <img src={calendarIcon} alt="calendar icon" />
-              </div>
-              <div className="cardContent">
-                <h5>Pickup date</h5>
-                <p>Tue 15 Feb, 09:00</p>
-              </div>
-            </div>
-            <div className="searchCarWrapperCard">
-              <div className="cardSeperator">|</div>
-              <div className="cardIcon">
-                <img src={calendarIcon} alt="calendar icon" />
-              </div>
-              <div className="cardContent">
-                <h5>Return date</h5>
-                <p>Thu 16 Feb, 11:00</p>
-              </div>
-            </div>
-            {/* Search Button */}
-            <Modal />
-          </div>
+          <Search />
         </div>
       </section>
       <section className="wrokProcess">
@@ -302,7 +266,11 @@ const Home = () => {
                     $1,800 <span>/day</span>
                   </p>
                 </div>
-                <Link to="/rent-car" className="rentNowBtn" onClick={windowScroll} >
+                <Link
+                  to="/rent-car"
+                  className="rentNowBtn"
+                  onClick={windowScroll}
+                >
                   Rent Now
                 </Link>
               </div>
@@ -354,7 +322,11 @@ const Home = () => {
                     $2,100 <span>/day</span>
                   </p>
                 </div>
-                <Link to="/rent-car" className="rentNowBtn" onClick={windowScroll}>
+                <Link
+                  to="/rent-car"
+                  className="rentNowBtn"
+                  onClick={windowScroll}
+                >
                   Rent Now
                 </Link>
               </div>
@@ -406,7 +378,11 @@ const Home = () => {
                     $1,600 <span>/day</span>
                   </p>
                 </div>
-                <Link to="/rent-car" className="rentNowBtn" onClick={windowScroll}>
+                <Link
+                  to="/rent-car"
+                  className="rentNowBtn"
+                  onClick={windowScroll}
+                >
                   Rent Now
                 </Link>
               </div>
@@ -458,7 +434,11 @@ const Home = () => {
                     $2,300 <span>/day</span>
                   </p>
                 </div>
-                <Link to="/rent-car" className="rentNowBtn" onClick={windowScroll}>
+                <Link
+                  to="/rent-car"
+                  className="rentNowBtn"
+                  onClick={windowScroll}
+                >
                   Rent Now
                 </Link>
               </div>
@@ -487,7 +467,7 @@ const Home = () => {
       {/* Footer Declaration */}
       <footer className="carRentalFooter">
         <div className="container">
-          <Footer dataTwo={windowScroll}/>
+          <Footer dataTwo={windowScroll} />
         </div>
       </footer>
     </>

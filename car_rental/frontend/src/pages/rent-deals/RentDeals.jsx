@@ -4,6 +4,8 @@ import "../../global/container.css";
 import Footer from "../../footer/Footer";
 import "../../global/fonts.css";
 import Navbar from "../../navbar/Navbar";
+import BMW from "../../assets/images/bmw-car.webp";
+import Search from "../../search/Search.jsx"
 const RentDeals = () => {
   return (
     <>
@@ -17,8 +19,10 @@ const RentDeals = () => {
       <section className="rentDeals">
         <div className="container">
           <div className="rentDealsWrap">
-            <p> this is rent deal page</p>
-            <h1>This is Heading one</h1>
+            <img src={BMW} alt="bmw car" />
+            <h1>Exclusive Rental Deals.</h1>
+            <p>Discover the best offers and save big on your next rental.</p>
+            <Search/>
           </div>
         </div>
       </section>

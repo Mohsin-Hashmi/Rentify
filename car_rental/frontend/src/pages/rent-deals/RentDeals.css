@@ -1,7 +1,19 @@
-.rentDeals{
-    margin-top: 100px;
+.rentDealsWrap img{
+    max-width: 736px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
 }
-.rentDealsWrap{
-    display: flex;
-    justify-content: space-between;
+
+.rentDealsWrap h1{
+    font-size: 38px;
+    color: #333333;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+.rentDealsWrap p{
+    font-size: 16px;
+    color: #6d6d6d;
+    margin: 0 0 40px 0;
+    text-align: center;
 }

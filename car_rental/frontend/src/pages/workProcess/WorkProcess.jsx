@@ -137,7 +137,7 @@ const WorkProcess = () => {
       {/* Footer Declaration */}
       <footer className="carRentalFooter">
         <div className="container">
-          <Footer />
+        <Footer/>
         </div>
       </footer>
     </>
