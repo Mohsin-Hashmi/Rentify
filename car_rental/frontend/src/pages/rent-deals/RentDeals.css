@@ -1,19 +1,114 @@
-.rentDealsWrap img{
-    max-width: 736px;
-    width: 100%;
-    margin: 0 auto;
-    display: block;
+.rentDealsWrap img {
+  max-width: 736px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
-.rentDealsWrap h1{
-    font-size: 38px;
-    color: #333333;
-    margin: 0 0 15px 0;
-    text-align: center;
+.rentDealsWrap h1 {
+  font-size: 38px;
+  color: #333333;
+  margin: 0 0 15px 0;
+  text-align: center;
 }
-.rentDealsWrap p{
+.rentDealsWrap .rentDealsPara {
+  font-size: 16px;
+  color: #6d6d6d;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+.rentDealsCars {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 16px;
+  margin:60px 0;
+}
+.rentDealsCarsCard {
+  max-width: 256px;
+  width: 100%;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: -5px 5px 40px 0px #7d7d7d40;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+.rentDealsCarsCard:hover {
+    border: 1px solid #1572d3;
+  }
+  
+  .rentcarName {
+    font-size: 18px;
+    color: #262626;
+    margin: 25px 0 0 0;
+  }
+  
+  .carDealsRating {
+    width: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0 16px;
+  }
+  
+  .carDealsRating h4 {
+    font-size: 12px;
+  }
+  
+  .carDealsRating p {
+    color: #808080;
+    font-size: 12px;
+  }
+  .carDealsRating .starIcon{
+    width: 16px;
+    height: 15px;
+  }
+  .carFeaturesWrap {
+    max-width: 208px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 8px;
+  }
+  
+  .carFeatureIcon img {
+    display: flex;
+    align-items: center;
+  }
+  
+  .carFeatures {
+    display: flex;
+    column-gap: 4px;
+    align-items: center;
+  }
+  
+  .carFeatreContent p {
+    font-size: 12px;
+    color: #959595;
+  }
+  
+  .ourPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 48px 0 24px;
+  }
+  
+  .ourPrice h3 {
+    font-size: 14px;
+    color: #595959;
+  }
+  
+  .ourPrice p {
     font-size: 16px;
-    color: #6d6d6d;
-    margin: 0 0 40px 0;
-    text-align: center;
-}
+    color: #292929;
+    font-weight: bold;
+  }
+  
+  .ourPrice p span {
+    font-size: 14px;
+    color: #595959;
+  }
