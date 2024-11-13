@@ -18,12 +18,12 @@
   text-align: center;
 }
 .rentDealsCars {
-  max-width: 800px;
+  max-width: 1200px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   row-gap: 30px;
-  column-gap: 16px;
+  justify-content: space-between;
   margin:60px 0;
 }
 .rentDealsCarsCard {

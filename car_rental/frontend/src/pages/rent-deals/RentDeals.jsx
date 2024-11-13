@@ -8,6 +8,9 @@ import BMW from "../../assets/images/bmw-car.webp";
 import Search from "../../search/Search";
 // import { Link } from "react-router-dom";
 import carOne from "../../assets/images/cardCarOne.webp";
+import carTwo from "../../assets/images/cardCarTwo.webp";
+import carThree from "../../assets/images/cardCarThree.webp"
+import carFour from "../../assets/images/cardCarFour.webp";
 import starIcon from "../../assets/images/starIcon.webp";
 import userIcon from "../../assets/images/user.webp";
 import autoIcon from "../../assets/images/autoIcon.webp";
@@ -73,6 +76,153 @@ const RentDeals = () => {
                     </div>
                     <div className="carFeatreContent">
                       <p>4 Doors</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="ourPrice">
+                  <h3>Price</h3>
+                  <p>
+                    $1,800 <span>/day</span>
+                  </p>
+                </div>
+              </div>
+              <div className="rentDealsCarsCard">
+                <img src={carTwo} alt="car one" />
+                <h2 className="rentcarName">Audi R8</h2>
+                <div className="carDealsRating">
+                  <img className="starIcon" src={starIcon} alt="star icon" />
+                  <h4>4.5</h4>
+                  <p>(1.936 reviews)</p>
+                </div>
+                <div className="carFeaturesWrap">
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={userIcon} alt="user icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>2 Passagers</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={autoIcon} alt="auto icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>Auto</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={airCon} alt="air condition icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>Air Conditioning</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={doorsIcon} alt="car doors icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>2 Doors</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="ourPrice">
+                  <h3>Price</h3>
+                  <p>
+                    $1,800 <span>/day</span>
+                  </p>
+                </div>
+              </div>
+              <div className="rentDealsCarsCard">
+                <img src={carThree} alt="car one" />
+                <h2 className="rentcarName">Audi R8</h2>
+                <div className="carDealsRating">
+                  <img className="starIcon" src={starIcon} alt="star icon" />
+                  <h4>4.5</h4>
+                  <p>(2.036 reviews)</p>
+                </div>
+                <div className="carFeaturesWrap">
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={userIcon} alt="user icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>4 Passagers</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={autoIcon} alt="auto icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>Auto</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={airCon} alt="air condition icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>Air Conditioning</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={doorsIcon} alt="car doors icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>4 Doors</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="ourPrice">
+                  <h3>Price</h3>
+                  <p>
+                    $1,800 <span>/day</span>
+                  </p>
+                </div>
+              </div>
+              <div className="rentDealsCarsCard">
+                <img src={carFour} alt="car one" />
+                <h2 className="rentcarName">Audi R8</h2>
+                <div className="carDealsRating">
+                  <img className="starIcon" src={starIcon} alt="star icon" />
+                  <h4>4.3</h4>
+                  <p>(2.236 reviews)</p>
+                </div>
+                <div className="carFeaturesWrap">
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={userIcon} alt="user icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>2 Passagers</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={autoIcon} alt="auto icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>Auto</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={airCon} alt="air condition icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>Air Conditioning</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={doorsIcon} alt="car doors icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>2 Doors</p>
                     </div>
                   </div>
                 </div>
