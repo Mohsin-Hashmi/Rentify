@@ -6,7 +6,7 @@ import Navbar from "../navbar/Navbar.jsx";
 import bannerLogo from "../assets/images/blueCar.webp";
 import googlePlayIcon from "../assets/images/googlePlayIcon.webp";
 import appleIcon from "../assets/images/apple-Icon.webp";
-import Search from "../search/Search.jsx";
+import Search from "../search/Search.jsx"
 import chooseLocation from "../assets/images/choose_location_icon.webp";
 import pickDate from "../assets/images/date_icon.webp";
 import bookCar from "../assets/images/book_car_icon.webp";

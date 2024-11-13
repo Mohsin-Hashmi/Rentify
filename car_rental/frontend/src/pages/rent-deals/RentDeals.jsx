@@ -5,7 +5,7 @@ import Footer from "../../footer/Footer";
 import "../../global/fonts.css";
 import Navbar from "../../navbar/Navbar";
 import BMW from "../../assets/images/bmw-car.webp";
-import Search from "../../search/Search.jsx"
+import Search from "../../search/Search"
 const RentDeals = () => {
   return (
     <>
