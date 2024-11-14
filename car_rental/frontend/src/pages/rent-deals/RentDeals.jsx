@@ -82,7 +82,7 @@ const RentDeals = () => {
                 <div className="ourPrice">
                   <h3>Price</h3>
                   <p>
-                    $1,800 <span>/day</span>
+                    RS:1,800 <span>/day</span>
                   </p>
                 </div>
                 <p className="discountPara">
@@ -137,7 +137,7 @@ const RentDeals = () => {
                 <div className="ourPrice">
                   <h3>Price</h3>
                   <p>
-                    $1,800 <span>/day</span>
+                    RS:1,800 <span>/day</span>
                   </p>
                 </div>
                 <p className="discountPara">
@@ -149,7 +149,7 @@ const RentDeals = () => {
               </div>
               <div className="rentDealsCarsCard">
                 <img src={carThree} alt="car one" />
-                <h2 className="rentcarName">Audi R8</h2>
+                <h2 className="rentcarName">BMW M3</h2>
                 <div className="carDealsRating">
                   <img className="starIcon" src={starIcon} alt="star icon" />
                   <h4>4.5</h4>
@@ -192,13 +192,19 @@ const RentDeals = () => {
                 <div className="ourPrice">
                   <h3>Price</h3>
                   <p>
-                    $1,800 <span>/day</span>
+                    RS:1,800 <span>/day</span>
                   </p>
                 </div>
+                <p className="discountPara">
+                  <span className="spanPara">
+                    <span>15% </span>
+                  </span>
+                  OFF
+                </p>
               </div>
               <div className="rentDealsCarsCard">
                 <img src={carFour} alt="car one" />
-                <h2 className="rentcarName">Audi R8</h2>
+                <h2 className="rentcarName">Lamborghini Huracan</h2>
                 <div className="carDealsRating">
                   <img className="starIcon" src={starIcon} alt="star icon" />
                   <h4>4.3</h4>
@@ -241,9 +247,15 @@ const RentDeals = () => {
                 <div className="ourPrice">
                   <h3>Price</h3>
                   <p>
-                    $1,800 <span>/day</span>
+                    RS:1,800 <span>/day</span>
                   </p>
                 </div>
+                <p className="discountPara">
+                  <span className="spanPara">
+                    <span>15% </span>
+                  </span>
+                  OFF
+                </p>
               </div>
             </div>
           </div>
