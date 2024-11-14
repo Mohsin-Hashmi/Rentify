@@ -1,6 +1,9 @@
 import "../home/Home.css";
 import "../global/container.css";
 import "../global/fonts.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../navbar/Navbar.jsx";
 import bannerLogo from "../assets/images/blueCar.webp";
@@ -36,6 +39,13 @@ const Home = () => {
     window.scrollTo(0, 0);
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // duration of animation in milliseconds
+      once: true, // whether animation should happen only once on scroll
+    });
+  }, []);
+
   return (
     <>
       {/* Header Section */}
@@ -49,14 +59,19 @@ const Home = () => {
         <div className="container">
           <div className="rentcarBannerWrapper">
             <div className="rentcarBannerWrapperContent">
-              <h1>
+              <h1 data-aos="fade-up">
                 Find, book and rent a car <span>Easily</span>
               </h1>
-              <p className="bannerPara">
+              <p className="bannerPara" data-aos="fade-up">
                 Get a car wherever and whenever you need it with your IOS and
                 Android device.
               </p>
-              <div className="mobileApplicationLinks">
+              <div
+                className="mobileApplicationLinks"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="150"
+              >
                 <Link to="">
                   <div className="googlePlayLink">
                     <div className="googlePlayIcon">
@@ -84,7 +99,14 @@ const Home = () => {
               </div>
             </div>
             <div className="rentcarBannerWrapperImage">
-              <img className="bannerImg" src={bannerLogo} alt="banner logo" />
+              <img
+                className="bannerImg"
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-delay="120"
+                src={bannerLogo}
+                alt="banner logo"
+              />
             </div>
           </div>
         </div>
@@ -98,25 +120,50 @@ const Home = () => {
       <section className="wrokProcess">
         <div className="container">
           <div className="wrokProcessWrap">
-            <div className="wrokProcessWrapPara">
+            <div
+              className="wrokProcessWrapPara"
+              data-aos="fade-up"
+              data-aos-duration="900"
+              data-aos-delay="100"
+            >
               <p>HOW IT WORK</p>
             </div>
-            <h2 className="workProcessHeading">
+            <h2
+              className="workProcessHeading"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="140"
+            >
               Rent with following Three working steps
             </h2>
             {/* Process Steps */}
             <div className="wrokProcessBox">
-              <div className="boxCard">
+              <div
+                className="boxCard"
+                data-aos="fade-up"
+                data-aos-duration="900"
+                data-aos-delay="100"
+              >
                 <img src={chooseLocation} alt="choose location icon" />
                 <h4>Choose location</h4>
                 <p>Choose your and find your best car.</p>
               </div>
-              <div className="boxCard">
+              <div
+                className="boxCard"
+                data-aos="fade-up"
+                data-aos-duration="1400"
+                
+              >
                 <img src={pickDate} alt="pick date icon" />
                 <h4>Pick-up date</h4>
                 <p>Select your pick up date and time to book your car.</p>
               </div>
-              <div className="boxCard">
+              <div
+                className="boxCard"
+                data-aos="fade-up"
+                data-aos-duration="2200"
+                
+              >
                 <img src={bookCar} alt="book car icon" />
                 <h4>Book your car</h4>
                 <p>Book your car and we will deliver it directly to you.</p>

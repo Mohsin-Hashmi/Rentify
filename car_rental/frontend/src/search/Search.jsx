@@ -6,7 +6,12 @@ import Modal from "../modal/CarRentalApp.jsx";
 const Search = () => {
   return (
     <>
-      <div className="searchCarWrapper">
+      <div
+        className="searchCarWrapper"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="120"
+      >
         <div className="searchCarWrapperCard">
           <div className="cardIcon">
             <img src={locationIcon} alt="location icon" />
