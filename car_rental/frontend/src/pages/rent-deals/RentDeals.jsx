@@ -9,7 +9,7 @@ import Search from "../../search/Search";
 // import { Link } from "react-router-dom";
 import carOne from "../../assets/images/cardCarOne.webp";
 import carTwo from "../../assets/images/cardCarTwo.webp";
-import carThree from "../../assets/images/cardCarThree.webp"
+import carThree from "../../assets/images/cardCarThree.webp";
 import carFour from "../../assets/images/cardCarFour.webp";
 import starIcon from "../../assets/images/starIcon.webp";
 import userIcon from "../../assets/images/user.webp";
@@ -85,6 +85,12 @@ const RentDeals = () => {
                     $1,800 <span>/day</span>
                   </p>
                 </div>
+                <p className="discountPara">
+                  <span className="spanPara">
+                    <span>15% </span>
+                  </span>
+                  OFF
+                </p>
               </div>
               <div className="rentDealsCarsCard">
                 <img src={carTwo} alt="car one" />
@@ -134,6 +140,12 @@ const RentDeals = () => {
                     $1,800 <span>/day</span>
                   </p>
                 </div>
+                <p className="discountPara">
+                  <span className="spanPara">
+                    <span>15% </span>
+                  </span>
+                  OFF
+                </p>
               </div>
               <div className="rentDealsCarsCard">
                 <img src={carThree} alt="car one" />

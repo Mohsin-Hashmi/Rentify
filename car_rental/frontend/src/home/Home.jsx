@@ -263,7 +263,7 @@ const Home = () => {
                 <div className="ourPrice">
                   <h3>Price</h3>
                   <p>
-                    $1,800 <span>/day</span>
+                    RS:1,800 <span>/day</span>
                   </p>
                 </div>
                 <Link
@@ -319,7 +319,7 @@ const Home = () => {
                 <div className="ourPrice">
                   <h3>Price</h3>
                   <p>
-                    $2,100 <span>/day</span>
+                    RS:2,100 <span>/day</span>
                   </p>
                 </div>
                 <Link
@@ -375,7 +375,7 @@ const Home = () => {
                 <div className="ourPrice">
                   <h3>Price</h3>
                   <p>
-                    $1,600 <span>/day</span>
+                    RS:1,600 <span>/day</span>
                   </p>
                 </div>
                 <Link
@@ -431,7 +431,7 @@ const Home = () => {
                 <div className="ourPrice">
                   <h3>Price</h3>
                   <p>
-                    $2,300 <span>/day</span>
+                    RS:2,300 <span>/day</span>
                   </p>
                 </div>
                 <Link

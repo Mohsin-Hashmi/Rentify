@@ -24,7 +24,7 @@
   flex-wrap: wrap;
   row-gap: 30px;
   justify-content: space-between;
-  margin:60px 0;
+  margin: 60px 0;
 }
 .rentDealsCarsCard {
   max-width: 256px;
@@ -36,79 +36,107 @@
   box-sizing: border-box;
 }
 .rentDealsCarsCard:hover {
-    border: 1px solid #1572d3;
-  }
+  border: 1px solid #1572d3;
+}
+
+.rentcarName {
+  font-size: 18px;
+  color: #262626;
+  margin: 25px 0 0 0;
+}
+
+.carDealsRating {
+  width: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 0 16px;
+}
+
+.carDealsRating h4 {
+  font-size: 12px;
+}
+
+.carDealsRating p {
+  color: #808080;
+  font-size: 12px;
+}
+.carDealsRating .starIcon {
+  width: 16px;
+  height: 15px;
+}
+.carFeaturesWrap {
+  max-width: 208px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 8px;
+}
+
+.carFeatureIcon img {
+  display: flex;
+  align-items: center;
+}
+
+.carFeatures {
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
+}
+
+.carFeatreContent p {
+  font-size: 12px;
+  color: #959595;
+}
+
+.ourPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 48px 0 24px;
+}
+
+.ourPrice h3 {
+  font-size: 14px;
+  color: #595959;
+}
+
+.ourPrice p {
+  font-size: 16px;
+  color: #292929;
+  font-weight: bold;
+}
+
+.ourPrice p span {
+  font-size: 14px;
+  color: #595959;
+}
+.discountPara span {
+  color: green;
+  font-size: 25px;
+}
+.discountPara {
+  font-size: 16px;
+  text-align: right;
   
-  .rentcarName {
-    font-size: 18px;
-    color: #262626;
-    margin: 25px 0 0 0;
-  }
+}
+.discountPara:after {
+ 
   
-  .carDealsRating {
-    width: 135px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 12px 0 16px;
+}
+.spanPara{
+  display: inline-block;
+  border-radius: 50px;
+  padding: 5px;
+  animation: mttCtaPulse 1.8s infinite;
+}
+@keyframes mttCtaPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(8, 8, 61, 0.3);
   }
-  
-  .carDealsRating h4 {
-    font-size: 12px;
+
+  to {
+    box-shadow: 0 0 0 13px rgba(8, 8, 61, 0);
   }
-  
-  .carDealsRating p {
-    color: #808080;
-    font-size: 12px;
-  }
-  .carDealsRating .starIcon{
-    width: 16px;
-    height: 15px;
-  }
-  .carFeaturesWrap {
-    max-width: 208px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 8px;
-  }
-  
-  .carFeatureIcon img {
-    display: flex;
-    align-items: center;
-  }
-  
-  .carFeatures {
-    display: flex;
-    column-gap: 4px;
-    align-items: center;
-  }
-  
-  .carFeatreContent p {
-    font-size: 12px;
-    color: #959595;
-  }
-  
-  .ourPrice {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 48px 0 24px;
-  }
-  
-  .ourPrice h3 {
-    font-size: 14px;
-    color: #595959;
-  }
-  
-  .ourPrice p {
-    font-size: 16px;
-    color: #292929;
-    font-weight: bold;
-  }
-  
-  .ourPrice p span {
-    font-size: 14px;
-    color: #595959;
-  }
+}
