@@ -1,132 +1,149 @@
-/* Reset */
+.carRenter {
+  margin: 130px 0;
+}
+/* Form Container */
+.form-container {
+  background-color: white;
+  width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.carRenterHeading {
+  font-size: 40px;
+  color: #242424;
+  text-align: center;
+}
+/* Form Header */
+.form-container h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
 
-  
- 
-  .carRenter{
-    margin: 130px  0;
+/* Form Groups */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin: 5px;
+  color: #555;
+  font-size: 18px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 21px;
+  outline: none;
+  color: #555;
+  font-size: 15px;
+}
+
+.form-group input:hover,
+.form-group textarea:hover {
+  background-color: #edecec;
+}
+input[type="file"]::-webkit-file-upload-button {
+  font-weight: bold;
+  padding: 14px;
+  background-color: transparent;
+  outline: none;
+  border-radius: 15px;
+  color: #ffffff;
+  background-color: #1572d3;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  border: 1px solid transparent;
+}
+input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #ffffff;
+  color: #1572d3;
+  border: 1px solid #1572d3;
+}
+
+.form-group input[type="file"] {
+  padding: 15px;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Availability Inputs */
+.form-group input[type="date"] {
+  width: calc(50% - 5px);
+  margin-right: 10px;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #1572d3;
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 50px auto 0 auto;
+  display: block;
+  max-width: 200px;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #004dcf;
+}
+
+.dateWraper {
+  display: flex;
+  justify-content: space-evenly;
+}
+.dateInputs {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .carRenter {
+    margin: 90px 0;
   }
-  /* Form Container */
-  .form-container {
-    background-color: white;
-    width: 400px;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  .carRenterHeading{
-    font-size: 40px;
-    color: #242424;
-    text-align: center;
-  }
-  /* Form Header */
-  .form-container h1 {
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  /* Form Groups */
-  .form-group {
-    margin-bottom: 15px;
-    text-align: left;
-  }
-  
   .form-group label {
-    display: block;
-    margin: 5px;
-    color: #555;
-    font-size: 18px;
+    margin: 9px;
+    font-size: 16px;
   }
-  
-  .form-group input, 
-  .form-group textarea {
-    width: 100%;
-    padding: 15px;
-    border: 2px solid #ddd;
-    border-radius: 21px;
-   outline: none;
-   color: #555;
-   font-size: 15px;
+}
+@media (max-width: 575px) {
+  .dateWraper {
+    flex-wrap: wrap;
   }
-
-  .form-group input:hover, 
-  .form-group textarea:hover{
-    background-color: #edecec;
-    
+  .carRenterHeading {
+    font-size: 36px;
   }
-  input[type="file"]::-webkit-file-upload-button {
-    font-weight: bold;
-    padding: 14px;
-    background-color: transparent;
-    outline: none;
-    border-radius: 15px;
-    color: #ffffff;
-    background-color: #1572d3;
-    border: none;
-    cursor: pointer;
+  .form-group input::placeholder {
+    font-size: 14px;
+  }
+  .form-group textarea::placeholder {
+    font-size: 14px;
+  }
+}
+@media (max-width: 413px) {
+  .form-group label {
+    font-size: 14px;
+  }
+  .carRenterHeading {
+    font-size: 32px;
+  }
+  .form-group input::placeholder {
     font-size: 12px;
-    border: 1px solid transparent;
   }
-  input[type="file"]::-webkit-file-upload-button:hover{
-    background-color: #ffffff;
-    color: #1572d3;
-    border: 1px solid #1572d3;
+  .form-group textarea::placeholder {
+    font-size: 12px;
   }
-  
-  .form-group input[type="file"] {
-    padding: 15px;
-  }
-  
-  textarea {
-    resize: none;
-  }
-  
-  /* Availability Inputs */
-  .form-group input[type="date"] {
-    width: calc(50% - 5px);
-    margin-right: 10px;
-  }
-  
-  /* Submit Button */
-  .submit-btn {
-    background-color: #1572d3;
-    color: white;
-    border: none;
-    padding: 20px;
-    border-radius: 15px;
-    font-size: 17px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 50px auto 0  auto;
-    display: block;
-    max-width: 200px;
-    width: 100%;
-  }
-  
-  .submit-btn:hover {
-    background-color: #004dcf;
-  }
-
-  .dateWraper{
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .dateInputs{
-    width: 100%;
-  }
-  
- 
-
-  @media(max-width:767px){
-    .carRenter{
-      margin: 90px 0;
-    }
-    .form-group label{
-      margin: 9px;
-    }
-  }
-  @media(max-width:575px){
-    .dateWraper{
-      flex-wrap: wrap;
-    }
-  }
+}

@@ -92,21 +92,40 @@
 }
 
 @media (max-width: 991px) {
-    .cards{
-        justify-content: center;
-        row-gap: 70px;
-        
-    }
+  .cards {
+    justify-content: center;
+    row-gap: 70px;
+  }
 }
 
 @media (max-width: 767px) {
-    .cards{
-        margin: 50px 0 0 0;
-    }
+  .cards {
+    margin: 50px 0 0 0;
+    row-gap: 60px;
+  }
 }
 
 @media (max-width: 575px) {
 }
 
 @media (max-width: 413px) {
+  .workProcessWrap {
+    margin: 83px 0 50px 0;
+  }
+  .processHeading {
+    font-size: 32px;
+  }
+  .cards {
+    margin: 25px 0 0 0;
+    row-gap: 50px;
+  }
+  .workProcessCards h2 {
+    font-size: 18px;
+  }
+  .workProcessCards p {
+    font-size: 14px;
+  }
+  .workProcessCards ul li {
+    font-size: 14px;
+  }
 }
