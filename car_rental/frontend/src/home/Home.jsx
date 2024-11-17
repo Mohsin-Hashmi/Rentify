@@ -152,7 +152,6 @@ const Home = () => {
                 className="boxCard"
                 data-aos="fade-up"
                 data-aos-duration="1400"
-                
               >
                 <img src={pickDate} alt="pick date icon" />
                 <h4>Pick-up date</h4>
@@ -162,7 +161,6 @@ const Home = () => {
                 className="boxCard"
                 data-aos="fade-up"
                 data-aos-duration="2200"
-                
               >
                 <img src={bookCar} alt="book car icon" />
                 <h4>Book your car</h4>
@@ -191,17 +189,38 @@ const Home = () => {
         <div className="container">
           <div className="ourFeaturesWrap">
             <div className="audiCarImage">
-              <img src={audiCar} alt="audi car" />
+              <img
+                src={audiCar}
+                alt="audi car"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="400"
+              />
             </div>
             <div className="ourOffers">
-              <div className="ourOffersTitle">
+              <div
+                className="ourOffersTitle"
+                data-aos="fade-up"
+                data-aos-duration="900"
+                data-aos-delay="100"
+              >
                 <p>WHY CHOOSE US</p>
               </div>
-              <h2 className="ourOffersHeading">
+              <h2
+                className="ourOffersHeading"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
                 We offer the best experience with our rental deals
               </h2>
               <div className="ourOffersContent">
-                <div className="contentCard">
+                <div
+                  className="contentCard"
+                  data-aos="fade-up"
+                  data-aos-duration="1100"
+                  data-aos-delay="300"
+                >
                   <div className="contentCardImage">
                     <img src={priceIcon} alt="price icon" />
                   </div>
@@ -213,7 +232,12 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div className="contentCard">
+                <div
+                  className="contentCard"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay="400"
+                >
                   <div className="contentCardImage">
                     <img src={expDriver} alt="experience driver icon" />
                   </div>
@@ -225,7 +249,12 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div className="contentCard">
+                <div
+                  className="contentCard"
+                  data-aos="fade-up"
+                  data-aos-duration="1300"
+                  data-aos-delay="400"
+                >
                   <div className="contentCardImage">
                     <img src={carDelivery} alt="car delivery icon" />
                   </div>
@@ -237,7 +266,12 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-                <div className="contentCard">
+                <div
+                  className="contentCard"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  data-aos-delay="500"
+                >
                   <div className="contentCardImage">
                     <img src={techSupport} alt="tech support icon" />
                   </div>
@@ -258,14 +292,29 @@ const Home = () => {
       <section className="popularDeals">
         <div className="container">
           <div className="popularDealsWrap">
-            <div className="popularDealsBox">
+            <div
+              className="popularDealsBox"
+              data-aos="fade-up"
+              data-aos-duration="1700"
+              data-aos-delay="600"
+            >
               <p>POPULAR RENTAL DEALS</p>
             </div>
-            <h2 className="popularDealsHeading">
+            <h2
+              className="popularDealsHeading"
+              data-aos="fade-up"
+              data-aos-duration="1900"
+              data-aos-delay="800"
+            >
               Most popular cars rental deals
             </h2>
             <div className="popularDealsWrapper">
-              <div className="popularDealsCard">
+              <div
+                className="popularDealsCard"
+                data-aos="fade-up"
+                data-aos-duration="2300"
+                data-aos-delay="1200"
+              >
                 <img className="carImages" src={carOne} alt="car one " />
                 <h2 className="carName">Jaguar XE L P250</h2>
                 <div className="carRating">
@@ -321,7 +370,12 @@ const Home = () => {
                   Rent Now
                 </Link>
               </div>
-              <div className="popularDealsCard">
+              <div
+                className="popularDealsCard "
+                data-aos="fade-up"
+                data-aos-duration="2800"
+                data-aos-delay="1100"
+              >
                 <img className="carImages" src={carTwo} alt="car two " />
                 <h2 className="carName Cars">Audi R8</h2>
                 <div className="carRating">
@@ -377,7 +431,12 @@ const Home = () => {
                   Rent Now
                 </Link>
               </div>
-              <div className="popularDealsCard">
+              <div
+                className="popularDealsCard"
+                data-aos="fade-up"
+                data-aos-duration="3500"
+                data-aos-delay="1400"
+              >
                 <img className="carImages" src={carThree} alt="car three " />
                 <h2 className="carName">BMW M3</h2>
                 <div className="carRating">
@@ -433,7 +492,12 @@ const Home = () => {
                   Rent Now
                 </Link>
               </div>
-              <div className="popularDealsCard">
+              <div
+                className="popularDealsCard"
+                data-aos="fade-up"
+                data-aos-duration="3900"
+                data-aos-delay="1500"
+              >
                 <img className="carImages" src={carFour} alt="car four " />
                 <h2 className="carName Cars">Lamborghini Huracan</h2>
                 <div className="carRating">

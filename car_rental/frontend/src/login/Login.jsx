@@ -16,7 +16,6 @@ const Login = () => {
   const [loginError, setLoginError] = useState(""); 
   const [success, setSuccess] = useState("");
 
-  const { login } = useAuth(); // Destructure login from useAuth
   const navigate = useNavigate(); // Initialize navigate
 
   // Toggle Password visibility
@@ -125,8 +124,8 @@ const Login = () => {
           Show Password
         </label>
 
-        {loginError && <p style={{ color: "red" }}>{loginError}</p>} {/* Login error */}
-        {success && <p className="successMessage">{success}</p>} {/* Success message */}
+        {loginError && <p style={{ color: "red" }}>{loginError}</p>} 
+        {success && <p className="successMessage">{success}</p>} Success message
       </form>
 
       <Link className="forgetPassLink" >Forgot your password?</Link>

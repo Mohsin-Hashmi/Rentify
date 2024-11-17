@@ -22,7 +22,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +30,8 @@
   }
   
   .modal-content {
-    background: #ffffff;
+    background-color: #ffffff; 
+
     padding: 20px;
     border-radius: 8px;
     width: 800px;
