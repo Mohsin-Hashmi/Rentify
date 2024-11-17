@@ -31,8 +31,7 @@ const Signup = () => {
 
     // Validate Passwords
     if (password !== confirmPassword) {
-      setError("Passwords do not match!");
-      return;
+      return setError("Passwords do not match!");
     }
 
     try {
@@ -40,7 +39,6 @@ const Signup = () => {
         email,
         password,
       });
-
       console.log("Register response:", res.data);
       setSuccess("User registered successfully!"); // Success feedback
       localStorage.setItem("isAuthenticated", "true"); // Optional: Track authentication
@@ -127,15 +125,15 @@ const Signup = () => {
 
       <p className="otherOptions">Or continue with</p>
       <div className="otherOptionsIcons">
-        <a href="##">
+        <Link to=''>
           <img src={googleIcon} alt="google icon" />
-        </a>
-        <a href="##">
+        </Link>
+        <Link to=''>
           <img src={facebookIcon} alt="facebook icon" />
-        </a>
-        <a href="##">
+        </Link>
+        <Link to=''>
           <img src={appleIcon} alt="apple icon" />
-        </a>
+        </Link>
       </div>
     </div>
   );
