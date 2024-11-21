@@ -3,7 +3,7 @@ import { Navigate } from "react-router-dom";
 import { useAuth } from "./AuthContext"; // Import the useAuth hook
 
 // ProtectedRoute component to protect certain routes
-export const ProtectedRoute = ({ children }) => {
+const ProtectedRoute = ({ children }) => {
   const { isAuthenticated } = useAuth();
 
   if (!isAuthenticated) {
@@ -12,3 +12,4 @@ export const ProtectedRoute = ({ children }) => {
 
   return children; // Render the protected component if authenticated
 };
+export default ProtectedRoute;

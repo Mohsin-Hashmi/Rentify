@@ -15,7 +15,7 @@ const Login = () => {
   const [passwordError, setPasswordError] = useState(""); 
   const [loginError, setLoginError] = useState(""); 
   const [success, setSuccess] = useState("");
-
+  const { login } = useAuth();
   const navigate = useNavigate(); // Initialize navigate
 
   // Toggle Password visibility
@@ -40,7 +40,7 @@ const Login = () => {
     if (!password) {
       setPasswordError("Password is required");
       isValid = false;
-    } else if (password.length < 2) {
+    } else if (password.length < 6) {
       setPasswordError("Password must be at least 6 characters");
       isValid = false;
     }
@@ -79,7 +79,7 @@ const Login = () => {
         setEmailError("");
         setPasswordError("");
         setLoginError("");
-
+        login();
         // Redirect to home page
         navigate("/home");
       } catch (err) {
