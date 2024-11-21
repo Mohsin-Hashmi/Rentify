@@ -17,7 +17,7 @@ const CarRenter = () => {
         <div className="container">
           <div className="carRenterWrap">
             <h1 className="carRenterHeading">Rent Your Car</h1>
-            <form id="rentalForm" enctype="multipart/form-data">
+            <form id="rentalForm">
               {/* <!-- Car Name --> */}
               <div class="form-group">
                 <label htmlFor="carName">Car Name</label>
