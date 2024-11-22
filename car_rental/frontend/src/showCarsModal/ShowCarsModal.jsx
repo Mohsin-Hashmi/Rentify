@@ -20,7 +20,13 @@ const ShowCarsModal = () => {
   return (
     <>
       {/* Second Button */}
-      <button className="seeAllVehicals" onClick={openModal}>
+      <button
+        className="seeAllVehicals"
+        data-aos="fade-up"
+        data-aos-duration="1700"
+        data-aos-delay="600"
+        onClick={openModal}
+      >
         Show all vehicles
       </button>
 

@@ -563,7 +563,12 @@ const Home = () => {
       <section className="userReviews">
         <div className="container">
           <div className="userReviewsWrap">
-            <div className="userReviewsPara">
+            <div
+              className="userReviewsPara"
+              data-aos="fade-up"
+              data-aos-duration="1900"
+              data-aos-delay="800"
+            >
               <p>TESTIMONIALS</p>
             </div>
 
