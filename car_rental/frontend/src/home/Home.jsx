@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../navbar/Navbar.jsx";
-import bannerLogo from "../assets/images/blueCar.webp";
+import bannerLogo from "../assets/images/blueCarNew.webp";
 import googlePlayIcon from "../assets/images/googlePlayIcon.webp";
 import appleIcon from "../assets/images/apple-Icon.webp";
 import Search from "../search/Search.jsx";
@@ -69,8 +69,6 @@ const Home = () => {
               <div
                 className="mobileApplicationLinks"
                 data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay="150"
               >
                 <Link to="">
                   <div className="googlePlayLink">

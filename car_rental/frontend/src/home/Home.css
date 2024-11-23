@@ -1,19 +1,28 @@
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Banner section css code */
+
+.rentcarBanner{
+  background: linear-gradient(180deg, #ebf7ff 0%, #fdf5eb 100%);
+  height: 100vh;
+  position: relative;
+  
+}
 
 .rentcarBannerWrapper {
   display: flex;
   column-gap: 99px;
   align-items: center;
+  max-width: 1170px;
+  width: 100%;
   justify-content: space-evenly;
-  margin: 90px 0 0 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .rentcarBannerWrapperContent {
@@ -24,12 +33,12 @@
 .bannerImg {
   max-width: 612px;
   width: 100%;
+  position: relative;
 }
 
 .rentcarBannerWrapperContent h1 {
   font-size: 47px;
   color: #242424;
- 
 }
 
 .rentcarBannerWrapperContent h1 span {
@@ -81,13 +90,13 @@
 .googlePlayContent h3 {
   font-size: 12px;
 }
-
-
-
-.wrokProcessWrap {
-  padding: 86px 0;
+.searchCar{
+  margin: 145px 0 102px 0;
 }
 
+.wrokProcess{
+  background-color: #F8FCFF;
+}
 .wrokProcessWrapPara {
   max-width: 253px;
   width: 100%;
@@ -441,21 +450,21 @@
   padding: 40px 0;
 }
 ::-webkit-scrollbar {
-  width: 8px; 
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #888; 
+  background-color: #888;
   border-radius: 10px;
-  border: 2px solid #f1f1f1; 
+  border: 2px solid #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 /* media queries  start here */
 @media (max-width: 1169px) {
@@ -567,7 +576,7 @@
   .contentCard {
     column-gap: 15px;
   }
-  .rentcarBannerWrapper{
+  .rentcarBannerWrapper {
     margin: 90px 0 50px 0;
   }
 }
@@ -600,7 +609,6 @@
 
   .rentcarBannerWrapperContent h1 {
     text-align: center;
-   
   }
 
   .rentcarBannerWrapperContent .bannerPara {
