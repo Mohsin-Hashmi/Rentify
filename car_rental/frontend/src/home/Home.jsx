@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../navbar/Navbar.jsx";
-import bannerLogo from "../assets/images/blueCarNew.webp";
+import bannerLogo from "../assets/images/blueCar.webp";
 import googlePlayIcon from "../assets/images/googlePlayIcon.webp";
 import appleIcon from "../assets/images/apple-Icon.webp";
 import Search from "../search/Search.jsx";
@@ -105,6 +105,7 @@ const Home = () => {
                 src={bannerLogo}
                 alt="banner logo"
               />
+              
             </div>
           </div>
         </div>

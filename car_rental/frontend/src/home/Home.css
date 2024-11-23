@@ -51,7 +51,7 @@
 .bannerImg {
   max-width: 612px;
   width: 100%;
-  position: relative;
+  mix-blend-mode: multiply;
 }
 
 .rentcarBannerWrapperContent h1 {

@@ -1,8 +1,14 @@
+
+.rentDeals{
+  background-color: #F8FCFF;
+  padding: 60px;
+}
 .rentDealsWrap img {
   max-width: 736px;
   width: 100%;
   margin: 0 auto;
   display: block;
+  mix-blend-mode: multiply;
 }
 
 .rentDealsWrap h1 {

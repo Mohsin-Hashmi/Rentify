@@ -1,6 +1,9 @@
-.workProcessWrap {
-  margin: 120px 0;
+
+.workProcess{
+  background-color: #F8FCFF;
+  padding: 130px 0;
 }
+
 .processHeading {
   font-size: 40px;
   color: #242424;
