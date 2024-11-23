@@ -59,7 +59,7 @@ const Home = () => {
         <div className="container">
           <div className="rentcarBannerWrapper">
             <div className="rentcarBannerWrapperContent">
-              <h1 data-aos="fade-up">
+              <h1 className="movingHeading" data-aos="fade-up">
                 Find, book and rent a car <span>Easily</span>
               </h1>
               <p className="bannerPara" data-aos="fade-up">
@@ -99,7 +99,7 @@ const Home = () => {
             <div className="rentcarBannerWrapperImage">
               <img
                 className="bannerImg"
-                data-aos="fade-right"
+                data-aos="fade-up"
                 data-aos-duration="800"
                 data-aos-delay="120"
                 src={bannerLogo}
@@ -308,6 +308,252 @@ const Home = () => {
               Most popular cars rental deals
             </h2>
             <div className="popularDealsWrapper">
+              <div
+                className="popularDealsCard"
+                data-aos="fade-up"
+                data-aos-duration="2300"
+                data-aos-delay="1200"
+              >
+                <img className="carImages" src={carOne} alt="car one " />
+                <h2 className="carName">Jaguar XE L P250</h2>
+                <div className="carRating">
+                  <img src={starIcon} alt="star icon" />
+                  <h4>4.8</h4>
+                  <p>(2.436 reviews)</p>
+                </div>
+                <div className="carFeaturesWrap">
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={userIcon} alt="user icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>4 Passagers</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={autoIcon} alt="auto icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>Auto</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={airCon} alt="air condition icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>Air Conditioning</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={doorsIcon} alt="car doors icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>4 Doors</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="ourPrice">
+                  <h3>Price</h3>
+                  <p>
+                    RS:1,800 <span>/day</span>
+                  </p>
+                </div>
+                <Link
+                  to="/rent-car"
+                  className="rentNowBtn"
+                  onClick={windowScroll}
+                >
+                  Rent Now
+                </Link>
+              </div>
+              <div
+                className="popularDealsCard "
+                data-aos="fade-up"
+                data-aos-duration="2800"
+                data-aos-delay="1100"
+              >
+                <img className="carImages" src={carTwo} alt="car two " />
+                <h2 className="carName Cars">Audi R8</h2>
+                <div className="carRating">
+                  <img src={starIcon} alt="star icon" />
+                  <h4>4.6</h4>
+                  <p>(1.936 reviews)</p>
+                </div>
+                <div className="carFeaturesWrap">
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={userIcon} alt="user icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>2 Passagers</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={autoIcon} alt="auto icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>Auto</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={airCon} alt="air condition icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>Air Conditioning</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={doorsIcon} alt="car doors icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>2 Doors</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="ourPrice">
+                  <h3>Price</h3>
+                  <p>
+                    RS:2,100 <span>/day</span>
+                  </p>
+                </div>
+                <Link
+                  to="/rent-car"
+                  className="rentNowBtn"
+                  onClick={windowScroll}
+                >
+                  Rent Now
+                </Link>
+              </div>
+              <div
+                className="popularDealsCard"
+                data-aos="fade-up"
+                data-aos-duration="3500"
+                data-aos-delay="1400"
+              >
+                <img className="carImages" src={carThree} alt="car three " />
+                <h2 className="carName">BMW M3</h2>
+                <div className="carRating">
+                  <img src={starIcon} alt="star icon" />
+                  <h4>4.5</h4>
+                  <p>(2.036 reviews)</p>
+                </div>
+                <div className="carFeaturesWrap">
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={userIcon} alt="user icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>4 Passagers</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={autoIcon} alt="auto icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>Auto</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={airCon} alt="air condition icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>Air Conditioning</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={doorsIcon} alt="car doors icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>4 Doors</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="ourPrice">
+                  <h3>Price</h3>
+                  <p>
+                    RS:1,600 <span>/day</span>
+                  </p>
+                </div>
+                <Link
+                  to="/rent-car"
+                  className="rentNowBtn"
+                  onClick={windowScroll}
+                >
+                  Rent Now
+                </Link>
+              </div>
+              <div
+                className="popularDealsCard"
+                data-aos="fade-up"
+                data-aos-duration="3900"
+                data-aos-delay="1500"
+              >
+                <img className="carImages" src={carFour} alt="car four " />
+                <h2 className="carName Cars">Lamborghini Huracan</h2>
+                <div className="carRating">
+                  <img src={starIcon} alt="star icon" />
+                  <h4>4.3</h4>
+                  <p>(2.236 reviews)</p>
+                </div>
+                <div className="carFeaturesWrap">
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={userIcon} alt="user icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>2 Passagers</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={autoIcon} alt="auto icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>Auto</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={airCon} alt="air condition icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>Air Conditioning</p>
+                    </div>
+                  </div>
+                  <div className="carFeatures">
+                    <div className="carFeatureIcon">
+                      <img src={doorsIcon} alt="car doors icon" />
+                    </div>
+                    <div className="carFeatreContent">
+                      <p>2 Doors</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="ourPrice">
+                  <h3>Price</h3>
+                  <p>
+                    RS:2,300 <span>/day</span>
+                  </p>
+                </div>
+                <Link
+                  to="/rent-car"
+                  className="rentNowBtn"
+                  onClick={windowScroll}
+                >
+                  Rent Now
+                </Link>
+              </div>
+
+              {/* second row  */}
               <div
                 className="popularDealsCard"
                 data-aos="fade-up"

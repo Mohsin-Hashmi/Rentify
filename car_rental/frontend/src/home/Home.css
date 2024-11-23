@@ -4,26 +4,24 @@
   box-sizing: border-box;
 }
 
-
-.rentcarBanner{
+.rentcarBanner {
   background: linear-gradient(180deg, #ebf7ff 0%, #fdf5eb 100%);
   height: 100vh;
   position: relative;
-  
 }
-.rentcarBanner::before{
-  content: '';
+.rentcarBanner::before {
+  content: "";
   position: absolute;
-  background-image: url('../assets/images/dots-bg01.webp');
+  background-image: url("../assets/images/dots-bg01.webp");
   top: 0;
   left: 0;
   width: 232px;
   height: 355px;
 }
-.rentcarBanner::after{
-  content: '';
+.rentcarBanner::after {
+  content: "";
   position: absolute;
-  background-image: url('../assets/images/dots-bg02.webp');
+  background-image: url("../assets/images/dots-bg02.webp");
   bottom: 0;
   right: 0;
   width: 129px;
@@ -40,23 +38,32 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .rentcarBannerWrapperContent {
   max-width: 390px;
   width: 100%;
+  overflow: hidden;
 }
-
-.bannerImg {
+.rentcarBannerWrapperImage {
+  max-width: 612px; /* Set your image width */
+  width: 100%;
+  height: 500px; /* Set your image height */
+  background: linear-gradient(180deg, #ebf7ff 0%, #fdf5eb 100%);
+}
+.rentcarBannerWrapperImage .bannerImg {
   max-width: 612px;
   width: 100%;
-  mix-blend-mode: multiply;
+  object-fit: cover;
+  mix-blend-mode: multiply; /* Blend image with gradient */
+  pointer-events: none;
 }
 
 .rentcarBannerWrapperContent h1 {
   font-size: 47px;
   color: #242424;
+  position: relative;
 }
 
 .rentcarBannerWrapperContent h1 span {
@@ -108,14 +115,14 @@
 .googlePlayContent h3 {
   font-size: 12px;
 }
-.searchCar{
+.searchCar {
   margin: 145px 0 102px 0;
 }
 
-.wrokProcess{
-  background-color: #F8FCFF;
+.wrokProcess {
+  background-color: #f8fcff;
 }
-.wrokProcessWrap{
+.wrokProcessWrap {
   padding: 70px 0;
 }
 .wrokProcessWrapPara {
@@ -279,8 +286,8 @@
   top: -168px;
   z-index: -1;
 }
-.popularDeals{
-  background-color:  #F8FCFF;
+.popularDeals {
+  background-color: #f8fcff;
 }
 .popularDealsWrap {
   padding: 70px 0;
@@ -313,6 +320,8 @@
   display: flex;
   column-gap: 32px;
   margin: 0 auto;
+  flex-wrap: wrap;
+  row-gap: 32px;
 }
 
 .popularDealsCard {
@@ -439,7 +448,7 @@
 .Cars {
   margin: 35px 0 0 0;
 }
-.userReviews{
+.userReviews {
   padding: 70px 0;
 }
 .userReviewsPara {
