@@ -308,6 +308,7 @@ const Home = () => {
               Most popular cars rental deals
             </h2>
             <div className="popularDealsWrapper">
+               {/* First row */}
               <div
                 className="popularDealsCard"
                 data-aos="fade-up"
