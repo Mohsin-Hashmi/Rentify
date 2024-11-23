@@ -11,6 +11,24 @@
   position: relative;
   
 }
+.rentcarBanner::before{
+  content: '';
+  position: absolute;
+  background-image: url('../assets/images/dots-bg01.webp');
+  top: 0;
+  left: 0;
+  width: 232px;
+  height: 355px;
+}
+.rentcarBanner::after{
+  content: '';
+  position: absolute;
+  background-image: url('../assets/images/dots-bg02.webp');
+  bottom: 0;
+  right: 0;
+  width: 129px;
+  height: 156px;
+}
 
 .rentcarBannerWrapper {
   display: flex;
@@ -18,7 +36,7 @@
   align-items: center;
   max-width: 1170px;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -96,6 +114,9 @@
 
 .wrokProcess{
   background-color: #F8FCFF;
+}
+.wrokProcessWrap{
+  padding: 70px 0;
 }
 .wrokProcessWrapPara {
   max-width: 253px;
@@ -177,7 +198,9 @@
 }
 
 .ourFeaturesWrap {
-  padding: 91px 0;
+  max-width: 1170px;
+  width: 100%;
+  padding: 120px 0;
   display: flex;
   align-items: center;
   column-gap: 101px;
@@ -256,9 +279,11 @@
   top: -168px;
   z-index: -1;
 }
-
+.popularDeals{
+  background-color:  #F8FCFF;
+}
 .popularDealsWrap {
-  padding: 84px 0;
+  padding: 70px 0;
 }
 
 .popularDealsBox {
@@ -414,7 +439,9 @@
 .Cars {
   margin: 35px 0 0 0;
 }
-
+.userReviews{
+  padding: 70px 0;
+}
 .userReviewsPara {
   max-width: 253px;
   width: 100%;

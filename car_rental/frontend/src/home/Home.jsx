@@ -49,7 +49,7 @@ const Home = () => {
   return (
     <>
       {/* Header Section */}
-      <header className="carRentalNavbar">
+      <header className="carRentalNavbar" Style='background: linear-gradient(180deg, #ebf7ff 0%, #fdf5eb 100%)'>
         <div className="container">
           <Navbar dataOne={windowScroll} />
         </div>
