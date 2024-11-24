@@ -130,16 +130,7 @@ export default function Navbar(props) {
             </Link>
           </li>
         </nav>
-        <button
-          className="signInBtn"
-          onClick={() => {
-            //    <Routes>
-            //      <Route path="/login" element={<Login/>}></Route>
-            //    </Routes>
-          }}
-        >
-          Sign In
-        </button>
+        
         <button
           className="signUpBtn"
           onClick={() => {
@@ -148,7 +139,7 @@ export default function Navbar(props) {
             //   </Routes>
           }}
         >
-          Sign up
+        Logout
         </button>
       </div>
     </>
