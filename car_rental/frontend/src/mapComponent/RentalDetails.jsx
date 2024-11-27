@@ -1,6 +1,7 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import MapComponent from "./MapComponent";
+import './RentalDetails.css'
 
 const RentalDetails = () => {
   const [pickupLocation, setPickupLocation] = useState(null);
@@ -49,18 +50,20 @@ const RentalDetails = () => {
             },
           }
         );
-  
+
         const duration = response.data.features[0].properties.summary.duration;
         const distance = response.data.features[0].properties.summary.distance;
         alert(
-          `Estimated Travel Time: ${(duration / 60).toFixed(2)} minutes\nDistance: ${(distance / 1000).toFixed(2)} km`
+          `Estimated Travel Time: ${(duration / 60).toFixed(
+            2
+          )} minutes\nDistance: ${(distance / 1000).toFixed(2)} km`
         );
       } catch (error) {
         console.error("Error fetching travel time:", error);
       }
     }
   };
-  
+
   // Call this function when both pickup and drop-off locations are set
   useEffect(() => {
     if (pickupLocation && dropoffLocation) fetchTravelTime();
@@ -68,8 +71,8 @@ const RentalDetails = () => {
 
   return (
     <div>
-      <h1>Rental Details</h1>
-      <p>
+      <h1 className="rentalHeading">Pickup Your Location</h1>
+      <p className="rentalPara">
         {pickupAddress
           ? `Pickup Location: ${pickupAddress}`
           : "Click on the map to set the pickup location."}
@@ -92,6 +95,3 @@ const RentalDetails = () => {
 };
 
 export default RentalDetails;
-
-
-

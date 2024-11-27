@@ -50,7 +50,10 @@ const Home = () => {
   return (
     <>
       {/* Header Section */}
-      <header className="carRentalNavbar" Style='background: linear-gradient(180deg, #ebf7ff 0%, #fdf5eb 100%)'>
+      <header
+        className="carRentalNavbar"
+        Style="background: linear-gradient(180deg, #ebf7ff 0%, #fdf5eb 100%)"
+      >
         <div className="container">
           <Navbar dataOne={windowScroll} />
         </div>
@@ -67,10 +70,7 @@ const Home = () => {
                 Get a car wherever and whenever you need it with your IOS and
                 Android device.
               </p>
-              <div
-                className="mobileApplicationLinks"
-                data-aos="fade-up"
-              >
+              <div className="mobileApplicationLinks" data-aos="fade-up">
                 <Link to="">
                   <div className="googlePlayLink">
                     <div className="googlePlayIcon">
@@ -106,7 +106,6 @@ const Home = () => {
                 src={bannerLogo}
                 alt="banner logo"
               />
-              
             </div>
           </div>
         </div>
@@ -309,7 +308,7 @@ const Home = () => {
               Most popular cars rental deals
             </h2>
             <div className="popularDealsWrapper">
-               {/* First row */}
+              {/* First row */}
               <div
                 className="popularDealsCard"
                 data-aos="fade-up"
@@ -826,11 +825,11 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* Map Section. */}
       <section className="map">
         <div className="container">
-        <RentalDetails />
+          <RentalDetails />
         </div>
-        
       </section>
 
       {/* Footer Declaration */}
