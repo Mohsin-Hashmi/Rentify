@@ -34,6 +34,7 @@ import doorsIcon from "../assets/images/doorsIcon.webp";
 import ShowCarsModal from "../showCarsModal/ShowCarsModal.jsx";
 import Footer from "../footer/Footer.jsx";
 import SwiperCom from "../swiperCom/SwiperCom.jsx";
+import RentalDetails from "../mapComponent/RentalDetails.jsx";
 const Home = () => {
   const windowScroll = () => {
     window.scrollTo(0, 0);
@@ -824,6 +825,12 @@ const Home = () => {
             <SwiperCom />
           </div>
         </div>
+      </section>
+      <section className="map">
+        <div className="container">
+        <RentalDetails />
+        </div>
+        
       </section>
 
       {/* Footer Declaration */}

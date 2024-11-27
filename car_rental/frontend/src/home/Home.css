@@ -123,7 +123,7 @@
   background-color: #f8fcff;
 }
 .wrokProcessWrap {
-  padding: 70px 0;
+  padding: 100px 0;
 }
 .wrokProcessWrapPara {
   max-width: 253px;
@@ -502,6 +502,9 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+.map{
+  padding: 50px 0;
+}
 /* media queries  start here */
 @media (max-width: 1169px) {
   .bannerImg {
@@ -675,7 +678,9 @@
   .cardSeperator {
     display: none;
   }
-
+  .searchCar{
+   margin: 70px 0;
+  }
   .workProcessHeading {
     margin-bottom: 30px;
   }
@@ -696,7 +701,7 @@
   }
 
   .wrokProcessWrap {
-    padding-bottom: unset;
+    padding-bottom: 60px 0;
   }
 
   .workProcessHeading {
@@ -727,6 +732,9 @@
 
   .ourFeaturesWrap {
     padding-bottom: unset;
+  }
+  .ourFeaturesWrap{
+    padding: unset;
   }
 }
 
