@@ -14,6 +14,7 @@ import ProtectedRoute from "./context/ProtectedRoute.js";
 
 export default function App() {
   return (
+    <>
     <Router> {/* Make Router the outermost wrapper */}
       <AuthProvider> {/* AuthProvider is inside Router */}
         <Routes>
@@ -66,6 +67,7 @@ export default function App() {
         </Routes>
       </AuthProvider>
     </Router>
+    </>
   );
 }
 
