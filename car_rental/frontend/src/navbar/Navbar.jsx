@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../navbar/Navbar.css";
 import { Link } from "react-router-dom";
+import DarkMode from "../darkMode/DarkMode";
 // import { Route, Routes, useNavigate } from "react-router-dom";
 
 import rentcarlogo from "../assets/images/rentcarlogo.webp";
@@ -141,6 +142,7 @@ export default function Navbar(props) {
         >
         Logout
         </button>
+        <DarkMode/>
       </div>
     </>
   );
