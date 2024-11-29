@@ -10,8 +10,27 @@ const DarkMode = () => {
     localStorage.setItem("theme", "light");
     document.documentElement.setAttribute("data-theme", "light");
   };
-  const storedItem= localStorage.getItem("theme");
+  const storedTheme= localStorage.getItem("theme");
 
+
+  const prefersDark =
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+const defaultDark =
+  storedTheme === "dark" || (storedTheme === null && prefersDark);
+
+if (defaultDark) {
+  setDark();
+}
+
+const toggleTheme: ChangeEventHandler<HTMLInputElement> = (e) => {
+  if (e.target.checked) {
+    setDark();
+  } else {
+    setLight();
+  }
+};
   
   return(
     <>
