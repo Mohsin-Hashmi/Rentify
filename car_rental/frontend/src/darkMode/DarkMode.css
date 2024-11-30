@@ -1,12 +1,14 @@
 :root {
   --bg-color-light: #f8fcff;
   --bg-color-white: #ffffff;
+  --bg-swiper-color: #f9f9f9;
   --bg-gradient: linear-gradient(180deg, #ebf7ff 0%, #fdf5eb 100%);
 }
 
 [data-theme="dark"] {
   --bg-color-light: #121212;
   --bg-color-white: #121212;
+  --bg-swiper-color: #121212;
   --bg-color: #ffffff;
   --bg-gradient: linear-gradient(180deg, #121212 0%, #121212 100%);
 }
@@ -26,7 +28,9 @@
 .map {
   background-color: var(--bg-color-white);
 }
-
+.swiperWrap {
+  background-color: var(--bg-swiper-color);
+}
 .rentcarBanner,
 .carRentalNavbarWrapper {
   background: var(--bg-gradient);
@@ -38,10 +42,16 @@
 .workProcessHeading,
 .boxCard h4,
 .ourOffersHeading,
-.contentCardParas h3 {
+.contentCardParas h3,
+.popularDealsHeading,
+.carName,
+.carRating h4,
+.userReviewsWrap h2,
+.rentalHeading {
   color: var(--bg-color);
 }
-.rentcarBannerWrapperContent .bannerPara {
+.rentcarBannerWrapperContent .bannerPara,
+.ourPrice p {
   color: var(--bg-color);
 }
 .cardContent h5 {
