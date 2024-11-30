@@ -7,6 +7,7 @@
 [data-theme="dark"] {
   --bg-color-light: #121212;
   --bg-color-white: #121212;
+  --bg-color: #ffffff;
   --bg-gradient: linear-gradient(180deg, #121212 0%, #121212 100%);
 }
 
@@ -26,6 +27,23 @@
   background-color: var(--bg-color-white);
 }
 
-.rentcarBanner {
+.rentcarBanner,
+.carRentalNavbarWrapper {
   background: var(--bg-gradient);
+}
+.navbarOptions li a {
+  color: var(--bg-color);
+}
+.rentcarBannerWrapperContent h1,
+.workProcessHeading,
+.boxCard h4,
+.ourOffersHeading,
+.contentCardParas h3 {
+  color: var(--bg-color);
+}
+.rentcarBannerWrapperContent .bannerPara {
+  color: var(--bg-color);
+}
+.cardContent h5 {
+  color: var(--bg-color);
 }

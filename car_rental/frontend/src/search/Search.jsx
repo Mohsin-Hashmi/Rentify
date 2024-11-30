@@ -3,6 +3,7 @@ import "./Search.css";
 import locationIcon from "../assets/images/location.webp";
 import calendarIcon from "../assets/images/calendar.webp";
 import Modal from "../modal/CarRentalApp.jsx";
+
 const Search = () => {
   return (
     <>
@@ -43,6 +44,7 @@ const Search = () => {
         </div>
         {/* Search Button */}
         <Modal />
+        
       </div>
     </>
   );

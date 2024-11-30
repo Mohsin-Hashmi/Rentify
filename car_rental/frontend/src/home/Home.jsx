@@ -1,6 +1,7 @@
 import "../home/Home.css";
 import "../global/container.css";
 import "../global/fonts.css";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
