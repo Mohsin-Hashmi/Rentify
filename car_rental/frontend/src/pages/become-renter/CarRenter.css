@@ -1,6 +1,8 @@
+
 .carRenter {
   padding: 130px 0;
   background-color: #F8FCFF;
+  background-color: var(--bg-color-light);
 }
 /* Form Container */
 .form-container {
@@ -15,6 +17,7 @@
   font-size: 40px;
   color: #242424;
   text-align: center;
+  color: var(--bg-color);
 }
 /* Form Header */
 .form-container h1 {

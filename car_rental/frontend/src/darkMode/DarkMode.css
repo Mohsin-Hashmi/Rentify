@@ -1,9 +1,12 @@
+
+
 :root {
   --bg-color-light: #f8fcff;
   --bg-color-white: #ffffff;
   --bg-swiper-color: #f9f9f9;
   --bg-gradient: linear-gradient(180deg, #ebf7ff 0%, #fdf5eb 100%);
 }
+
 
 [data-theme="dark"] {
   --bg-color-light: #121212;
@@ -13,9 +16,10 @@
   --bg-gradient: linear-gradient(180deg, #121212 0%, #121212 100%);
 }
 [data-theme="dark"] .rentcarBannerWrapperImage {
-  background-image: url(../assets/images/blueCar-transformed.webp);
+  background-image: url(../assets//images/blueCar-transformed.webp);
 
 }
+
 
 .wrokProcess,
 .popularDeals,

@@ -2,6 +2,7 @@
 .workProcess{
   background-color: #F8FCFF;
   padding: 130px 0;
+  background-color: var(--bg-color-light);
 }
 
 .processHeading {
