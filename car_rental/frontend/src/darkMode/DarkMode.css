@@ -65,3 +65,91 @@
 .cardContent h5 {
   color: var(--bg-color);
 }
+
+
+/* Container for the toggle switch */
+.toggle-theme-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* The switch container */
+.toggle-theme {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+/* Hide the checkbox */
+.toggle-theme input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 30px;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+/* Show icons inside the slider */
+.icon {
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.sun {
+  color: #ffc107;
+  position: absolute;
+  left: 10px;
+}
+
+.moon {
+  color: #212121;
+  position: absolute;
+  right: 10px;
+}
+
+/* Move the toggle when checked */
+input:checked + .slider {
+  background-color: #121212;
+  border:1px solid #ffffff;
+}
+
+input:checked + .slider::before {
+  transform: translateX(30px);
+}
+
+input:checked + .slider .moon {
+  color: #fff;
+}
+
+input:checked + .slider .sun {
+  color: #212121;
+}

@@ -24,17 +24,19 @@
   font-size: 40px;
   color: #242424;
   text-align: center;
+  color: var(--bg-color);
 }
 .chooseUsSubHeading {
   margin: 20px 0;
   font-size: 24px;
   color: #242424;
-  
+  color: var(--bg-color);
 }
 .chooseUsPara {
   font-size: 17px;
   line-height: 28px;
   color: #272727;
+  color: var(--bg-color);
 }
 .carRentalNavbarWrapper{
     background-color: #ffffff;

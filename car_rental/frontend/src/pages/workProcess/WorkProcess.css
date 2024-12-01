@@ -9,6 +9,7 @@
   font-size: 40px;
   color: #242424;
   text-align: center;
+  color: var(--bg-color);
 }
 .workProcessCards {
   max-width: 450px;
@@ -29,11 +30,14 @@
     box-shadow: 0 0 0 13px rgba(0, 171, 240, 0);
   }
 }
-
+.workProcessCards h2{
+  color: var(--bg-color);
+}
 .workProcessCards p {
   font-size: 15px;
   color: #272727;
   margin: 10px 0;
+  color: var(--bg-color);
 }
 
 .workProcessCards ul {
@@ -42,6 +46,7 @@
 .workProcessCards ul li {
   font-size: 15px;
   margin: 0 0 8px 0;
+  color: var(--bg-color);
 }
 .cards {
   display: flex;
