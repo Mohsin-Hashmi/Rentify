@@ -5,9 +5,9 @@
 }
 
 .rentcarBanner {
-  background: linear-gradient(180deg, #ebf7ff 0%, #fdf5eb 100%);
   height: 100vh;
   position: relative;
+  background-color: var(--bg-gradient);
 }
 .rentcarBanner::before {
   content: "";
@@ -64,6 +64,7 @@
   font-size: 47px;
   color: #242424;
   position: relative;
+  color: var(--bg-color);
 }
 
 .rentcarBannerWrapperContent h1 span {
@@ -83,9 +84,10 @@
 }
 
 .rentcarBannerWrapperContent .bannerPara {
-  font-weight: 18px;
+  font-weight: 18;
   line-height: 150%;
   color: #272727;
+  color: var(--bg-color);
   margin: 40px 0;
 }
 
@@ -121,6 +123,7 @@
 
 .wrokProcess {
   background-color: #f8fcff;
+  background-color: var(--bg-color-light);
 }
 .wrokProcessWrap {
   padding: 100px 0;
@@ -144,6 +147,7 @@
   margin: 32px 0 80px;
   font-size: 38px;
   color: #333333;
+  color: var(--bg-color);
 }
 
 .wrokProcessBox {
@@ -158,6 +162,7 @@
   max-width: 230px;
   width: 100%;
   text-align: center;
+  
 }
 
 .boxCard img {
@@ -169,6 +174,7 @@
   margin: 40px 0 24px;
   font-size: 20px;
   color: #333333;
+  color: var(--bg-color);
 }
 
 .boxCard p {
@@ -241,6 +247,7 @@
   font-size: 28px;
   color: #333333;
   margin: 32px 0 35px;
+  color: var(--bg-color);
 }
 
 .ourOffersContent {
@@ -288,6 +295,7 @@
 }
 .popularDeals {
   background-color: #f8fcff;
+  background-color: var(--bg-color-light);
 }
 .popularDealsWrap {
   padding: 70px 0;
@@ -312,6 +320,7 @@
   font-size: 38px;
   margin: 24px 0 50px;
   color: #333333;
+  color: var(--bg-color);
 }
 
 .popularDealsWrapper {
@@ -342,6 +351,7 @@
   font-size: 18px;
   color: #262626;
   margin: 25px 0 0 0;
+  color: var(--bg-color);
 }
 
 .carRating {
@@ -471,6 +481,7 @@
   font-size: 38px;
   margin: 24px 0 0 0;
   color: #333333;
+  color: var(--bg-color);
 }
 
 .swiperWrap {

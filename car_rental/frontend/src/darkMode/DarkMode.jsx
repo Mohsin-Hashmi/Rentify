@@ -43,7 +43,7 @@ const DarkMode = () => {
           defaultChecked={defaultDark}
         />
         <span className="slider">
-         
+    
         </span>
       </label>
     </div>

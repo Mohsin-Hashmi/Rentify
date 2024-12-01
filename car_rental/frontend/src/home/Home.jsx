@@ -36,7 +36,6 @@ import ShowCarsModal from "../showCarsModal/ShowCarsModal.jsx";
 import Footer from "../footer/Footer.jsx";
 import SwiperCom from "../swiperCom/SwiperCom.jsx";
 import RentalDetails from "../mapComponent/RentalDetails.jsx";
-
 const Home = () => {
   const windowScroll = () => {
     window.scrollTo(0, 0);
@@ -51,6 +50,7 @@ const Home = () => {
 
   return (
     <>
+   
       {/* Header Section */}
       <header
         className="carRentalNavbar"

@@ -114,6 +114,7 @@
   font-size: 16px;
   color: #292929;
   font-weight: bold;
+  color: var(--bg-color);
 }
 
 .ourPrice p span {

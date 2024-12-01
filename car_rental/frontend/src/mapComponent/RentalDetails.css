@@ -1,6 +1,7 @@
 .rentalHeading{
     font-size: 38px;
     color: #333333;
+    color: var(--bg-color);
 
 }
 .rentalPara{

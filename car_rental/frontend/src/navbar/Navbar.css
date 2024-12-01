@@ -38,6 +38,7 @@
   text-decoration: none;
   color: #484848;
   font-size: 16px;
+  color: var(--bg-color);
 }
 .navbarOptions li a:hover {
   color: #1572d3;
