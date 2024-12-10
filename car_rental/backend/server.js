@@ -1,23 +1,29 @@
-import express from 'express';
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
-import cors from 'cors';
-import authRoutes from './routes/auth.js'; // Import your auth routes
-
+import express from "express";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+import cors from "cors";
+import authRoutes from "./routes/auth.js"; // Import your auth routes
+import cookieParser from "cookie-parser";
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware
-app.use(cors({
-  origin: "http://localhost:3000", // Replace with your frontend URL
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true,
-}));
-app.use(express.json()); // Parse JSON request bodies
+app.use(
+  cors({
+    origin: "http://localhost:3000" /**Frontend origin */,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
+app.use(express.json());
+app.use(cookieParser());
 
-// MongoDB connection function
+app.use("/", authRoutes); 
+
+
+
+
 const connect = async () => {
   try {
     await mongoose.connect(process.env.MONGO_URI);
@@ -26,14 +32,6 @@ const connect = async () => {
     console.log("MongoDB connection error:", err);
   }
 };
-
-// Basic route
-app.get("/", (req, res) => {
-  res.send("Welcome to the backend!");
-});
-
-// Use auth routes
-app.use('/api/auth', authRoutes); // Add this line to use the auth routes
 
 // Start the server and connect to MongoDB
 app.listen(PORT, () => {

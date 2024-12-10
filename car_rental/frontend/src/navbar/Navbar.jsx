@@ -25,6 +25,14 @@ export default function Navbar(props) {
     };
   }, []);
 
+  const handleLogout= async ()=>{
+    try{
+      await fetch()
+    }catch(err){
+      console.log(err.message)
+    }
+  }
+
   return (
     // Navbar code starts Here.
     <>
@@ -131,18 +139,9 @@ export default function Navbar(props) {
             </Link>
           </li>
         </nav>
-        
-        <button
-          className="signUpBtn"
-          onClick={() => {
-            //     <Routes>
-            //     <Route path="/register" element={<Signup/>}></Route>
-            //   </Routes>
-          }}
-        >
-        Logout
-        </button>
-        <DarkMode/>
+
+        <button className="signUpBtn">Logout</button>
+        <DarkMode />
       </div>
     </>
   );
