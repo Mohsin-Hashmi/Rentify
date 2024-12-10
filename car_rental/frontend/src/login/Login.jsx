@@ -127,7 +127,7 @@ const Login = () => {
         </label>
 
         {loginError && <p style={{ color: "red" }}>{loginError}</p>} 
-        {success && <p className="successMessage">{success}</p>} Success message
+        {success && <p className="successMessage">{success}</p>} 
       </form>
 
       <Link className="forgetPassLink" >Forgot your password?</Link>

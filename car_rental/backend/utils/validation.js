@@ -12,16 +12,15 @@ const validateCarsInfo = (req) => {
 
   if (
     !carName ||
-    carImage ||
-    pricePerDay ||
-    carLocation ||
-    description ||
-    availabilityFrom ||
-    availabilityTo ||
-    contactNumber
+    !carImage ||
+    !pricePerDay ||
+    !carLocation ||
+    !description ||
+    !availabilityFrom ||
+    !availabilityTo ||
+    !contactNumber
   ) {
     throw new Error("All fields are required")
   }
 };
-
-export default validateCarsInfo;
+module.exports= validateCarsInfo;

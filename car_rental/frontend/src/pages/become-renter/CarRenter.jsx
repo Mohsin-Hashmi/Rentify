@@ -21,19 +21,19 @@ const CarRenter = () => {
     
     try {
       e.preventDefault();
+      const formData = new FormData();
+      formData.append("carName", carName);
+      formData.append("carImage", carImage); // Ensure this contains the file object
+      formData.append("pricePerDay", pricePerDay);
+      formData.append("carLocation", carLocation);
+      formData.append("description", description);
+      formData.append("availabilityFrom", availabilityFrom);
+      formData.append("availabilityTo", availabilityTo);
+      formData.append("contactNumber", contactNumber);
       const response = await fetch(BASE_URL + "/rentCar", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          carName,
-          carImage,
-          pricePerDay,
-          carLocation,
-          description,
-          availabilityFrom,
-          availabilityTo,
-          contactNumber,
-        }),
+        body: formData,
         credentials: "include",
       });
 
@@ -67,6 +67,8 @@ const CarRenter = () => {
                 <label htmlFor="carName">Car Name</label>
                 <input
                   type="text"
+                  value={carName}
+                  onChange={(e) => setCarName(e.target.value)}
                   id="carName"
                   name="carName"
                   placeholder="Enter your car name"
@@ -80,6 +82,8 @@ const CarRenter = () => {
                 <input
                   type="number"
                   id="carPrice"
+                  value={pricePerDay}
+                  onChange={(e) => setPricePerDay(e.target.value)}
                   name="carPrice"
                   placeholder="Enter rent price"
                   required
@@ -92,6 +96,8 @@ const CarRenter = () => {
                 <input
                   type="text"
                   id="carLocation"
+                  value={carLocation}
+                  onChange={(e) => setCarLocation(e.target.value)}
                   name="carLocation"
                   placeholder="Enter your location"
                   required
@@ -105,6 +111,8 @@ const CarRenter = () => {
                   className="chooseFile"
                   type="file"
                   id="carImage"
+                  value={carImage}
+                  onChange={(e) => setCarImage(e.target.value)}
                   name="carImage"
                   accept="image/*"
                   required
@@ -117,6 +125,8 @@ const CarRenter = () => {
                 <textarea
                   id="carDescription"
                   name="carDescription"
+                  value={description}
+                  onChange={(e) => setDescription(e.target.value)}
                   rows="4"
                   placeholder="Describe your car..."
                   required
@@ -127,12 +137,12 @@ const CarRenter = () => {
               <div class="form-group dateWraper">
                 <div className="dateInputs">
                   <label htmlFor="availability">Availability To</label>
-                  <input type="date" id="startDate" name="startDate" required />
+                  <input type="date" id="startDate" value={availabilityFrom}  onChange={(e) => setAvailabilityFrom(e.target.value)} name="startDate" required />
                 </div>
 
                 <div className="dateInputs">
                   <label htmlFor="availability">Availability From</label>
-                  <input type="date" id="endDate" name="endDate" required />
+                  <input type="date" id="endDate" value={availabilityTo}  onChange={(e) => setAvailabilityTo(e.target.value)} name="endDate" required />
                 </div>
               </div>
 
@@ -142,6 +152,8 @@ const CarRenter = () => {
                 <input
                   type="tel"
                   id="contactNumber"
+                  value={contactNumber}
+                  onChange={(e) => setContactNumber(e.target.value)}
                   name="contactNumber"
                   placeholder="Enter your phone number"
                   required

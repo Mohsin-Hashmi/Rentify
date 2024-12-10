@@ -1,11 +1,11 @@
-import express from "express";
-import userAuth from "../middlewares/auth";
-import RentCars from "../models/rentCars";
-import validateCarsInfo from "../utils/validation"
 
+const express= require('express');
+const userAuth= require('../middlewares/auth');
+const RentCars= require('../models/rentCars');
+const validateCarsInfo = require('../utils/validation');
 const rentalCarRouter = express.Router();
 
-rentalCarRouter.post("/rentCar", userAuth, async (req, res) => {
+rentalCarRouter.post("/rentCar",userAuth,  async (req, res) => {
     
   try {
    
@@ -40,4 +40,5 @@ rentalCarRouter.post("/rentCar", userAuth, async (req, res) => {
   }
 });
 
-export default rentalCarRouter;
+module.exports= rentalCarRouter;
+

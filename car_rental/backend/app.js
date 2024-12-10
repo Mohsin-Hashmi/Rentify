@@ -1,10 +1,12 @@
-import express from "express";
-import mongoose from "mongoose";
-import dotenv from "dotenv";
-import cors from "cors";
-import authRoutes from "./routes/auth.js"; // Import your auth routes
-import rentalCarRouter from "./routes/rentalCar.js";
-import cookieParser from "cookie-parser";
+
+const express= require('express');
+const mongoose = require('mongoose');
+const dotenv= require('dotenv');
+const cors= require('cors');
+const authRoutes= require('./routes/auth.js');
+const rentalCarRouter= require('./routes/rentalCar.js');
+const cookieParser= require('cookie-parser');
+
 dotenv.config();
 
 const app = express();

@@ -1,5 +1,7 @@
-import mongoose from "mongoose";
+const mongoose= require('mongoose');
+
 const rentCars = new mongoose.Schema({
+  
   carName: {
     type: String,
     required: true,
@@ -35,8 +37,9 @@ const rentCars = new mongoose.Schema({
     required: true,
     match: /^[0-9]{10,15}$/, // Validate phone number format (10 to 15 digits)
   },
-});
+},{ timestamps: true });
 
 const RentCars = mongoose.model("RentCars", rentCars);
 
-export default RentCars;
+module.exports= RentCars;
+
