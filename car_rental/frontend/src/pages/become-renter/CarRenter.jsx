@@ -1,10 +1,54 @@
-import React from "react";
+/* eslint-disable no-unused-vars */
+import React, { useState } from "react";
 import Navbar from "../../navbar/Navbar";
 import Footer from "../../footer/Footer";
 import "../../global/container.css";
 import "../../global/fonts.css";
 import "./CarRenter.css";
+import { BASE_URL } from "../../utils/constants";
+
 const CarRenter = () => {
+  const [carName, setCarName] = useState("");
+  const [carImage, setCarImage] = useState("");
+  const [pricePerDay, setPricePerDay] = useState("");
+  const [carLocation, setCarLocation] = useState("");
+  const [description, setDescription] = useState("");
+  const [availabilityFrom, setAvailabilityFrom] = useState("");
+  const [availabilityTo, setAvailabilityTo] = useState("");
+  const [contactNumber, setContactNumber] = useState("");
+
+  const handleSubmit = async (e) => {
+    
+    try {
+      e.preventDefault();
+      const response = await fetch(BASE_URL + "/rentCar", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          carName,
+          carImage,
+          pricePerDay,
+          carLocation,
+          description,
+          availabilityFrom,
+          availabilityTo,
+          contactNumber,
+        }),
+        credentials: "include",
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+
+        throw new Error(errorData.message || "Invalid Credentials");
+      }
+      const user = await response.json();
+      // Store token in localStorage
+      localStorage.setItem("token", user.token);
+    } catch (err) {
+      console.log(err);
+    }
+  };
   return (
     <>
       {/* Header Section */}
@@ -17,7 +61,7 @@ const CarRenter = () => {
         <div className="container">
           <div className="carRenterWrap">
             <h1 className="carRenterHeading">Rent Your Car</h1>
-            <form id="rentalForm">
+            <form onSubmit={handleSubmit} id="rentalForm">
               {/* <!-- Car Name --> */}
               <div class="form-group">
                 <label htmlFor="carName">Car Name</label>

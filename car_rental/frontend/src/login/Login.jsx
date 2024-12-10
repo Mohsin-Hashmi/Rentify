@@ -6,6 +6,7 @@ import googleIcon from "../assets/images/googleIcon.webp";
 import facebookIcon from "../assets/images/facebookIcon.webp";
 import appleIcon from "../assets/images/appleIcon.webp";
 import { useAuth } from "../context/AuthContext"; // Import useAuth to use the auth context
+import { BASE_URL } from "../utils/constants";
 
 const Login = () => {
   const [password, setPassword] = useState("");
@@ -55,11 +56,12 @@ const Login = () => {
     if (validateForm()) {
       try {
         // Make the API call
-        const response = await fetch("http://localhost:5000/login", {
+        const response = await fetch(BASE_URL + "/login", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email, password }),
-        });
+          credentials: "include",
+      });
 
         if (!response.ok) {
           const errorData = await response.json();

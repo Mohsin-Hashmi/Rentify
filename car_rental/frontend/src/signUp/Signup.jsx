@@ -6,6 +6,7 @@ import googleIcon from "../assets/images/googleIcon.webp";
 import facebookIcon from "../assets/images/facebookIcon.webp";
 import appleIcon from "../assets/images/appleIcon.webp";
 import axios from "axios";
+import { BASE_URL } from "../utils/constants";
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -35,12 +36,13 @@ const Signup = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:5000/register", {
+      const res = await axios.post( BASE_URL + "/register", {
         email,
         password,
       });
+    
       console.log("Register response:", res.data);
-      setSuccess("User registered successfully!"); // Success feedback
+      
       localStorage.setItem("isAuthenticated", "true"); // Optional: Track authentication
 
       // Navigate to home page

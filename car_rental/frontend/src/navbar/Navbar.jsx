@@ -2,14 +2,19 @@ import React, { useEffect, useState } from "react";
 import "../navbar/Navbar.css";
 import { Link } from "react-router-dom";
 import DarkMode from "../darkMode/DarkMode";
-// import { Route, Routes, useNavigate } from "react-router-dom";
-
+import { BASE_URL } from "../utils/constants";
+import { useNavigate } from "react-router-dom";
 import rentcarlogo from "../assets/images/rentcarlogo.webp";
 import hamburgerIcon from "../assets/images/hamburger-icon-logo.webp";
 import crossIcon from "../assets/images/closeIcon.webp";
 export default function Navbar(props) {
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
 
+
+  /**
+   * Function Starts here
+   */
   const handleScroll = () => {
     const scrollY = window.scrollY;
     if (scrollY > 10) {
@@ -25,16 +30,19 @@ export default function Navbar(props) {
     };
   }, []);
 
-  const handleLogout= async ()=>{
-    try{
-      await fetch()
-    }catch(err){
-      console.log(err.message)
+  const handleLogout = async () => {
+    try {
+      await fetch(BASE_URL + "/login", {
+        method: "POST",
+        credentials: "include",
+      });
+      navigate("/login");
+    } catch (err) {
+      console.log(err.message);
     }
-  }
+  };
 
   return (
-    // Navbar code starts Here.
     <>
       <div className={`carRentalNavbarWrapper  ${scrolled ? "scrolled" : ""}`}>
         <Link
@@ -140,7 +148,7 @@ export default function Navbar(props) {
           </li>
         </nav>
 
-        <button className="signUpBtn">Logout</button>
+        <button className="signUpBtn" onClick={handleLogout}>Logout</button>
         <DarkMode />
       </div>
     </>

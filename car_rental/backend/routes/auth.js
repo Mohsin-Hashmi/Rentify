@@ -59,6 +59,9 @@ router.post("/logout", (req, res) => {
     res.cookie("token", null, {
       expires: new Date(Date.now()),
     });
+    res.json({
+      message: "user logged out successfully"
+    })
   } catch (err) {
     res.status(400).json("ERROR: " + err.message);
   }

@@ -3,26 +3,25 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
 import authRoutes from "./routes/auth.js"; // Import your auth routes
+import rentalCarRouter from "./routes/rentalCar.js";
 import cookieParser from "cookie-parser";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 4000;
 
 app.use(
   cors({
     origin: "http://localhost:3000" /**Frontend origin */,
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "DELETE","PATCH"],
     credentials: true,
   })
 );
 app.use(express.json());
 app.use(cookieParser());
 
-app.use("/", authRoutes); 
-
-
-
+app.use("/", authRoutes);
+app.use("/", rentalCarRouter);
 
 const connect = async () => {
   try {
