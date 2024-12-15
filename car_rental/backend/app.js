@@ -1,11 +1,11 @@
-
-const express= require('express');
-const mongoose = require('mongoose');
-const dotenv= require('dotenv');
-const cors= require('cors');
-const authRoutes= require('./routes/auth.js');
-const rentalCarRouter= require('./routes/rentalCar.js');
-const cookieParser= require('cookie-parser');
+const express = require("express");
+const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+const cors = require("cors");
+const multer = require("multer");
+const authRoutes = require("./routes/auth.js");
+const rentalCarRouter = require("./routes/rentalCar.js");
+const cookieParser = require("cookie-parser");
 
 dotenv.config();
 
@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 4000;
 app.use(
   cors({
     origin: "http://localhost:3000" /**Frontend origin */,
-    methods: ["GET", "POST", "PUT", "DELETE","PATCH"],
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     credentials: true,
   })
 );

@@ -37,6 +37,7 @@ const rentCars = new mongoose.Schema({
     required: true,
     match: /^[0-9]{10,15}$/, // Validate phone number format (10 to 15 digits)
   },
+ 
 },{ timestamps: true });
 
 const RentCars = mongoose.model("RentCars", rentCars);

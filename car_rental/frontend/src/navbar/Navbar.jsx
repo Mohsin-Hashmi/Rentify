@@ -7,11 +7,10 @@ import { useNavigate } from "react-router-dom";
 import rentcarlogo from "../assets/images/rentcarlogo.webp";
 import hamburgerIcon from "../assets/images/hamburger-icon-logo.webp";
 import crossIcon from "../assets/images/closeIcon.webp";
+
 export default function Navbar(props) {
   const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
-
-
   /**
    * Function Starts here
    */
@@ -50,7 +49,7 @@ export default function Navbar(props) {
           className="rentCarLogo"
           onClick={() => props.dataOne && props.dataOne()}
         >
-          <img src={rentcarlogo} alt="rent car logo" />
+        <img src={rentcarlogo} alt="rent car logo" />
         </Link>
         <div className="hamburger">
           {/* Hamburger Icon */}
@@ -106,6 +105,7 @@ export default function Navbar(props) {
                 </Link>
               </li>
             </ul>
+            
             <div className="hambugerButtons">
               <button className="hanburgerSignInBtn">Sign In</button>
               <button className="hanburgerSignUpBtn">Sign up</button>
@@ -149,7 +149,7 @@ export default function Navbar(props) {
         </nav>
 
         <button className="signUpBtn" onClick={handleLogout}>Logout</button>
-        <DarkMode />
+        <DarkMode className="darkMode" />
       </div>
     </>
   );

@@ -14,9 +14,8 @@ const userAuth = async (req, res, next) => {
     if (!decodedObj) {
       throw new Error("Invalid token");
     }
-    const { _id } = decodedObj;
-
-    const user = await User.findById(_id);
+    const  {id}  = decodedObj;
+    const user = await User.findById(id);
     if (!user) {
       throw new Error("User Not Found");
     }

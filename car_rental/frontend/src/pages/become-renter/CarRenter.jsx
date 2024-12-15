@@ -32,14 +32,13 @@ const CarRenter = () => {
       formData.append("contactNumber", contactNumber);
       const response = await fetch(BASE_URL + "/rentCar", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
         body: formData,
         credentials: "include",
       });
 
       if (!response.ok) {
         const errorData = await response.json();
-
+        console.log(errorData);
         throw new Error(errorData.message || "Invalid Credentials");
       }
       const user = await response.json();
@@ -112,10 +111,10 @@ const CarRenter = () => {
                   type="file"
                   id="carImage"
                   value={carImage}
-                  onChange={(e) => setCarImage(e.target.value)}
+                  onChange={(e) => setCarImage(e.target.files)}
                   name="carImage"
                   accept="image/*"
-                  required
+                  
                 />
               </div>
 

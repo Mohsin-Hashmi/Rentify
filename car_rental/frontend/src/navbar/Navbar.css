@@ -92,6 +92,9 @@
   transition: transform 0.4s ease;
   display: none;
 }
+.sideMenuWrap .darkModer {
+  display: block;
+}
 /* Media Queries */
 @media (max-width: 1169px) {
   .navbarOptions {
@@ -176,6 +179,9 @@
     font-size: 15px;
 
     color: #1572d3;
+  }
+  .darkMode{
+    display: none;
   }
 }
 
