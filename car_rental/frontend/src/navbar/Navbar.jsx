@@ -148,8 +148,9 @@ export default function Navbar(props) {
           </li>
         </nav>
 
-        <button className="signUpBtn" onClick={handleLogout}>Logout</button>
+        
         <DarkMode className="darkMode" />
+        <button className="signUpBtn" onClick={handleLogout}>Logout</button>
       </div>
     </>
   );

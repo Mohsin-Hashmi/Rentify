@@ -1,4 +1,3 @@
-
 .carRentalNavbarWrapper {
   display: flex;
   align-items: center;
@@ -10,7 +9,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 15px 20px;
+  padding: 20px;
   background-color: #ffffff;
   transition: all 0.3s ease;
   border: none;
@@ -29,7 +28,6 @@
   display: flex;
   align-items: center;
   column-gap: 40px;
-  
 }
 .navbarOptions li {
   list-style: none;
@@ -60,7 +58,6 @@
   max-width: 120px;
   width: 100%;
   height: 45px;
-  margin: 0 0 0 30px;
   background-color: #1572d3;
   border: none;
   color: #ffffff;
@@ -83,7 +80,6 @@
 }
 .hamburgerButton {
   background-color: initial;
-
   border: none;
 }
 .sideMenuWrap {
@@ -164,7 +160,7 @@
     right: 10px;
     top: 5px;
     filter: brightness(0) saturate(100%) invert(100%) sepia(14%) saturate(448%)
-    hue-rotate(45deg) brightness(117%) contrast(104%);
+      hue-rotate(45deg) brightness(117%) contrast(104%);
   }
   .hambugerButtons {
     display: flex;
@@ -180,7 +176,7 @@
 
     color: #1572d3;
   }
-  .darkMode{
+  .darkMode {
     display: none;
   }
 }
