@@ -12,7 +12,7 @@ import WorkProcess from "../../frontend/src/pages/workProcess/WorkProcess.jsx";
 import CarRenter from "./pages/become-renter/CarRenter.jsx";
 import RentDeals from "./pages/rent-deals/RentDeals.jsx";
 import ProtectedRoute from "./context/ProtectedRoute.js";
-
+import CreateProfile from "./pages/create-profile/CreateProfile.jsx";
 export default function App() {
   return (
     <>
@@ -64,6 +64,14 @@ export default function App() {
               element={
                 <ProtectedRoute>
                   <RentDeals />
+                </ProtectedRoute>
+              }
+            />
+             <Route
+              path="/create-profile"
+              element={
+                <ProtectedRoute>
+                  <CreateProfile/>
                 </ProtectedRoute>
               }
             />

@@ -19,6 +19,11 @@
   text-align: center;
   color: var(--bg-color);
 }
+.carRenterWrap{
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+}
 /* Form Header */
 .form-container h1 {
   margin-bottom: 20px;

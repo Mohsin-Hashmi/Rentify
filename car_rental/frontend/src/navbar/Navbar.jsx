@@ -41,6 +41,9 @@ export default function Navbar(props) {
     }
   };
 
+  const handleCreateProfile= ()=>{
+    navigate('/create-profile')
+  }
   return (
     <>
       <div className={`carRentalNavbarWrapper  ${scrolled ? "scrolled" : ""}`}>
@@ -150,7 +153,9 @@ export default function Navbar(props) {
 
         
         <DarkMode className="darkMode" />
-        <button className="signUpBtn" onClick={handleLogout}>Logout</button>
+       
+        <button className="createProfile" onClick={handleCreateProfile}>Create Profile</button>
+         <button className="signUpBtn" onClick={handleLogout}>Logout</button>
       </div>
     </>
   );

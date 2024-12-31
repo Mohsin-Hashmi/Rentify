@@ -34,7 +34,7 @@ profileRouter.post('/profile/create/:id', userAuth, async(req,res)=>{
         }
         const{firstName, lastName, profileImage, about}= req.body;
 
-        const userProfile= await User.findByIdAndUpdate(userId,{
+        await User.findByIdAndUpdate(userId,{
             firstName,
             lastName,
             profileImage,
