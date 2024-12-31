@@ -5,6 +5,7 @@ const cors = require("cors");
 const multer = require("multer");
 const authRoutes = require("./routes/auth.js");
 const rentalCarRouter = require("./routes/rentalCar.js");
+const profileRouter= require('./routes/profile.js');
 const cookieParser = require("cookie-parser");
 
 dotenv.config();
@@ -24,6 +25,7 @@ app.use(cookieParser());
 
 app.use("/", authRoutes);
 app.use("/", rentalCarRouter);
+app.use("/", profileRouter);
 
 const connect = async () => {
   try {
