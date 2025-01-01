@@ -41,121 +41,128 @@ export default function Navbar(props) {
     }
   };
 
-  const handleCreateProfile= ()=>{
-    navigate('/create-profile')
-  }
+  const handleCreateProfile = () => {
+    navigate("/create-profile");
+  };
   return (
     <>
       <div className={`carRentalNavbarWrapper  ${scrolled ? "scrolled" : ""}`}>
-        <Link
-          to="/home"
-          className="rentCarLogo"
-          onClick={() => props.dataOne && props.dataOne()}
-        >
-        <img src={rentcarlogo} alt="rent car logo" />
-        </Link>
-        <div className="hamburger">
-          {/* Hamburger Icon */}
-          <button
-            className="hamburgerButton"
-            onClick={() => {
-              document.querySelector(".sideMenuWrap").style.display = "block";
-            }}
+        <div className="navbarOptions02">
+          <Link
+            to="/home"
+            className="rentCarLogo"
+            onClick={() => props.dataOne && props.dataOne()}
           >
-            <img src={hamburgerIcon} alt="hamburger icon" />
-          </button>
-          <div className="sideMenuWrap">
-            {/* close button */}
+            <img src={rentcarlogo} alt="rent car logo" />
+          </Link>
+          <div className="hamburger">
+            {/* Hamburger Icon */}
             <button
-              className="closeButton"
+              className="hamburgerButton"
               onClick={() => {
-                document.querySelector(".sideMenuWrap").style.display = "none";
+                document.querySelector(".sideMenuWrap").style.display = "block";
               }}
             >
-              <img src={crossIcon} alt="cross icon" />
+              <img src={hamburgerIcon} alt="hamburger icon" />
             </button>
-            <ul>
-              <li>
-                <Link
-                  to="/rent-car"
-                  onClick={() => props.dataOne && props.dataOne()}
-                >
-                  Become a renter
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/rent-deals"
-                  onClick={() => props.dataOne && props.dataOne()}
-                >
-                  Rental deals
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/workprocess"
-                  onClick={() => props.dataOne && props.dataOne()}
-                >
-                  How it work
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/chooseus"
-                  onClick={() => props.dataOne && props.dataOne()}
-                >
-                  Why choose us
-                </Link>
-              </li>
-            </ul>
-            
-            <div className="hambugerButtons">
-              <button className="hanburgerSignInBtn">Sign In</button>
-              <button className="hanburgerSignUpBtn">Sign up</button>
+            <div className="sideMenuWrap">
+              {/* close button */}
+              <button
+                className="closeButton"
+                onClick={() => {
+                  document.querySelector(".sideMenuWrap").style.display =
+                    "none";
+                }}
+              >
+                <img src={crossIcon} alt="cross icon" />
+              </button>
+              <ul>
+                <li>
+                  <Link
+                    to="/rent-car"
+                    onClick={() => props.dataOne && props.dataOne()}
+                  >
+                    Become a renter
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/rent-deals"
+                    onClick={() => props.dataOne && props.dataOne()}
+                  >
+                    Rental deals
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/workprocess"
+                    onClick={() => props.dataOne && props.dataOne()}
+                  >
+                    How it work
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/chooseus"
+                    onClick={() => props.dataOne && props.dataOne()}
+                  >
+                    Why choose us
+                  </Link>
+                </li>
+              </ul>
+
+              <div className="hambugerButtons">
+                <button className="hanburgerSignInBtn">Sign In</button>
+                <button className="hanburgerSignUpBtn">Sign up</button>
+              </div>
             </div>
           </div>
+
+          <nav className="navbarOptions">
+            <li>
+              <Link
+                to="/rent-car"
+                onClick={() => props.dataOne && props.dataOne()}
+              >
+                Become a renter
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/rent-deals"
+                onClick={() => props.dataOne && props.dataOne()}
+              >
+                Rental deals
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/workprocess"
+                onClick={() => props.dataOne && props.dataOne()}
+              >
+                How it work
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/chooseus"
+                onClick={() => props.dataOne && props.dataOne()}
+              >
+                Why choose us
+              </Link>
+            </li>
+          </nav>
         </div>
+        <div className="navbarBtns">
+          <DarkMode className="darkMode" />
 
-        <nav className="navbarOptions">
-          <li>
-            <Link
-              to="/rent-car"
-              onClick={() => props.dataOne && props.dataOne()}
-            >
-              Become a renter
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/rent-deals"
-              onClick={() => props.dataOne && props.dataOne()}
-            >
-              Rental deals
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/workprocess"
-              onClick={() => props.dataOne && props.dataOne()}
-            >
-              How it work
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/chooseus"
-              onClick={() => props.dataOne && props.dataOne()}
-            >
-              Why choose us
-            </Link>
-          </li>
-        </nav>
-
-        
-        <DarkMode className="darkMode" />
-       
-        <button className="createProfile" onClick={handleCreateProfile}>Create Profile</button>
-         <button className="signUpBtn" onClick={handleLogout}>Logout</button>
+          <button className="createProfile" onClick={handleCreateProfile}>
+            Create Profile
+          </button>
+          <button className="signUpBtn" onClick={handleLogout}>
+            Logout
+          </button>
+        </div>
       </div>
     </>
   );

@@ -25,7 +25,8 @@
 .carRenter,
 .rentDeals,
 .workProcess,
-.chooseUs {
+.chooseUs
+.createProfileSection {
   background-color: var(--bg-color-light);
 }
 
