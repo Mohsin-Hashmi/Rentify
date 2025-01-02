@@ -31,7 +31,7 @@ export default function Navbar(props) {
 
   const handleLogout = async () => {
     try {
-      await fetch(BASE_URL + "/login", {
+      await fetch(`${BASE_URL}/logout`, {
         method: "POST",
         credentials: "include",
       });
