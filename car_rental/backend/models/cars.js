@@ -11,7 +11,7 @@ const carSchema= new mongoose.Schema({
     },
     availability:[
         {
-            data:{
+            date:{
                 type:Date,
                 required:true,
             },
