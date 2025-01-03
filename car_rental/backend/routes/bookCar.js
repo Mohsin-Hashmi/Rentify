@@ -36,9 +36,22 @@ bookCarRouter.post('/cars/available',userAuth, async(req,res)=>{
 /**
  * Book a car API
  */
-bookCarRouter.post('/', userAuth, async(req,res)=>{
+bookCarRouter.post('/car/booking', userAuth, async(req,res)=>{
     try{
-
+        const userId= req.user._id;
+        const {carId, pickupDate, returnDate}= req.body;
+        if(!carId || !pickupDate || !returnDate){
+            return res.status(400).json({
+                message: "All fields are required"
+            });
+        }
+        const car= await Car.findById(carId);
+        if(!car){
+            return res.status(400).json({
+                message: "Car not found"
+            });
+        }
+        // Check Availability of car
     }catch(err){
         res.status(400).json({
             message: err.message
