@@ -13,6 +13,7 @@ import CarRenter from "./pages/become-renter/CarRenter.jsx";
 import RentDeals from "./pages/rent-deals/RentDeals.jsx";
 import ProtectedRoute from "./context/ProtectedRoute.js";
 import CreateProfile from "./pages/create-profile/CreateProfile.jsx";
+import BookCar from "./pages/book-car/BookCar.jsx";
 export default function App() {
   return (
     <>
@@ -72,6 +73,14 @@ export default function App() {
               element={
                 <ProtectedRoute>
                   <CreateProfile/>
+                </ProtectedRoute>
+              }
+            />
+             <Route
+              path="/book-car"
+              element={
+                <ProtectedRoute>
+                  <BookCar/>
                 </ProtectedRoute>
               }
             />
