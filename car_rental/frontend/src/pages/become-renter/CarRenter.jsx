@@ -23,14 +23,14 @@ const CarRenter = () => {
       e.preventDefault();
       const formData = new FormData();
       formData.append("carName", carName);
-      formData.append("carImage", carImage); // Ensure this contains the file object
+      formData.append("carImage", carImage); 
       formData.append("pricePerDay", pricePerDay);
       formData.append("carLocation", carLocation);
       formData.append("description", description);
       formData.append("availabilityFrom", availabilityFrom);
       formData.append("availabilityTo", availabilityTo);
       formData.append("contactNumber", contactNumber);
-      const response = await fetch(BASE_URL + "/rentCar", {
+      const response = await fetch(`${BASE_URL}/rentCar`, {
         method: "POST",
         body: formData,
         credentials: "include",
@@ -110,8 +110,7 @@ const CarRenter = () => {
                   className="chooseFile"
                   type="file"
                   id="carImage"
-                  value={carImage}
-                  onChange={(e) => setCarImage(e.target.files)}
+                  onChange={(e) => setCarImage(e.target.files[0])}
                   name="carImage"
                   accept="image/*"
                   

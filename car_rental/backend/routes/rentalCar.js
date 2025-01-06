@@ -4,6 +4,7 @@ const RentCars = require("../models/rentCars");
 const validateCarsInfo = require("../utils/validation");
 const rentalCarRouter = express.Router();
 const multer = require("multer");
+const path = require("path");
 
 // Configure Multer storage
 const storage = multer.diskStorage({
@@ -17,71 +18,64 @@ const storage = multer.diskStorage({
 
 // File filter to allow only images and PDFs
 const fileFilter = (req, file, cb) => {
-  const allowedTypes = [
-    "image/jpeg",
-    "image/png",
-    "image/webp",
-    "application/pdf",
-  ];
+  const allowedTypes = ["image/jpeg", "image/png", "image/webp", "application/pdf"];
   if (allowedTypes.includes(file.mimetype)) {
     cb(null, true);
   } else {
-    cb(
-      new Error(
-        "Invalid file type. Only JPEG, PNG, WebP images and PDFs are allowed."
-      ),
-      false
-    );
+    cb(new Error("Invalid file type. Only JPEG, PNG, WEBP, and PDF files are allowed."), false);
   }
 };
 
-const upload = multer({ storage, fileFilter });
+const upload = multer({ storage: storage, fileFilter: fileFilter });
 
-// API endpoint to handle form submission
-rentalCarRouter.post(
-  "/rentCar",
-  userAuth,
-  upload.single("carImage"),
-  (req, res) => {
-    try {
-      const {
-        carName,
-        pricePerDay,
-        carLocation,
-        description,
-        availabilityFrom,
-        availabilityTo,
-        contactNumber,
-      } = req.body;
-      const carFile = req.file;
+// Create a new rental car
+rentalCarRouter.post("/rentCar", userAuth, upload.single("carImage"), async (req, res) => {
+  try {
+    const {
+      carName,
+      pricePerDay,
+      carLocation,
+      description,
+      availabilityFrom,
+      availabilityTo,
+      contactNumber,
+    } = req.body;
+    const carImage = req.file ? req.file.path : null;
 
-      if (!carFile) {
-        return res.status(400).json({
-          message: "File upload failed. Please upload an image or PDF.",
-        });
-      }
-
-      // Mock saving the data (replace with your database logic)
-      const response = {
-        carName,
-        pricePerDay,
-        carLocation,
-        description,
-        availabilityFrom,
-        availabilityTo,
-        contactNumber,
-        filePath: carFile.path, // Path to the uploaded file
-        fileType: carFile.mimetype,
-      };
-
-      res.status(200).json({
-        message: "Car rental data submitted successfully",
-        data: response,
-      });
-    } catch (error) {
-      res.status(500).json({ error: error.message });
+    // Validate car information
+    const { error } = validateCarsInfo({
+      carName,
+      pricePerDay,
+      carLocation,
+      description,
+      availabilityFrom,
+      availabilityTo,
+      contactNumber,
+    });
+    if (error) {
+      return res.status(400).json({ message: error.details[0].message });
     }
+
+    // Create a new rental car
+    const newCar = new RentCars({
+      carName,
+      pricePerDay,
+      carLocation,
+      description,
+      availabilityFrom,
+      availabilityTo,
+      contactNumber,
+      carImage,
+    });
+
+    // Save the car to the database
+    await newCar.save();
+
+    res.status(201).json({ message: "Car created successfully", car: newCar });
+  } catch (err) {
+    console.error("Error creating car:", err);
+    res.status(500).json({ message: "Internal server error", error: err.message });
   }
-);
+});
 
 module.exports = rentalCarRouter;
