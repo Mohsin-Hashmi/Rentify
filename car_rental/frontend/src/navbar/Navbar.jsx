@@ -109,6 +109,14 @@ export default function Navbar(props) {
                     Why choose us
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/contact-us"
+                    onClick={() => props.dataOne && props.dataOne()}
+                  >
+                    Contact Us
+                  </Link>
+                </li>
               </ul>
 
               <div className="hambugerButtons">
@@ -149,6 +157,14 @@ export default function Navbar(props) {
                 onClick={() => props.dataOne && props.dataOne()}
               >
                 Why choose us
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact-us"
+                onClick={() => props.dataOne && props.dataOne()}
+              >
+                Contact Us
               </Link>
             </li>
           </nav>
