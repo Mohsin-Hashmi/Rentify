@@ -23,6 +23,8 @@
     padding: 10px;
     display: flex;
     column-gap: 30px;
+    border: 2px solid #1572d3;
+    border-radius: 8px;
 }
 .contactUsInfo{
     max-width: 491px;
@@ -42,10 +44,10 @@
     font-size: 15px;
 }
 .contactInfoWrapper{
-    padding-top: 111px;
+    padding-top: 60px;
     display: flex;
     flex-wrap: wrap;
-    row-gap: 50px;
+    row-gap: 30px;
 }
 .contactInfoWrapperContent{
     display: flex;
@@ -55,6 +57,7 @@
 }
 .infoPara{
     color: #FFFFFF;
+    font-size: 15px;
 }
 .contactUsFormWrapper{
     display: flex;
@@ -64,8 +67,7 @@
     margin-top: 50px;
 }
 .inputBox{
-    max-width: 185px;
-    width: 100%;
+    width: 185px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -84,4 +86,28 @@
 }
 .contactUsinputField::placeholder{
     font-size: 12px;
+}
+.messageField{
+    width: 100%;
+}
+.sendButton{
+    max-width: 214px;
+    width: 100%;
+    padding: 15px 48px;
+    float: right;
+    margin-top: 45px;
+    outline: none;
+    background: #1572d3;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid transparent;
+}
+.sendButton:hover{
+    background-color: #FFFFFF;
+    color: #1572d3;
+    border: 1px solid #1572d3;
+
 }

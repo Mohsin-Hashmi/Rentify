@@ -45,46 +45,67 @@ const ContactUs = () => {
                 <form action="">
                   <div className="contactUsFormWrapper">
                     <div className="inputBox">
-                      <label className="labelText" htmlFor="">
+                      <label className="labelText" htmlFor="firstName">
                         First Name
                       </label>
                       <input
                         className="contactUsinputField"
                         type="text"
+                        id="firstName"
                         placeholder="Enter First Name"
+                        required
                       />
                     </div>
                     <div className="inputBox">
-                      <label className="labelText" htmlFor="">
+                      <label className="labelText" htmlFor="lastName">
                         Last Name
                       </label>
                       <input
                         className="contactUsinputField"
                         type="text"
+                        id="lastName"
                         placeholder="Enter First Name"
+                        required
                       />
                     </div>
                     <div className="inputBox">
-                      <label className="labelText" htmlFor="">
+                      <label className="labelText" htmlFor="emailId">
                         Email
                       </label>
                       <input
                         className="contactUsinputField"
                         type="email"
+                        id="emailId"
                         placeholder="Enter Email"
+                        required
                       />
                     </div>
                     <div className="inputBox">
-                      <label className="labelText" htmlFor="">
+                      <label className="labelText" htmlFor="phoneNumber">
                         Phone Number
                       </label>
                       <input
                         className="contactUsinputField"
                         type="tel"
+                        id="phoneNumber"
                         placeholder="Enter Phone Number"
+                        required
+                      />
+                    </div>
+                    <div className="inputBox messageField ">
+                      <label className="labelText" htmlFor="message">
+                        Message
+                      </label>
+                      <input
+                        className="contactUsinputField "
+                        type="text"
+                        id="message"
+                        placeholder="Enter Message"
+                        required
                       />
                     </div>
                   </div>
+                  <button className="sendButton" type="submit">Send Message</button>
                 </form>
               </div>
             </div>
