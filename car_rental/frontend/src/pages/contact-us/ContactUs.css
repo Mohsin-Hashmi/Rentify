@@ -20,12 +20,13 @@
     width: 100%;
     background:#ffffff;
     margin-top: 69px;
-    padding: 10px 50px 10px 10px;
+    padding: 10px;
     display: flex;
-    column-gap: 50px;
+    column-gap: 30px;
 }
 .contactUsInfo{
-    width: 491px;
+    max-width: 491px;
+    width: 100%;
     background-color:#1572d3;
     padding: 40px;
     border-radius: 10px;
@@ -54,4 +55,33 @@
 }
 .infoPara{
     color: #FFFFFF;
+}
+.contactUsFormWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 45px;
+    margin-top: 50px;
+}
+.inputBox{
+    max-width: 185px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.labelText{
+    font-size: 15px;
+    color: #8D8D8D;
+}
+.contactUsinputField{
+    width: 100%;
+    display: block;
+    padding: 8px 0;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #1572d3;
+    margin-top: 5px;
+}
+.contactUsinputField::placeholder{
+    font-size: 12px;
 }

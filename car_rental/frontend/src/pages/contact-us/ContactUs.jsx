@@ -3,9 +3,9 @@ import Navbar from "../../navbar/Navbar";
 import Footer from "../../footer/Footer";
 import "../../global/container.css";
 import "./ContactUs.css";
-import phoneLogo from '../../assets/images/phoneLogo.webp';
-import emailLogo from '../../assets/images/emailLogo.webp';
-import locationLogo from '../../assets/images/locationLogo.webp';
+import phoneLogo from "../../assets/images/phoneLogo.webp";
+import emailLogo from "../../assets/images/emailLogo.webp";
+import locationLogo from "../../assets/images/locationLogo.webp";
 const ContactUs = () => {
   return (
     <>
@@ -20,28 +20,73 @@ const ContactUs = () => {
             <div className="ContactUsBodyWrapper">
               <div className="contactUsInfo">
                 <h2 className="contactInfoHeading">Contact Information</h2>
-                <p className="contactInfoPara">Say something to start a live chat!</p>
+                <p className="contactInfoPara">
+                  Say something to start a live chat!
+                </p>
                 <div className="contactInfoWrapper">
-                    <div className="contactInfoWrapperContent">
-                        <img src={phoneLogo} alt="phoneLogo" />
-                        <p className="infoPara">+1012 3456 789</p>
-                    </div>
-                    <div className="contactInfoWrapperContent">
-                        <img src={emailLogo} alt="emailLogo" />
-                        <p className="infoPara">demo@gmail.com</p>
-                    </div>
-                    <div className="contactInfoWrapperContent">
-                        <img src={locationLogo} alt="locationLogo" />
-                        <p className="infoPara">
-                        132 Dartmouth Street Boston, Massachusetts 02156 United States
-                        </p>
-                    </div>
-                    
+                  <div className="contactInfoWrapperContent">
+                    <img src={phoneLogo} alt="phoneLogo" />
+                    <p className="infoPara">+1012 3456 789</p>
+                  </div>
+                  <div className="contactInfoWrapperContent">
+                    <img src={emailLogo} alt="emailLogo" />
+                    <p className="infoPara">demo@gmail.com</p>
+                  </div>
+                  <div className="contactInfoWrapperContent">
+                    <img src={locationLogo} alt="locationLogo" />
+                    <p className="infoPara">
+                      132 Dartmouth Street Boston, Massachusetts 02156 United
+                      States
+                    </p>
+                  </div>
                 </div>
               </div>
-            <div>
-                <h1>contact us form</h1>
-            </div>
+              <div className="">
+                <form action="">
+                  <div className="contactUsFormWrapper">
+                    <div className="inputBox">
+                      <label className="labelText" htmlFor="">
+                        First Name
+                      </label>
+                      <input
+                        className="contactUsinputField"
+                        type="text"
+                        placeholder="Enter First Name"
+                      />
+                    </div>
+                    <div className="inputBox">
+                      <label className="labelText" htmlFor="">
+                        Last Name
+                      </label>
+                      <input
+                        className="contactUsinputField"
+                        type="text"
+                        placeholder="Enter First Name"
+                      />
+                    </div>
+                    <div className="inputBox">
+                      <label className="labelText" htmlFor="">
+                        Email
+                      </label>
+                      <input
+                        className="contactUsinputField"
+                        type="email"
+                        placeholder="Enter Email"
+                      />
+                    </div>
+                    <div className="inputBox">
+                      <label className="labelText" htmlFor="">
+                        Phone Number
+                      </label>
+                      <input
+                        className="contactUsinputField"
+                        type="tel"
+                        placeholder="Enter Phone Number"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
