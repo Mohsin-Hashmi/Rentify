@@ -20,7 +20,16 @@ const validateCarsInfo = (req) => {
     !availabilityTo ||
     !contactNumber
   ) {
-    throw new Error("All fields are required")
+    throw new Error("All fields are required");
   }
 };
-module.exports= validateCarsInfo;
+
+const validateUser = (req) => {
+  const { email, firstName, lastName, phoneNumber, message } = req.body;
+
+  if (!email || !firstName || !lastName || !phoneNumber || !message) {
+    throw new Error("All fields are required");
+  }
+};
+
+module.exports = {validateCarsInfo, validateUser};

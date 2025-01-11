@@ -6,7 +6,8 @@ const multer = require("multer");
 const authRoutes = require("./routes/auth.js");
 const rentalCarRouter = require("./routes/rentalCar.js");
 const profileRouter= require('./routes/profile.js');
-const bookCarRouter= require('./routes/bookCar.js')
+const bookCarRouter= require('./routes/bookCar.js');
+const contactUsRoute= require('./routes/contactUs.js');
 const cookieParser = require("cookie-parser");
 
 dotenv.config();
@@ -28,6 +29,7 @@ app.use("/", authRoutes);
 app.use("/", rentalCarRouter);
 app.use("/", profileRouter);
 app.use("/", bookCarRouter);
+app.use("/", contactUsRoute);
 
 const connect = async () => {
   try {

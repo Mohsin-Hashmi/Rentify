@@ -1,7 +1,7 @@
 const express = require("express");
 const userAuth = require("../middlewares/auth");
 const RentCars = require("../models/rentCars");
-const validateCarsInfo = require("../utils/validation");
+const {validateCarsInfo} = require("../utils/validation");
 const rentalCarRouter = express.Router();
 const { GridFsStorage } = require("multer-gridfs-storage");
 const multer = require("multer");
