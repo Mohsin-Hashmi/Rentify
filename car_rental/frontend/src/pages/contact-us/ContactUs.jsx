@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../../navbar/Navbar";
 import Footer from "../../footer/Footer";
 import "../../global/container.css";
@@ -6,7 +6,36 @@ import "./ContactUs.css";
 import phoneLogo from "../../assets/images/phoneLogo.webp";
 import emailLogo from "../../assets/images/emailLogo.webp";
 import locationLogo from "../../assets/images/locationLogo.webp";
+import axios from "axios";
+import { BASE_URL } from "../../utils/constants";
+
 const ContactUs = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [message, setMessage] = useState("");
+
+  /**API call function */
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post(
+        `${BASE_URL}/contact-us`,
+        { firstName, lastName, email, phoneNumber, message },
+        { withCredentials: true }
+      );
+      localStorage.setItem("token", response.data.token);
+      console.log("Message send Successfully!!!");
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+      setPhoneNumber("");
+      setMessage("");
+    } catch (err) {
+      console.error(err);
+    }
+  };
   return (
     <>
       <Navbar />
@@ -42,7 +71,7 @@ const ContactUs = () => {
                 </div>
               </div>
               <div className="">
-                <form action="">
+                <form onSubmit={handleSubmit}>
                   <div className="contactUsFormWrapper">
                     <div className="inputBox">
                       <label className="labelText" htmlFor="firstName">
@@ -52,6 +81,8 @@ const ContactUs = () => {
                         className="contactUsinputField"
                         type="text"
                         id="firstName"
+                        value={firstName}
+                        onChange={(e) => setFirstName(e.target.value)}
                         placeholder="Enter First Name"
                         required
                       />
@@ -64,6 +95,8 @@ const ContactUs = () => {
                         className="contactUsinputField"
                         type="text"
                         id="lastName"
+                        value={lastName}
+                        onChange={(e) => setLastName(e.target.value)}
                         placeholder="Enter First Name"
                         required
                       />
@@ -76,6 +109,8 @@ const ContactUs = () => {
                         className="contactUsinputField"
                         type="email"
                         id="emailId"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         placeholder="Enter Email"
                         required
                       />
@@ -88,6 +123,8 @@ const ContactUs = () => {
                         className="contactUsinputField"
                         type="tel"
                         id="phoneNumber"
+                        value={phoneNumber}
+                        onChange={(e) => setPhoneNumber(e.target.value)}
                         placeholder="Enter Phone Number"
                         required
                       />
@@ -100,12 +137,16 @@ const ContactUs = () => {
                         className="contactUsinputField "
                         type="text"
                         id="message"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
                         placeholder="Enter Message"
                         required
                       />
                     </div>
                   </div>
-                  <button className="sendButton" type="submit">Send Message</button>
+                  <button className="sendButton" type="submit">
+                    Send Message
+                  </button>
                 </form>
               </div>
             </div>
