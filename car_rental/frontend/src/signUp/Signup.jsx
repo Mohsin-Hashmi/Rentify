@@ -5,8 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import googleIcon from "../assets/images/googleIcon.webp";
 import facebookIcon from "../assets/images/facebookIcon.webp";
 import appleIcon from "../assets/images/appleIcon.webp";
-import axios from "axios";
-import { BASE_URL } from "../utils/constants";
+import { SignupAPI } from "../services/SignupAPI";
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -36,17 +35,14 @@ const Signup = () => {
     }
 
     try {
-      const res = await axios.post( BASE_URL + "/register", {
-        email,
-        password,
-      });
-    
-      console.log("Register response:", res.data);
-      
-      localStorage.setItem("isAuthenticated", "true"); // Optional: Track authentication
-
+      const response = await SignupAPI(email, password, confirmPassword);      
+      // localStorage.setItem("token", response.token);
+      console.log("login Successfully!!!", response);
       // Navigate to home page
       navigate("/home");
+      setEmail('');
+      setPassword('');
+      setConfirmPassword('');
     } catch (err) {
       console.error("Registration Error:", err);
       if (err.response && err.response.data && err.response.data.message) {

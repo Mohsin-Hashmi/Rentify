@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import "../login/Login.css";
 import { Link, useNavigate } from "react-router-dom";
@@ -6,19 +5,18 @@ import googleIcon from "../assets/images/googleIcon.webp";
 import facebookIcon from "../assets/images/facebookIcon.webp";
 import appleIcon from "../assets/images/appleIcon.webp";
 import { useAuth } from "../context/AuthContext"; // Import useAuth to use the auth context
-import { BASE_URL } from "../utils/constants";
+import { LoginAPI } from "../services/LoginAPI";
 
 const Login = () => {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
-  const [emailError, setEmailError] = useState(""); 
-  const [passwordError, setPasswordError] = useState(""); 
-  const [loginError, setLoginError] = useState(""); 
+  const [emailError, setEmailError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+  const [loginError, setLoginError] = useState("");
   const [success, setSuccess] = useState("");
   const { login } = useAuth();
   const navigate = useNavigate(); // Initialize navigate
-
   // Toggle Password visibility
   const handleShowPassword = () => {
     setShowPassword((prevShowPassword) => !prevShowPassword);
@@ -29,7 +27,6 @@ const Login = () => {
     let isValid = true;
     setEmailError("");
     setPasswordError("");
-
     if (!email) {
       setEmailError("Email is required");
       isValid = false;
@@ -56,24 +53,11 @@ const Login = () => {
     if (validateForm()) {
       try {
         // Make the API call
-        const response = await fetch(BASE_URL + "/login", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ email, password }),
-          credentials: "include",
-      });
-
-        if (!response.ok) {
-          const errorData = await response.json();
-          throw new Error(errorData.message || "Login failed");
-        }
-
-        const data = await response.json();
-        console.log("login Successfully!!!")
-        setSuccess("User login successful!");
-
+        const response = await LoginAPI(email, password);
         // Store token if required
-        localStorage.setItem("token", data.token);
+        localStorage.setItem("token", response.token);
+        console.log("login Successfully!!!", response);
+        setSuccess("User login successful!");
 
         // Clear form fields and errors
         setEmail("");
@@ -103,8 +87,8 @@ const Login = () => {
           className="inputField"
           placeholder="Email"
         />
-        {emailError && <p style={{ color: "red" }}>{emailError}</p>} {/* Email error */}
-
+        {emailError && <p style={{ color: "red" }}>{emailError}</p>}{" "}
+        {/* Email error */}
         <input
           type={showPassword ? "text" : "password"}
           value={password}
@@ -112,10 +96,11 @@ const Login = () => {
           className="inputField passField"
           placeholder="Password"
         />
-        {passwordError && <p style={{ color: "red" }}>{passwordError}</p>} {/* Password error */}
-
-        <button type="submit" className="loginSignInBtn">Sign in</button>
-
+        {passwordError && <p style={{ color: "red" }}>{passwordError}</p>}{" "}
+        {/* Password error */}
+        <button type="submit" className="loginSignInBtn">
+          Sign in
+        </button>
         <input
           type="checkbox"
           id="show-password"
@@ -125,25 +110,24 @@ const Login = () => {
         <label htmlFor="show-password" className="labelShowPass">
           Show Password
         </label>
-
-        {loginError && <p style={{ color: "red" }}>{loginError}</p>} 
-        {success && <p className="successMessage">{success}</p>} 
+        {loginError && <p style={{ color: "red" }}>{loginError}</p>}
+        {success && <p className="successMessage">{success}</p>}
       </form>
 
-      <Link className="forgetPassLink" >Forgot your password?</Link>
+      <Link className="forgetPassLink">Forgot your password?</Link>
       <Link className="newAccountLink" to="/register">
         Create new account
       </Link>
 
       <p className="otherOptions">Or continue with</p>
       <div className="otherOptionsIcons">
-        <Link to='' >
+        <Link to="">
           <img src={googleIcon} alt="google icon" />
         </Link>
-        <Link to=''>
+        <Link to="">
           <img src={facebookIcon} alt="facebook icon" />
         </Link>
-        <Link to=''>
+        <Link to="">
           <img src={appleIcon} alt="apple icon" />
         </Link>
       </div>
