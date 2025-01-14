@@ -6,8 +6,7 @@ import "./ContactUs.css";
 import phoneLogo from "../../assets/images/phoneLogo.webp";
 import emailLogo from "../../assets/images/emailLogo.webp";
 import locationLogo from "../../assets/images/locationLogo.webp";
-import axios from "axios";
-import { BASE_URL } from "../../utils/constants";
+import { ContactUsAPI } from "../../services/ContactUsAPI";
 
 const ContactUs = () => {
   const [firstName, setFirstName] = useState("");
@@ -20,13 +19,11 @@ const ContactUs = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
-        `${BASE_URL}/contact-us`,
-        { firstName, lastName, email, phoneNumber, message },
-        { withCredentials: true }
-      );
-      localStorage.setItem("token", response.data.token);
-      console.log("Message send Successfully!!!");
+      const response = await ContactUsAPI(firstName, lastName, email, phoneNumber, message)
+      if (response?.token) {
+        localStorage.setItem("token", response.token);
+        console.log("Message send Successfully!!!", response);
+      }
       setFirstName("");
       setLastName("");
       setEmail("");

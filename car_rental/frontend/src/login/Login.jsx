@@ -55,9 +55,11 @@ const Login = () => {
         // Make the API call
         const response = await LoginAPI(email, password);
         // Store token if required
-        localStorage.setItem("token", response.token);
-        console.log("login Successfully!!!", response);
-        setSuccess("User login successful!");
+        if (response?.token) {
+          localStorage.setItem("token", response.token);
+          console.log("login Successfully!!!", response);
+          setSuccess("User login successful!");
+        }
 
         // Clear form fields and errors
         setEmail("");

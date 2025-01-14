@@ -1,14 +1,21 @@
-const express= require('express');
-const bcrypt= require('bcryptjs');
-const jwt = require('jsonwebtoken');
-const User= require('../models/User.js');
+const express = require("express");
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
+const User = require("../models/User.js");
 
 const router = express.Router();
 
 //Login API
 router.post("/register", async (req, res) => {
   try {
-    const { email, password } = req.body;
+    const { email, password, confirmPassword } = req.body;
+    if (!email || !password || !confirmPassword) {
+      return res.status(400).json({ message: "All fields are required" });
+    }
+
+    if (password !== confirmPassword) {
+      return res.status(400).json({ message: "Passwords do not match" });
+    }
     const existingUser = await User.findOne({ email });
     if (existingUser)
       return res.status(400).json({ message: "User already exists" });
@@ -18,7 +25,7 @@ router.post("/register", async (req, res) => {
 
     const newUser = new User({
       email,
-      password: HASHED_PASSWORD
+      password: HASHED_PASSWORD,
     });
     await newUser.save();
     res.status(200).json({ message: "User registered successfully" });
@@ -46,6 +53,7 @@ router.post("/login", async (req, res) => {
 
     res.status(200).json({
       message: "user login successfully",
+      token,
       user,
     });
   } catch (err) {
@@ -60,11 +68,11 @@ router.post("/logout", (req, res) => {
       expires: new Date(Date.now()),
     });
     res.json({
-      message: "user logged out successfully"
-    })
+      message: "user logged out successfully",
+    });
   } catch (err) {
     res.status(400).json("ERROR: " + err.message);
   }
 });
 
-module.exports= router;
+module.exports = router;

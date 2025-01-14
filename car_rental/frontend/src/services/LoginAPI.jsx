@@ -1,20 +1,14 @@
-
 import { BASE_URL } from "../utils/constants";
+import axios from "axios";
 export const LoginAPI = async (email, password) => {
   try {
-    const response = await fetch(`${BASE_URL}/login`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email, password }),
-      credentials: "include",
-    });
-    if (!response.ok) {
-      const errorData = await response.json();
-      throw new Error(errorData.message || "Failed to login");
-    }
-    const data = await response.json();
-    return data;
-  } catch (err) {}
+    const response = axios.post(
+      `${BASE_URL}/login`,
+      { email, password },
+      { withCredentials: true }
+    );
+    return response;
+  } catch (err) {
+    throw err.response?.data || { message: "Something went wrong" };
+  }
 };

@@ -35,9 +35,8 @@ const Signup = () => {
     }
 
     try {
-      const response = await SignupAPI(email, password, confirmPassword);      
-      // localStorage.setItem("token", response.token);
-      console.log("login Successfully!!!", response);
+      const response = await SignupAPI(email, password, confirmPassword);
+      console.log("signup Successfully!!!", response);
       // Navigate to home page
       navigate("/home");
       setEmail('');

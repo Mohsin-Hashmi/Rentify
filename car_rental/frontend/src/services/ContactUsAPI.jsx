@@ -1,10 +1,17 @@
+
 import { BASE_URL } from "../utils/constants";
 import axios from "axios";
-export const SignupAPI = async (email, password, confirmPassword) => {
+export const ContactUsAPI = async (
+  firstName,
+  lastName,
+  email,
+  phoneNumber,
+  message
+) => {
   try {
     const response = await axios.post(
-      `${BASE_URL}/register`,
-      { email, password, confirmPassword },
+      `${BASE_URL}/contact-us`,
+      { firstName, lastName, email, phoneNumber, message },
       { withCredentials: true }
     );
     return response;
