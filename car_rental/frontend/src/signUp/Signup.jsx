@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import "../signUp/Signup.css";
 import { Link, useNavigate } from "react-router-dom";
@@ -26,22 +25,20 @@ const Signup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError('');
-    setSuccess(''); // Reset success message
-
+    setError("");
+    setSuccess("");
     // Validate Passwords
     if (password !== confirmPassword) {
       return setError("Passwords do not match!");
     }
-
     try {
       const response = await SignupAPI(email, password, confirmPassword);
       console.log("signup Successfully!!!", response);
       // Navigate to home page
       navigate("/home");
-      setEmail('');
-      setPassword('');
-      setConfirmPassword('');
+      setEmail("");
+      setPassword("");
+      setConfirmPassword("");
     } catch (err) {
       console.error("Registration Error:", err);
       if (err.response && err.response.data && err.response.data.message) {
@@ -122,13 +119,13 @@ const Signup = () => {
 
       <p className="otherOptions">Or continue with</p>
       <div className="otherOptionsIcons">
-        <Link to=''>
+        <Link to="">
           <img src={googleIcon} alt="google icon" />
         </Link>
-        <Link to=''>
+        <Link to="">
           <img src={facebookIcon} alt="facebook icon" />
         </Link>
-        <Link to=''>
+        <Link to="">
           <img src={appleIcon} alt="apple icon" />
         </Link>
       </div>
