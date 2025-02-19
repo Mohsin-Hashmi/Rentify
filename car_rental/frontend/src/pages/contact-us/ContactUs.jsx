@@ -6,7 +6,7 @@ import "./ContactUs.css";
 import phoneLogo from "../../assets/images/phoneLogo.webp";
 import emailLogo from "../../assets/images/emailLogo.webp";
 import locationLogo from "../../assets/images/locationLogo.webp";
-import { ContactUsAPI } from "../../services/ContactUsAPI";
+import handleSubmit from "../../hooks/useContactUs";
 
 const ContactUs = () => {
   const [firstName, setFirstName] = useState("");
@@ -15,24 +15,13 @@ const ContactUs = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [message, setMessage] = useState("");
 
-  /**API call function */
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await ContactUsAPI(firstName, lastName, email, phoneNumber, message)
-      if (response?.token) {
-        localStorage.setItem("token", response.token);
-        console.log("Message send Successfully!!!", response);
-      }
-      setFirstName("");
-      setLastName("");
-      setEmail("");
-      setPhoneNumber("");
-      setMessage("");
-    } catch (err) {
-      console.error(err);
-    }
-  };
+  const resetForm = () =>{
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setPhoneNumber("");
+    setMessage("");
+  }
   return (
     <>
       <Navbar />
@@ -68,7 +57,7 @@ const ContactUs = () => {
                 </div>
               </div>
               <div className="">
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={(e)=> handleSubmit(e, { firstName, lastName, email, phoneNumber, message }, resetForm)}>
                   <div className="contactUsFormWrapper">
                     <div className="inputBox">
                       <label className="labelText" htmlFor="firstName">
